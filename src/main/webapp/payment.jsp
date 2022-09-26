@@ -24,6 +24,7 @@
         
         body {
             background-color: #3ecc6d;
+             background-image: url(img/air1.jpg.jpg);
         }
         
         .container {
@@ -35,7 +36,7 @@
         .card.box1 {
             width: 350px;
             height: 500px;
-            background-color: #3ecc6d;
+            background-color: #6996d0;
             color: #baf0c3;
             border-radius: 0
         }
@@ -55,7 +56,7 @@
             width: 20px;
             background-color: transparent;
             border: none;
-            color: #3ecc6d
+            color: #65d2f7
         }
         
         .box2 .btn.btn-primary.bar:hover {
@@ -63,7 +64,7 @@
         }
         
         .box1 .btn.btn-primary {
-            background-color: #57c97d;
+            background-color: #65d2f7;
             width: 45px;
             height: 45px;
             display: flex;
@@ -74,7 +75,7 @@
         
         .box1 .btn.btn-primary:hover {
             background-color: #f6f8f7;
-            color: #57c97d
+            color: #65d2f7
         }
         
         .btn.btn-success {
@@ -165,7 +166,7 @@
         .btn-outline-primary.dropdown-toggle.show,
         .btn-outline-primary:active {
             color: #baf0c3;
-            background-color: #3ecc6d;
+            background-color: #65d2f7;
             box-shadow: none;
             border: 1px solid #ddd
         }
@@ -190,7 +191,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #3ecc6d;
+            background-color: #65d2f7;
             border: 1px solid #ddd
         }
         
@@ -220,19 +221,19 @@
 <body>
     <div class="container bg-light d-md-flex align-items-center">
         <div class="card box1 shadow-sm p-md-5 p-md-5 p-4">
-            <div class="fw-bolder mb-4"><span class="fas fa-dollar-sign">
+            <div class="fw-bolder mb-4"><span class="">
 
          </span>
-                <span class="ps-1">599,00</span>
+                <span class="ps-1">Rs.599000,00</span>
             </div>
             <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between text">
-                    <span class="">Commission</span> <span class="fas fa-dollar-sign">
-                    <span class="ps-1">1.99</span></span>
+                    <span class="">Commission</span> <span class="">
+                    <span class="ps-1">Rs.10000.99</span></span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between text mb-4">
-                    <span>Total</span> <span class="fas fa-dollar-sign">
-                            <span class="ps-1">600.99</span></span>
+                    <span>Total</span> <span class="">
+                            <span class="ps-1">Rs.600000.99</span></span>
                 </div>
                 <div class="border-bottom mb-4"></div>
                 <div class="d-flex flex-column mb-4">
@@ -241,8 +242,8 @@
                     <span class="ps-3">SN8478042099</span> </div>
                 <div class="d-flex flex-column mb-5">
                     <span class="far fa-calendar-alt text">
-                                            <span class="ps-2">Next payment:</span></span>
-                    <span class="ps-3">22 july,2018</span>
+                                            <span class="ps-2">Payment Date:</span></span>
+                    <span class="ps-3">22 OCT,2022</span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between text mt-5">
                     <div class="d-flex flex-column text">
@@ -268,12 +269,8 @@
                 <li class="nav-item">
                     <a class="nav-link px-2 active" aria-current="page" href="#">Credit Card</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2" href="#">Mobile Payment</a>
-                </li>
-                <li class="nav-item ms-auto">
-                    <a class="nav-link px-2" href="#">+ More</a>
-                </li>
+             
+               
             </ul>
             <div class="px-md-5 px-4 mb-4 d-flex align-items-center">
                 <div class="btn btn-success me-4">
@@ -336,7 +333,7 @@
                         </div>
                     </div>
                     <div class="col-12 px-md-5 px-4 mt-3">
-                        <div class="btn btn-primary w-100">Pay $599.00
+                        <div class="btn btn-primary w-100">Pay Rs.59900.00
 
 
                         </div>
