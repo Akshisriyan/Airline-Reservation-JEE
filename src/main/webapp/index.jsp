@@ -504,9 +504,9 @@
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
-										<button  class="about-view packages-btn">
+										<a href="payment.jsp"><button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
