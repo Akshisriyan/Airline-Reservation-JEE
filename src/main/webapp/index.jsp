@@ -96,7 +96,7 @@
 										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
 										<li>
-											<button class="book-btn">Sign now
+											<button class="book-btn"><a href="login.jsp">Sign now</a>
 											</button>
 										</li><!--/.project-btn--> 
 									</ul>
@@ -126,7 +126,7 @@
 									</h2>
 									<div class="about-btn">
 										<button  class="about-view">
-											Sign now
+											<a href="login.jsp">Sign now</a>
 										</button>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
