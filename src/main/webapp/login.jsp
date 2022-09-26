@@ -35,7 +35,7 @@
 
             <button class="btn" type="submit">Sign in</button>
             <a href="#"><h6>Forget Password ?</h6></a>
-            <a href="user.html"><h6>Don't have an account? User or</h6></a>
+            <a href="user.jsp"><h6>Don't have an account? User or</h6></a>
         
             <a href="staff.jsp"><h6>Staff</h6></a>
         </div>
