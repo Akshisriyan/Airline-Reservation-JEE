@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-      <video src="./1.mp4" autoplay muted loop></video>
+      <video src="img/1.mp4" autoplay muted loop></video>
         <div class="card">
             <h1><center>Login</center></h1>
             <div class="form-group">
