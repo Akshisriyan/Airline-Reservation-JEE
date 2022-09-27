@@ -68,7 +68,7 @@
 
 				<div class="input_wrap">
 					<center><input type="submit" value="Create Account" class="submit_btn"></center><br>
-					<a href="login.html"><center><b>Already have an account? Sign in</b></center></a> 
+					<a href="login.jsp"><center><b>Already have an account? Sign in</b></center></a> 
         </div>
 
 				</div>
