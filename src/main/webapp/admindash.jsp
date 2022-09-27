@@ -44,18 +44,18 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
 					</li>
 				
 
-                    <li>
-                        <a class="active-menu"  href="admindash.jsp"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
-                    </li> 
                     <li  >
-                        <a  href="adminstaff.jsp"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
+                        <a  href="admindash.jsp"><i class="fa fa-dashboard fa-3x"></i> Dashboared</a>
+                    </li>
+                    <li  >
+                        <a  href="adminstaffapp.jsp"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
                     </li>	
                     <li  >
-                        <a  href="AdminStaffAdd.html"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
+                        <a  href="adminstaff.jsp"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
                     </li>
-                    <li  >
-                        <a  href="Login Details.html"><i class="fa fa-file fa-3x"></i> Login Details</a>
-                    </li>
+                    <li>
+                        <a class="active-menu"  href="logindetails.jsp"><i class="fa fa-file fa-3x"></i> Login Details</a>
+                    </li> 
                 </ul>      
             </div>
             
