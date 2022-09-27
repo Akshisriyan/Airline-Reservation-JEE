@@ -13,31 +13,32 @@
 </head>
 <body>
     <header>
-       <!-- <video src="./1.mp4" autoplay muted loop></video>-->
+        <video src="./1.mp4" autoplay muted loop></video>
         <div class="card">
             <h1><center>Login</center></h1>
             <div class="form-group">
                 <i class="fas fa-user"></i>
-                <label for="name">Username</label>
+                <label for="name"><b>Username</b></label>
                 <input type="text" required>
             </div>
             <div class="form-group">
                 <i class="fas fa-lock"></i>
-                <label for="name">Password</label>
+                <label for="name"><b>Password</b></label>
                 <input type="password" required>
             </div>
             <div class="form-group">
                 <i class="fas fa-lock"></i>
-                <label for="name">Confirm Password</label>
+                <label for="name"><b>Confirm Password</b></label>
                 <input type="confirm_password" required>
             </div>
           
 
             <button class="btn" type="submit">Sign in</button>
             <a href="#"><h6>Forget Password ?</h6></a>
-            <a href="user.jsp"><h6>Don't have an account? User or</h6></a>
+            <h4><center>Create Your Account...</center></h4>
+            <a href="user.jsp"><h5> USER </h5></a>
         
-            <a href="staff.jsp"><h6>Staff</h6></a>
+            <a href="staff.jsp"><h5>STAFF</h5></a>
         </div>
     </header>
     
