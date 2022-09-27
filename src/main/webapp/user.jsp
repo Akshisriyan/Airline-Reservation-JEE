@@ -24,7 +24,7 @@
 						<input type="text" id="fname">
 					</div>
 					<div class="input_wrap">
-						<label for="lname"><b>User Name</b></label>
+						<label for="lname"><b>Last Name</b></label>
 						<input type="text" id="lname">
 					</div>
 				</div>
