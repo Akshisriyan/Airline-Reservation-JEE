@@ -1,0 +1,23 @@
+.container {
+    padding: 1rem 0rem;
+    margin-top: 50px;
+    text-align: center;
+    font-size:30px;
+  }
+  
+  h4 {
+    margin: 2rem 0rem 1rem;
+    
+  }
+  
+  .table-image {
+    td, th {
+      vertical-align: middle;
+       
+    }
+  }
+ th {
+    text-align: center;
+    font-size:40px; 
+  }
+ 
