@@ -14,6 +14,9 @@
     <link href="AdDash/assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+ 
+   <link href="AdDash/assets/css/table.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="wrapper">
@@ -30,7 +33,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -42,10 +45,10 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
 				
 
                     <li>
-                        <a class="active-menu"  href="AdminDboared.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                        <a class="active-menu"  href="admindash.jsp"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                     </li> 
                     <li  >
-                        <a  href="AdminStaffAppp.html"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
+                        <a  href="adminstaff.jsp"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
                     </li>	
                     <li  >
                         <a  href="AdminStaffAdd.html"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
@@ -63,11 +66,96 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="#" class="btn btn-d
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Admin Dashboard</h2>   
-                        <h5>Welcome Admin , Love to see you back. </h5>
-                       
+                     <h2>Recent Activities</h2>    
                     </div>
-                </div>             
+                </div>      
+                
+
+<!--table-->
+                
+                <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+
+                       
+                        <table class="table table-bordered">
+
+                           
+                     
+                          <thead>
+                            <tr>
+                              <th scope="col">Activity</th>
+                              <th scope="col">User Type</th>
+                              <th scope="col">User ID</th>
+                              <th scope="col">Date</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                             
+                              <td>User Account Created</td>
+                              <td>User</td>
+                              <td>22791</td>
+                              <td>2.846</td>
+                              
+                            </tr>
+                            <tr>
+                              
+                              <td>New Flight Details Added</td>
+                              <td>Staff Grade 1</td>
+                              <td>202014</td>
+                              <td>2.846</td>
+                            
+                            </tr>
+                            <tr>
+                              
+                              <td>User Account Created</td>
+                              <td>Cristina</td>
+                              <td>1.234</td> 
+                              <td>2.846</td> 
+                            </tr>
+                            <tr>
+                                
+                                <td>Staff Member Added</td>
+                                <td>Cristina</td>
+                                <td>1.234</td> 
+                                <td>2.846</td> 
+                              </tr>
+                              <tr>
+                                
+                                <td>New Flight Details Added</td>
+                                <td>Cristina</td>
+                                <td>1.234</td> 
+                                <td>2.846</td> 
+                              </tr>
+                              <tr>
+                                
+                                <td>Staff Account Approved</td>
+                                <td>Cristina</td>
+                                <td>1.234</td>  
+                                <td>2.846</td>
+                              </tr>
+                              <tr>
+                                
+                                <td>Saff Account Created</td>
+                                <td>Cristina</td>
+                                <td>1.234</td>  
+                                <td>2.846</td>
+                              </tr>
+                            
+                            </tbody>
+                   
+                   
+                          </tbody>
+                        </table>
+                      
+                    </div>
+                </div>
+
+<!--table-->
+
+
     </div>
 
     

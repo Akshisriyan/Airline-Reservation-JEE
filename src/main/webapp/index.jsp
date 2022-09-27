@@ -74,7 +74,7 @@
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="logo">
-								<a href="index.html">
+								<a href="admindash.jsp">
 									LOGO AND COMPANY NAME
 								</a>
 							</div><!-- /.logo-->
