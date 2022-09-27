@@ -3,27 +3,40 @@
 *{
 	margin: 0;
 	padding: 0;
-	color: #131111;
+	color: #080808;
 }
-
 body{
-	background: #300ecb;
+	
 	background-image: url(img/air1.jpg.jpg);
 }
- 
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .wrapper{
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 	
 }
 
 .registration_form{
-	background-color:rgb(0 ,0 ,0 , 0.6) ;
+	background-color:rgba(126, 123, 215, 0.3);
 	padding: 25px;
-	border-radius: 5px;
+	border-radius: 10px;
 	width: 400px;
+	
 	
 }
 
@@ -31,7 +44,7 @@ body{
 	text-align: center;
 	font-size: 20px;
 	text-transform: uppercase;
-	color: #ebd0ce;
+	color: #100b0b;
 	letter-spacing: 5px;
 	font-weight: 700;
 }
@@ -63,17 +76,28 @@ body{
 	width: 165px;
 }
 
-.form_wrap  input[type="text"]{
-	width: 95%;
-	border-radius: 3px;
-	border: 1px solid #9597a6;
-	padding: 10px;
-	outline: none;
-
+.form_wrap  input[type="text"],[type="password"]{
+	display: block;
+    width: 100%;
+    padding: 0.007px 0;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 0;
+    color: rgb(245, 240, 242);
+    height: 30px;
+    font-size: 15px;
+    box-shadow: 0 0.5px 0 0 rgb(21, 20, 20);
+    transition: all .5s linear;
+	
 }
+
 
 .form_wrap  input[type="text"]:focus{
 	border-color: #ebd0ce;
+}
+.form_wrap input:focus,
+.form_wrap input:valid{
+    outline: none;
 }
 
 .form_wrap ul{
@@ -113,16 +137,17 @@ body{
 }
 
 .form_wrap .submit_btn{
-	width: 100%;
+	width: 40%;
 	background:rgb(13, 162, 176);
-	padding: 10px;
+	padding: 8px;
 	border: 0;
 	border-radius: 3px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	cursor: pointer;
+	font-size: 10px;
 }
 
 .form_wrap .submit_btn:hover{
-	background: #28159f;
+	background: #0d7dbd;
 }

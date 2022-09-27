@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="staff.css">
 </head>
 <body>
-	
+	<video src="img/5.mp4" autoplay muted loop></video>	
 <div class="wrapper">
 	<div class=" Staff registration_form">
 		<div class="title">
@@ -18,37 +18,34 @@
 		<form>
 			<div class="form_wrap">
 				
+					
 					<div class="input_wrap">
-						<label for="fname"><center>Full Name</center></label>
-						<input type="text" id="fname">
-					</div>
-					<div class="input_wrap">
-						<label for="lname"><center>User Name</center></label>
+						<label for="lname"><center><b>User Name</b></center></label>
 						<input type="text" id="lname">
 					</div>
 				
 				<div class="input_wrap">
-					<label for="email"><center>Email Address</center></label>
+					<label for="email"><center><b>Email Address</b></center></label>
 					<input type="text" id="email">
 				</div>
                 <div class="input_wrap">
-					<label for="contact_no"><center>Contact No</center></label>
+					<label for="contact_no"><center><b>Contact No</b></center></label>
 					<input type="text" id="contact_no">
 				</div>
 			
                 <div class="input_wrap">
-					<label for="nic_no"><center>NIC NO</center></label>
+					<label for="nic_no"><center><b>NIC NO</b></center></label>
 					<input type="text" id="nic_no">
 				</div>
 				
            
                 <div class="input_wrap">
-					<label for="password"><center>Password</center></label>
-					<input type="text" id="password">
+					<label for="password"><center><b>Password</b></center></label>
+					<input type="password" id="password">
 				</div>
                 <div class="input_wrap">
-					<label for="confirm_password"><center>Confirm Password</center></label>
-					<input type="text" id="confirm_password">
+					<label for="confirm_password"><center><b>Confirm Password</b></center></label>
+					<input type="password" id="confirm_password">
 				</div>
 				<div>
 					
@@ -65,9 +62,12 @@
 				</div>
 
 				<div class="input_wrap">
-					<input type="submit" value="Create Account" class="submit_btn">
-					<a href="login.html"><center>Already have an account? Sign in</center></a> 
+					<center><input type="submit" value="Create Account" class="submit_btn"></center><br>
+					<a href="login.jsp"><center><b>Already have an account? Sign in</b></center></a> 
 				</div>
+				
+        
+
 			</div>
 		</form>
 	</div>
