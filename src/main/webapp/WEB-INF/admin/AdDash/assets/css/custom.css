@@ -1,17 +1,4 @@
 
-/*=============================================================
-    Authour URI: www.binarycart.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-/*==============================================
-    GENERAL  STYLES    
-    =============================================*/
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -29,7 +16,7 @@ body {
 }
 #page-inner {
     width:100%;
-    margin:10px 20px 10px 0px;
+    margin:4px 2px 2px 2px;
     background-color:#fff!important;
     padding:10px;
     min-height:780px;
@@ -43,12 +30,13 @@ body {
 }
 h2 {
     color: #f00;
+    font-size: 60px;
 }
 h4 {
     padding-top:10px;
 }
 .square-btn-adjust {
-    border: 0px solid transparent; 
+    border: 10px solid transparent; 
    -webkit-border-radius: 0px;
 -moz-border-radius: 0px;
 border-radius: 0px;
@@ -206,17 +194,19 @@ max-width:170px;
 }
 
 .navbar-cls-top .navbar-brand {
-	color: #fff;
+	color: rgb(240, 239, 240);
 background: #C90000;
 width: 300px;
 text-align: center;
-height: 60px;
-font-size: 40px;
+padding-top: 30px;
+height: 83px;
+font-size: 50px;
 font-weight: 700;
 }
 .active-menu {
     background-color:#C90000!important
-    ;
+    
+ ;
 }
 
 .arrow {
@@ -254,13 +244,15 @@ font-weight: 700;
 	color:#fff;
 	background:#202020;
 	text-shadow:none;
+
 	
 }
 .sidebar-collapse > .nav > li > a {
-	padding:15px 10px;
+	padding:30px 15px;
 }
 .sidebar-collapse > .nav > li {
 	border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+    width: 300px;
 }
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
@@ -360,7 +352,7 @@ line-height: 1.428571429;
      #page-wrapper{
                margin: 0 0 0 300px;
         padding: 15px 30px;
-        min-height: 841px;
+        height: 818px;
 		
     }
 	
