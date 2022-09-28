@@ -54,7 +54,7 @@
 						<div class="category"><center>
 							<input type="radio" name="gradeI">Grade I
 							
-							<input type="radio" name="graddeII">Grade II</center>
+							<input type="radio" name="gradeI">Grade II</center>
 						</div>
 						</div>
 					<br>

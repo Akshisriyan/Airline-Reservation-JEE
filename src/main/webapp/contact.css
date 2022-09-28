@@ -1,0 +1,52 @@
+.content-box {
+    width: 100%;
+    position: relative;
+    height: 110vh;
+    min-height: 700px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    background-image: url("https://businessmirror.com.ph/wp-content/uploads/2021/05/top01-052021.jpg");
+    font-family: Oswald, sans-serif;
+    background-size: cover;
+}
+
+.content-box1 {
+    width: 60%;
+    position: relative;
+    height: 60vh;
+    min-height: 60vh;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    font-family: Oswald, sans-serif;
+    border: 1px inset green;
+    font-style: italic;
+    margin: 10vh auto;
+}
+
+.send-msg {
+    width: 50%;
+    position: relative;
+    height: 4vh;
+    margin: 8vh auto;
+}
+
+.line-bar {
+    width: 100%;
+    height: 5vh;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    position: fixed;
+}
+
+.chat-box {
+    width: 80%;
+    height: 80vh;
+    min-height: 110vh;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0 auto;
+}
