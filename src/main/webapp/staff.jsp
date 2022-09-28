@@ -15,46 +15,46 @@
 			Staff Register
 		</div>
 
-		<form>
+		<form action = "iinsert" method = "POST">
+		
 			<div class="form_wrap">
 				
 					
 					<div class="input_wrap">
 						<label for="lname"><center><b>User Name</b></center></label>
-						<input type="text" id="lname">
+						<input type="text" id="lname" name = "lname" >
 					</div>
 				
 				<div class="input_wrap">
 					<label for="email"><center><b>Email Address</b></center></label>
-					<input type="text" id="email">
+					<input type="text" id="email"  name = "email">
 				</div>
                 <div class="input_wrap">
 					<label for="contact_no"><center><b>Contact No</b></center></label>
-					<input type="text" id="contact_no">
+					<input type="text" id="contact_no"  name = "contact_no">
 				</div>
 			
                 <div class="input_wrap">
 					<label for="nic_no"><center><b>NIC NO</b></center></label>
-					<input type="text" id="nic_no">
+					<input type="text" id="nic_no"  name = "nic_no">
 				</div>
 				
            
                 <div class="input_wrap">
 					<label for="password"><center><b>Password</b></center></label>
-					<input type="password" id="password">
+					<input type="password" id="password"  name = "password">
 				</div>
                 <div class="input_wrap">
 					<label for="confirm_password"><center><b>Confirm Password</b></center></label>
-					<input type="password" id="confirm_password">
+					<input type="password" id="confirm_password"  name = "confirm_password">
 				</div>
-				<div>
-					
-				
-						<div  class ="grade-details">
-						<div class="category"><center>
+				<div>				
+
+
+			      <div  class ="grade-details">
+		          <div class="category"><center>
 							<input type="radio" name="gradeI">Grade I
-							
-							<input type="radio" name="graddeII">Grade II</center>
+                            <input type="radio" name="graddeII">Grade II</center>
 						</div>
 						</div>
 					<br>

@@ -19,4 +19,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CustomerInsertServ</display-name>
+    <servlet-name>CustomerInsertServ</servlet-name>
+    <servlet-class>com.customer.CustomerInsertServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerInsertServ</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StaffInsertServ</display-name>
+    <servlet-name>StaffInsertServ</servlet-name>
+    <servlet-class>com.staff1.StaffInsertServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StaffInsertServ</servlet-name>
+    <url-pattern>/iinsert</url-pattern>
+  </servlet-mapping>
 </web-app>
