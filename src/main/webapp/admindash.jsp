@@ -33,7 +33,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -45,7 +45,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
 				
 
                     <li  >
-                        <a  href="admindash.jsp"><i class="fa fa-dashboard fa-3x"></i> Dashboared</a>
+                        <a  class="active-menu" href="admindash.jsp"><i class="fa fa-dashboard fa-3x"></i> Dashboared</a>
                     </li>
                     <li  >
                         <a  href="adminstaffapp.jsp"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
@@ -54,7 +54,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                         <a  href="adminstaff.jsp"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
                     </li>
                     <li>
-                        <a class="active-menu"  href="logindetails.jsp"><i class="fa fa-file fa-3x"></i> Login Details</a>
+                        <a  href="logindetails.jsp"><i class="fa fa-file fa-3x"></i> Login Details</a>
                     </li> 
                 </ul>      
             </div>

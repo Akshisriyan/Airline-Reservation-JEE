@@ -50,10 +50,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                         <a  href="adminstaffapp.jsp"><i class="fa fa-check-square fa-3x"></i> Staff Account Approval</a>
                     </li>	
                     <li  >
-                        <a  href="adminstaff.jsp"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
+                        <a class="active-menu"   href="adminstaff.jsp"><i class="fa fa-plus fa-3x"></i> Add Staff Members</a>
                     </li>
                     <li>
-                        <a class="active-menu"  href="logindetails.jsp"><i class="fa fa-file fa-3x"></i> Login Details</a>
+                        <a  href="logindetails.jsp"><i class="fa fa-file fa-3x"></i> Login Details</a>
                     </li> 	
                 </ul>      
             </div>
