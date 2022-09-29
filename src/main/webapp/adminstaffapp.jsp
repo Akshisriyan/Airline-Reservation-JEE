@@ -90,9 +90,9 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <tr>
                               
                               <td>John</td>
-                              <td>User</td>
-                              <td>22791</td>
-                              <td>2.846</td>
+                              <td>John98@gmail.com</td>
+                              <td>071614636</td>
+                              <td>1122345v</td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
@@ -102,9 +102,9 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <tr>
                               
                               <td>Sam</td>
-                              <td>Staff Grade 1</td>
-                              <td>202014</td>
-                              <td>2.846</td>
+                              <td>Sam@gmail.com</td>
+                              <td>071246326</td>
+                              <td>1243123v</td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
@@ -113,10 +113,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             </tr>
                             <tr>
                               
-                              <td>User Account Created</td>
-                              <td>Cristina</td>
-                              <td>1.234</td> 
-                              <td>2.846</td> 
+                              <td>Daemon</td>
+                              <td>Daemon7@gmail.com</td>
+                              <td>071611636</td> 
+                              <td>1243653v</td> 
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
@@ -124,10 +124,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             </tr>
                             <tr>
                                 
-                                <td>Staff Member Added</td>
-                                <td>Cristina</td>
-                                <td>1.234</td> 
-                                <td>2.846</td> 
+                                <td>Dean</td>
+                                <td>Dean70@gmail.com</td>
+                                <td>071698636</td> 
+                                <td>1223423v</td> 
                                 <td><div>
                                   <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
                                 <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
@@ -135,10 +135,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                               </tr>
                               <tr>
                                 
-                                <td>New Flight Details Added</td>
-                                <td>Cristina</td>
-                                <td>1.234</td> 
-                                <td>2.846</td> 
+                                <td>Aegon</td>
+                                <td>Aegon5@gmail.com</td>
+                                <td>071614684</td> 
+                                <td>1123123v</td> 
                                 <td><div>
                                   <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
                                 <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
@@ -146,10 +146,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                               </tr>
                               <tr>
                                 
-                                <td>Staff Account Approved</td>
-                                <td>Cristina</td>
-                                <td>1.234</td>  
-                                <td>2.846</td>
+                                <td>Jess</td>
+                                <td>Jess79@gmail.com</td>
+                                <td>077614613</td>  
+                                <td>1987323v</td>
                                 <td><div>
                                   <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
                                 <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
@@ -157,10 +157,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                               </tr>
                               <tr>
                                 
-                                <td>Saff Account Created</td>
-                                <td>Cristina</td>
-                                <td>1.234</td>  
-                                <td>2.846</td>
+                                <td>Clarra</td>
+                                <td>Clarra55@gmail.com</td>
+                                <td>071614456</td>  
+                                <td>1283423v</td>
                                 <td><div>
                                   <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
                                 <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
