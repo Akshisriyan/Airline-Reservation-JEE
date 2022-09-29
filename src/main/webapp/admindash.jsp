@@ -61,7 +61,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
             
         </nav>    
           
-        <!-- /. NAV SIDE  -->
+        <!-- /. NAVV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
                 <div class="row">
