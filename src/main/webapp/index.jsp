@@ -75,7 +75,7 @@
 						<div class="col-sm-2">
 							<div class="logo">
 								<a href="admindash.jsp">
-									LOGO AND COMPANY NAME
+									LOGO 
 								</a>
 							</div><!-- /.logo-->
 						</div><!-- /.col-->
