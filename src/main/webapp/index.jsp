@@ -342,10 +342,10 @@
 				<div class="gallery-details">
 					<div class="gallary-header text-center">
 						<h2>
-							top destination
+							Top destination
 						</h2>
 						<p>
-							Best Travel Partner.
+							Best Airline Partner.
 						</p>
 					</div><!--/.gallery-header-->
 					<div class="gallery-box">

@@ -35,7 +35,7 @@
           }
             %>
                                         <div class="line-bar">
-                                            <i><h4>Chat Box 1.0</h4></i>
+                                            <i><h4>Chat Box</h4></i>
                                         </div><br>
 
 
@@ -105,7 +105,7 @@
                                                     </div>
 
                                                     <button type="submit" class="btn btn-outline-info">Send message</button>
-                                                    <a href="chatbox_close"><button type="button" class="btn btn-danger" onclick="return confirm('are you sure want to exit ?');">Close the session</button></a>
+                                                    <a href="index.jsp"><button type="button" class="btn btn-danger" onclick="return confirm('are you sure want to exit ?');">Close the session</button></a>
                                                 </div>
                                             </form>
                                         </div>
