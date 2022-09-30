@@ -54,12 +54,8 @@
 			      <div  class ="grade-details">
 		          <div class="category"><center>
 							<input type="radio" name="gradeI">Grade I
-<<<<<<< HEAD
+
                             <input type="radio" name="graddeII">Grade II</center>
-=======
-							
-							<input type="radio" name="gradeI">Grade II</center>
->>>>>>> branch 'master' of https://github.com/Akshisriyan/Airline-Reservation-JEE.git
 						</div>
 						</div>
 					<br>
