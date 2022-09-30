@@ -243,12 +243,12 @@
                 <div class="d-flex flex-column mb-5">
                     <span class="far fa-calendar-alt text">
                                             <span class="ps-2">Payment Date:</span></span>
-                    <span class="ps-3">22 OCT,2022</span>
+                    <span class="ps-3">21 OCT,2022</span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between text mt-5">
                     <div class="d-flex flex-column text">
                         <span>Customer Support:</span>
-                        <span>online chat 24/7</span>
+                        <span>online chat 24/2</span>
                     </div>
                     <div class="btn btn-primary rounded-circle">
                         <span class="fas fa-comment-alt"></span>
