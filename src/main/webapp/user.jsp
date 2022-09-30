@@ -30,7 +30,7 @@
 				</div>
 				
 				<div class="input_wrap">
-					<label for="username"><b>Username</b></label>
+					<label for="username"><b>UserName</b></label>
 					<input type="text" id="username" name="username">
 				</div>
 				
