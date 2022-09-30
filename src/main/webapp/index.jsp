@@ -311,9 +311,9 @@
 												</div><!--/.col-->
 												<div class="clo-sm-5">
 													<div class="about-btn pull-right">
-														<button  class="about-view travel-btn">
+														<a href="flightdetails.jsp"><button  class="about-view travel-btn">
 															search	
-														</button><!--/.travel-btn-->
+														</button></a><!--/.travel-btn-->
 													</div><!--/.about-btn-->
 												</div><!--/.col-->
 												
@@ -342,7 +342,7 @@
 				<div class="gallery-details">
 					<div class="gallary-header text-center">
 						<h2>
-							Top destination
+							Top Destination
 						</h2>
 						<p>
 							Best Airline Partner.
