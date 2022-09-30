@@ -49,4 +49,14 @@
     <servlet-name>LoginCustomerServ</servlet-name>
     <url-pattern>/LloginCustomerServ</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginStaffServ</display-name>
+    <servlet-name>LoginStaffServ</servlet-name>
+    <servlet-class>com.customer.LoginStaffServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginStaffServ</servlet-name>
+    <url-pattern>/LoginStaffServ</url-pattern>
+  </servlet-mapping>
 </web-app>
