@@ -20,6 +20,8 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		String  LNAME = request.getParameter("lname");
 		
+		String  UNAME = request.getParameter("username");
+		
 		String  EMAIL = request.getParameter("email");
 		
 		String  CONTACT = request.getParameter("contact_no");
@@ -34,12 +36,12 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		String  PASSWORD = request.getParameter("password");
 		
-		
+		String  CPW = request.getParameter("confirm_password");
 		
 		//calling insertcustomer() Methode.......
 		boolean isTrue;
 		
-		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD);
+		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CPW );
 		
 		if(isTrue == true) {
 			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
