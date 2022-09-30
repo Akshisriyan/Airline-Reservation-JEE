@@ -16,7 +16,8 @@ public class LoginCustomerServ extends HttpServlet {
     public LoginCustomerServ() {
         super();
     }
-
+    
+    //Validate part
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter out = response.getWriter();
