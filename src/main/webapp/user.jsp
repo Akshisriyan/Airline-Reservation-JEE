@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Registration Form In HTML and CSS</title>
+	<title>Registration Form </title>
 	<link rel="stylesheet" href="user.css">
 </head>
 <body>
