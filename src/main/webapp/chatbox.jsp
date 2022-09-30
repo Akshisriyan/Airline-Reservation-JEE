@@ -104,7 +104,7 @@
                                                         <input type="text" name="msg" class="form-control" placeholder="type message here">
                                                     </div>
 
-                                                    <button type="submit" class="btn btn-outline-info">Send message</button>
+                                                    <button type="submit" class="btn btn-outline-info">Send Message</button>
                                                     <a href="index.jsp"><button type="button" class="btn btn-danger" onclick="return confirm('are you sure want to exit ?');">Close the session</button></a>
                                                 </div>
                                             </form>
