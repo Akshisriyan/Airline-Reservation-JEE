@@ -12,30 +12,27 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+    <form action = "LloginCustomerServ" method = "POST">
     <header>
       <video src="img/1.mp4" autoplay muted loop></video>
         <div class="card">
-            <h1><center>Login</center></h1>
+        
+        
+            <h1><center>login</center></h1>
             <div class="form-group">
                 <i class="fas fa-user"></i>
                 <label for="name"><b>Username</b></label>
-                <input type="text" required>
+                <input type="text" name="Username" required>
             </div>
             <div class="form-group">
                 <i class="fas fa-lock"></i>
                 <label for="name"><b>Password</b></label>
-                <input type="password" required>
-               
-            </div>
-            <div class="form-group">
-                <i class="fas fa-lock"></i>
-                <label for="name"><b>Confirm Password</b></label>
-                <input type="password" required>
+                <input type="password" name="Password" required>
                
             </div>
             
-          
-
+         
+        
             <button class="btn" type="submit">Sign in</button>
             <a href="#"><h6>Forget Password ?</h6></a>
             <h4><center>Create Your Account...</center> </h4>

@@ -39,4 +39,14 @@
     <servlet-name>StaffInsertServ</servlet-name>
     <url-pattern>/iinsert</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginCustomerServ</display-name>
+    <servlet-name>LoginCustomerServ</servlet-name>
+    <servlet-class>com.customer.LoginCustomerServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginCustomerServ</servlet-name>
+    <url-pattern>/LloginCustomerServ</url-pattern>
+  </servlet-mapping>
 </web-app>

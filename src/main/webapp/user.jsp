@@ -28,6 +28,12 @@
 						<input type="text" id="lname" name="lname">
 					</div>
 				</div>
+				
+				<div class="input_wrap">
+					<label for="username"><b>Username</b></label>
+					<input type="text" id="username" name="username">
+				</div>
+				
 				<div class="input_wrap">
 					<label for="email"><b>Email Address</b></label>
 					<input type="text" id="email" name="email">
