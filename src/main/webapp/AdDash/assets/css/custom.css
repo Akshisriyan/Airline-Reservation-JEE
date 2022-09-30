@@ -11,13 +11,13 @@ body {
 #page-wrapper {
     padding: 15px 15px;
     min-height: 600px;
-    background:#F3F3F3;
+    background: #74889a;
    
 }
 #page-inner {
     width:100%;
     margin:4px 2px 2px 2px;
-    background-color:#fff!important;
+    background-color: #c0c0c0;
     padding:10px;
     min-height:590px;
 }
@@ -29,7 +29,7 @@ body {
     border:1px solid #f3f3f3;
 }
 h2 {
-    color: #f00;
+    color: #000080;
     font-size: 60type=text/csspx;
 }
 h4 {
@@ -195,7 +195,7 @@ max-width:170px;
 
 .navbar-cls-top .navbar-brand {
 	color: rgb(240, 239, 240);
-background: #C90000;
+background: #000040;
 width: 300px;
 text-align: center;
 padding-top: 30px;
@@ -204,13 +204,7 @@ font-size: 50px;
 font-weight: 700;
 }
 .active-menu {
-    background-color:#C90000!important
-    
- ;
-}
-
-.arrow {
-    float: right;
+       background-color: #00ff00;
 }
 
 .fa.arrow:before {
@@ -242,7 +236,7 @@ font-weight: 700;
 }
 .sidebar-collapse .nav > li > a {
 	color:#fff;
-	background:#202020;
+	background:#353535;
 	text-shadow:none;
 
 	
@@ -275,8 +269,7 @@ font-weight: 700;
 .nav-second-level > li > a:after,
 .nav-third-level > li > a:after {
 	content:"";
-	display:block;
-	position:absolute;
+	display:blorgb(0, 255, 255), 255, 255)sition:absolute;
 	left:20px;
 	width:1px;
 	height:100%;
@@ -298,7 +291,7 @@ font-weight: 700;
 	
 }
 .navbar-cls-top {
-	background:#4D4D4D;
+	background: #383838;
 	border-bottom:none;
 	
 }

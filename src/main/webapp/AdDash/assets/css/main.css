@@ -296,11 +296,11 @@ h6 {
 }
 
 .bg-gra-03 {
-  background: -webkit-gradient(linear, left bottom, right top, from(#08aeea), to(#b721ff));
-  background: -webkit-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
-  background: -moz-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
-  background: -o-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
-  background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from #036083, to(#3d0383));
+  background: -webkit-linear-gradient(bottom left, #036083 0%, #3d0383 100%);
+  background: -moz-linear-gradient(bottom left, #036083 0%, #3d0383 100%);
+  background: -o-linear-gradient(bottom left, #036083 0%, #3d0383 100%);
+  background: linear-gradient(to top right, #036083 0%, #3d0383 100%);
 }
 
 /* ==========================================================================
@@ -742,7 +742,7 @@ input {
 }
 
 .card-5 {
-  background: #fff;
+  background: #c0c0c0;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -770,6 +770,7 @@ input {
   padding: 0px 20px;
   padding-bottom: 40px;
   margin-top: -20px;
+  background: #c0c0c0;
 }
 
 @media (max-width: 767px) {
