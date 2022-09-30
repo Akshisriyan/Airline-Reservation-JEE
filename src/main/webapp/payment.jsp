@@ -248,7 +248,7 @@
                 <div class="d-flex align-items-center justify-content-between text mt-5">
                     <div class="d-flex flex-column text">
                         <span>Customer Support:</span>
-                        <span>online chat 24/7</span>
+                        <span>online chat 24/2</span>
                     </div>
                     <div class="btn btn-primary rounded-circle">
                         <span class="fas fa-comment-alt"></span>
