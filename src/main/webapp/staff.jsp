@@ -15,7 +15,7 @@
 			Staff Register
 		</div>
 
-		<form action = "iinsert" method = "POST">
+		<form action = "staff" method = "POST">
 		
 			<div class="form_wrap">
 				
