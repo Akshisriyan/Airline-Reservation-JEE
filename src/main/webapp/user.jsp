@@ -15,7 +15,7 @@
 			User Register
 		</div>
 
-	      <form action = "user" method = "POST">
+	      <form action = "verification.jsp" method = "POST">
 		
 			<div class="form_wrap">
 				<div class="input_grp">
