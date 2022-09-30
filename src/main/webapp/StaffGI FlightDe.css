@@ -122,24 +122,18 @@
 	color: #fff;
 	margin-top: 10px;
 	border-radius: 8px;
-	padding: 1rem 2rem 2rem 5rem;
-	background: rgb(13, 13, 14);
+	padding: 0.5rem 1rem 1rem 3rem;
+	background: rgb(37, 37, 37);
   }
   .promo_card h1, .promo_card span, button{
 	margin: 10px;
   }
- 
-  .promo_card1{
-	width: 50%;
-	color: #fff;
-	margin-top: 6px;
-	border-radius: 10px;
-	padding: 1rem 0.5rem 0.5rem 1rem;
-	background: rgb(10, 21, 172);
+  .promo_card button{
+	display: block;
+	padding: 6px 12px;
+	border-radius: 5px;
+	cursor: pointer;
   }
-  
-  
-  
   .history_lists{
 	display: flex;
 	align-items: center;
@@ -152,29 +146,20 @@
 	margin: 1rem 0;
   }
   table{
-	background-color: rgba(126, 123, 215, 0.3);
-	padding: 0.5rem;
+	background:rgba(126, 123, 215, 0.3);
+	padding: 1rem;
 	text-align: left;
 	border-radius: 10px;
+	box-shadow: 2px 20px 60px -5px rgb(141, 26, 26);
   }
   table td, th{
-	padding: 1rem  6rem;
+	padding: 0.4rem 1rem;
   }
   table th{
-	font-size: 15px;
+	font-size: 18px;
   }
   table td{
-	font-style: oblique;
 	font-size: 16px;
-	color: rgb(17, 15, 15);
+	color: rgb(16, 15, 15);
   }
-  
- table>tbody>tr>td>img{
-	display:inline-block;
-	width:80px;
-	height:80px;
-	object-fit:cover;
-	border-radius:50%;
- } 
-  
   
