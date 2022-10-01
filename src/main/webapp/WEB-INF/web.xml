@@ -31,13 +31,13 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>StaffInsertServ</display-name>
-    <servlet-name>StaffInsertServ</servlet-name>
-    <servlet-class>com.staff1.StaffInsertServ</servlet-class>
+    <display-name>Grade1InsertServ</display-name>
+    <servlet-name>Grade1InsertServ</servlet-name>
+    <servlet-class>com.staff.Grade1InsertServ</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>StaffInsertServ</servlet-name>
-    <url-pattern>/staff</url-pattern>
+    <servlet-name>Grade1InsertServ</servlet-name>
+    <url-pattern>/grade1</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>

@@ -1,4 +1,4 @@
-package com.customer;
+package com.staff;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,10 +10,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class LoginStaffServ extends HttpServlet {
+public class LoginGrade1Serv extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public LoginStaffServ() {
+    public LoginGrade1Serv() {
         super();
     }
 
@@ -28,12 +28,12 @@ public class LoginStaffServ extends HttpServlet {
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
-		isTrue = CustomerDBUtil.validate(USERNAME , PASSWORD); //ok
+		isTrue = StaffDBUtil.validateGrade1(USERNAME , PASSWORD); //ok
 		
 		if (isTrue == true ) {
-			List<User> userInfo = CustomerDBUtil.getUser(USERNAME);
-			request.setAttribute("userInfo", userInfo);
-			RequestDispatcher dis = request.getRequestDispatcher("useraccount.jsp");
+			List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
+			request.setAttribute("grade1Info", grade1Info);
+			RequestDispatcher dis = request.getRequestDispatcher("staff1account.jsp");
 			dis.forward(request, response);
 		} else
 		{

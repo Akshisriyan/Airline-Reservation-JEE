@@ -1,4 +1,4 @@
-package com.staff1;
+package com.staff;
 
 import java.io.IOException;
 import jakarta.servlet.RequestDispatcher;
@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @jakarta.servlet.annotation.WebServlet("/StaffInsertServ")
-public class StaffInsertServ extends HttpServlet {
+public class Grade1InsertServ extends HttpServlet {
     
 	private static final long serialVersionUID = 1L;
 	
@@ -37,7 +37,7 @@ public class StaffInsertServ extends HttpServlet {
 		//calling insertcustomer() Methode
 		boolean isTrue;
 		
-		isTrue = StaffDBUtil.insertStaff(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD);
+		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD);
 		
 		if(isTrue == true) {
 			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");

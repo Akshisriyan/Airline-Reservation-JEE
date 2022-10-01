@@ -29,7 +29,7 @@ public class LoginCustomerServ extends HttpServlet {
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
-		isTrue = CustomerDBUtil.validate(USERNAME , PASSWORD);
+		isTrue = CustomerDBUtil.validateUser(USERNAME , PASSWORD);
 		
 		if (isTrue == true ) {
 			List<User> userInfo = CustomerDBUtil.getUser(USERNAME);

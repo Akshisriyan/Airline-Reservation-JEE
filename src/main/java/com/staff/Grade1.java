@@ -1,6 +1,6 @@
-package com.customer;
+package com.staff;
 
-public class Staff {
+public class Grade1 {
 	private int SID;
 	private String USERNAME;
 	private String EMAIL;
@@ -9,7 +9,7 @@ public class Staff {
 	private String NIC;
     private boolean GRADE;
     private String CONFIRMPASSWORD;
-	public Staff(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, boolean gRADE) {
+	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, boolean gRADE) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;

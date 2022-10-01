@@ -1,4 +1,4 @@
-package com.staff1;
+package com.staff;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

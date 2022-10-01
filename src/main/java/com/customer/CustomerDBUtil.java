@@ -13,13 +13,13 @@ public class CustomerDBUtil {
 	private static ResultSet rs = null;
 	
 	
-public static boolean validate(String USERNAME,String PASSWORD) {
+public static boolean validateUser(String USERNAME,String PASSWORD) {
 		
 		try {
 			
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = "select * from staff1 where username = '"+USERNAME+"' and password = '"+PASSWORD+"'";
+			String sql = "select * from user where username = '"+USERNAME+"' and password = '"+PASSWORD+"'";
 			rs = stmt.executeQuery(sql);
 			
 			if(rs.next()) {
@@ -36,6 +36,8 @@ public static boolean validate(String USERNAME,String PASSWORD) {
 		
 		return isSuccess;
 	}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 public static Boolean insertcustomer(String FNAME , String LNAME , String USERNAME ,String EMAIL , String CONTACT, String NIC , String BIRTHDAY , String COUNTRY , String COUNTRYCODE , String PASSWORD , String CONFIRMPASSWORD ) {
@@ -109,46 +111,7 @@ return isSuccess;
 		}
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
-public static List< Staff > getStaff(String USERNAME){
-		
-		//Creating object from ArrayList<User>
-		ArrayList< Staff > staf1 = new ArrayList<>();
-		
-		try {
-			
-			// Crating Database Connection
-			con = DBConnect.getConnection();
-			stmt = con.createStatement();
-			String sql = " select * from staff1 where username = '"+USERNAME+"'";
-			rs = stmt.executeQuery(sql);
-			
-			//Checking user information from Database 1 by 1.... 
-			while (rs.next()) {
-				int sid =  rs.getInt(1);
-				String username = rs.getString(2);
-				String email = rs.getString(3);
-				String password = rs.getString(4);
-				String phone = rs.getString(5);
-				String nic = rs.getString(6);
-				boolean grade = rs.getBoolean(7);
-				
-				
-				
-				//Sending parameters to User.java constructor..
-				Staff stf = new Staff( sid , username , email , password , phone , nic , grade);
-				
-				//pass the "usr" object to "user" object
-				staf1.add(stf);
-				
-			}
-			
-		} catch (Exception e ) {
-			
-		}
-		
-		return staf1;
-		}
+
 	
 } 
 
