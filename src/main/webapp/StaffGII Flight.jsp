@@ -42,7 +42,7 @@
 				<li>
 					<a href="#">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
-						<span>Logout</span>
+						<span>Log out</span>
 					</a>
 				</li>
 			</ul>
