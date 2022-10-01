@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,19 +22,19 @@
 			
 			<ul>
 				<li>
-					<a href="#">
+					<a href="staffGradeIDashboard.jsp">
 						<i class="fa fa-desktop" aria-hidden="true"></i>
 						<span>Dashboard</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="StaffGI FlightDe.jsp">
 						<i class="fa fa-plane" aria-hidden="true"></i>
-						<span>Flight Details</span>
+						<span>Fight Details</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="Staff1TicketInfo.jsp">
 						<i class="fa fa-ticket" aria-hidden="true"></i>
 						<span>Ticket Info</span>
 					</a>
@@ -44,13 +46,13 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="StaffGradeIFind userDashboard.jsp">
 						<i class="fa fa-address-card" aria-hidden="true"></i>
 						<span>Find User Dashboard</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="index.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>

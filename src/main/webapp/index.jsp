@@ -125,9 +125,9 @@
 
 									</h2>
 									<div class="about-btn">
-										<button  class="about-view">
-											<a href="login.jsp">Sign now</a>
-										</button>
+										<a href="login.jsp"><button  class="about-view">
+											Sign now
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
 							</div><!--/.single-about-us-->
