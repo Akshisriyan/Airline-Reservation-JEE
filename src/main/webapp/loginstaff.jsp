@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <form action = "LloginCustomerServ" method = "POST">
+    <form action = "LoginStaffServ" method = "POST">
     <header>
       <video src="img/1.mp4" autoplay muted loop></video>
         <div class="card">
@@ -31,6 +31,16 @@
                
             </div>
             
+            	<div>				
+			      <div  class ="grade-details">
+		          <div class="category"><center>
+							<input type="radio" name="grade" value="1">Grade I
+
+                            <input type="radio" name="grade" value="2">Grade II</center>
+						</div>
+						</div>
+					<br>
+				</div> 
          
         
             <button class="btn" type="submit">Sign in</button>

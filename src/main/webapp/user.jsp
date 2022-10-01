@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="input_wrap">
-					<center><input type="submit" value="Create Account" class="submit_btn"></center><br>
+					<center><input type="submit" value="Create Account" href=adminstaff.jsp class="submit_btn"></center><br>
 					<a href="login.jsp"><center><b>Already have an account? Sign in</b></center></a> 
         </div>
 

@@ -84,13 +84,14 @@ public static List< Grade1 > getGrade1(String USERNAME){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-public static boolean validateGrade1(String USERNAME,String PASSWORD) {
+public static boolean validateGrade1(String USERNAME,String PASSWORD  ) {
 	
 	try {
 		
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-		String sql = "select * from grade1 where username = '"+USERNAME+"' and password = '"+PASSWORD+"'";
+		String sql = "select * from grade1 where username = '"+USERNAME+"' and password='"+PASSWORD+"'";
+				
 		rs = stmt.executeQuery(sql);
 		
 		if(rs.next()) {

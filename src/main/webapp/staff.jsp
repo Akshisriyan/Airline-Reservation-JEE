@@ -48,19 +48,19 @@
 					<label for="confirm_password"><center><b>Confirm Password</b></center></label>
 					<input type="password" id="confirm_password"  name = "confirm_password">
 				</div>
+				
+				
+ 		
 				<div>				
-
-
 			      <div  class ="grade-details">
 		          <div class="category"><center>
-							<input type="radio" name="gradeI">Grade I
+							<input type="radio" name="grade" value="1">Grade I
 
-                            <input type="radio" name="graddeII">Grade II</center>
+                            <input type="radio" name="grade" value="2">Grade II</center>
 						</div>
 						</div>
 					<br>
-
-				</div>
+				</div>    
 
 				<div class="input_wrap">
 					<center><input type="submit" value="Create Account" class="submit_btn"></center><br>

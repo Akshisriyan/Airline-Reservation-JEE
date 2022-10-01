@@ -25,15 +25,17 @@ public class LoginGrade1Serv extends HttpServlet {
 		//getting Username and Password fron Login page...
 		String USERNAME = request.getParameter("Username");
 		String PASSWORD = request.getParameter("Password");
+		//String GRADE = request.getParameter("grade");
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
-		isTrue = StaffDBUtil.validateGrade1(USERNAME , PASSWORD); //ok
+		isTrue = StaffDBUtil.validateGrade1(USERNAME , PASSWORD ); //ok
+		
 		
 		if (isTrue == true ) {
 			List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
 			request.setAttribute("grade1Info", grade1Info);
-			RequestDispatcher dis = request.getRequestDispatcher("staff1account.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("staffaccount.jsp");
 			dis.forward(request, response);
 		} else
 		{

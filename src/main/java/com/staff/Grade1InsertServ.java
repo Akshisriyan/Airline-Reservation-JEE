@@ -27,7 +27,7 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		String  PASSWORD = request.getParameter("password");
 		
-		String  GRADE = request.getParameter("gradeI");
+		String  GRADE = request.getParameter("grade");
 		
 		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 
