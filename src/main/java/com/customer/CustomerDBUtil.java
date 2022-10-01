@@ -136,7 +136,7 @@ public static List< Staff > getStaff(String USERNAME){
 				
 				
 				//Sending parameters to User.java constructor..
-				Staff stf = new User( sid , username , email , password , phone , nic , grade);
+				Staff stf = new Staff( sid , username , email , password , phone , nic , grade);
 				
 				//pass the "usr" object to "user" object
 				staf1.add(stf);

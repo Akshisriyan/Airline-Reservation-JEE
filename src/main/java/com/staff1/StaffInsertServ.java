@@ -1,8 +1,6 @@
 package com.staff1;
 
 import java.io.IOException;
-import java.sql.DriverManager;
-
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -45,7 +43,7 @@ public class StaffInsertServ extends HttpServlet {
 			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
 			dis.forward(request, response);
 		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
 		}
    }	
 

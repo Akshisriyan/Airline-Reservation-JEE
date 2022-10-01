@@ -15,7 +15,7 @@
 			User Register
 		</div>
 
-	      <form action = "useraccount.jsp" method = "POST">
+	      <form action = "user" method = "POST">
 		
 			<div class="form_wrap">
 				<div class="input_grp">

@@ -37,7 +37,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>StaffInsertServ</servlet-name>
-    <url-pattern>/iinsert</url-pattern>
+    <url-pattern>/staff</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
