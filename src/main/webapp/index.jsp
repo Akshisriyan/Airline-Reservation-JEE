@@ -75,7 +75,7 @@
 						<div class="col-sm-2">
 							<div class="logo">
 								<a href="admindash.jsp">
-									LOGO 
+									<span>PHOENIX</span> Airline 
 								</a>
 							</div><!-- /.logo-->
 						</div><!-- /.col-->
@@ -96,8 +96,8 @@
 										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
 										<li>
-											<button class="book-btn"><a href="login.jsp">Sign now</a>
-											</button>
+											<a href="login.jsp"><button class="book-btn">Sign now
+											</button></a>
 										</li><!--/.project-btn--> 
 									</ul>
 								</div><!-- /.navbar-collapse -->
