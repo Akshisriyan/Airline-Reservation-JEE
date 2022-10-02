@@ -34,9 +34,9 @@
             	<div>				
 			      <div  class ="grade-details">
 		          <div class="category"><center>
-							<input type="radio" name="grade" value="1"required>Grade I
+							<input type="radio" name="grade" value="Grade 1"required>Grade I
 
-                            <input type="radio" name="grade" value="2"required>Grade II</center>
+                            <input type="radio" name="grade" value="Grade 2"required>Grade II</center>
 						</div>
 						</div>
 					<br>

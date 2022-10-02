@@ -38,10 +38,10 @@ public class LoginCustomerServ extends HttpServlet {
 			dis.forward(request, response);
 		} else
 		{
-			out.println("<script type = 'text/javascript>");
-			out.println("alert(Your User Name Or Password is Incorrect.);");
+			out.println("<script type = 'text/javascript'>");
+			out.println("alert('Your User Name Or Password is Incorrect.');");
 			out.println("location = 'login.jsp'");
-			out.println("</script");
+			out.println("</script>");
 		
 	}
 

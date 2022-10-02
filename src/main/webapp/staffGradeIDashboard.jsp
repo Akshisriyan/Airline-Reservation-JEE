@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <%@ taglib  uri ="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -93,31 +95,38 @@
 							</tr>
 								
 								
-							  
+							  <c:forEach var = "stf1" items = "${grade1Info}">
 							
+						  
+						  
+						   
+							<tr>
+							<td><b>Your Grade</b></td>
+							<td><b>:<c:out value = "${stf1.GRADE}"/></b></td>
+						  </tr>
 						  <tr>
-							
-							<td><b>Staff ID</b></td>
-							<td><b>:22200</b></td>
+							<td><b>Your ID</b></td>
+							<td><b><c:out value = ":${stf1.SID}"/></b></td>
 							
 						  </tr>
 						  <tr>
-							<td><b>Name</b></td>
-							<td><b>:Johan Smith</b></td>
-						  </tr>
-						  <tr>
-							<td><b>Staff Grade</b></td>
-							<td><b>:Grade 1</b></td>
-						  </tr>
-						  <tr>
-							<td><b>Contact No</b></td>
-							<td><b>:0718989273</b></td>
+							<td><b>User Name</b></td>
+							<td><b>:<c:out value = "${stf1.USERNAME}"/></b></td>
 						  </tr>
 						  <tr>
 							<td><b>Email</b></td>
-							<td><b>:Johan2@gmail.com</b></td>
+							<td><b>:<c:out value = "${stf1.EMAIL}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Phone</b></td>
+							<td><b>:<c:out value = "${stf1.PHONE}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>NICe</b></td>
+							<td><b>:<c:out value = "${stf1.NIC}"/></b></td>
 						  </tr>
 						  
+						  </c:forEach>
 						  
 						  </tbody>
 						  </table>

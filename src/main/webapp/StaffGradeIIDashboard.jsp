@@ -78,28 +78,41 @@
 								<td><img src="img/1.jfif" alt="">
 									
 							</tr>
+								
+								
+							  <c:forEach var = "stf1" items = "${grade1Info}">
+							
+						  
+						  
+						   
 							<tr>
+							<td><b>Your Grade</b></td>
+							<td><b>:<c:out value = "${stf1.GRADE}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Your ID</b></td>
+							<td><b><c:out value = ":${stf1.SID}"/></b></td>
 							
-							<td><b>Staff ID</b></td>
-							<td><b>:22201</b></td>
-							
 						  </tr>
 						  <tr>
-							<td><b>Name</b></td>
-							<td><b>:Clara</b></td>
-						  </tr>
-						  <tr>
-							<td><b>Staff Grade</b></td>
-							<td><b>:Grade 2</b></td>
-						  </tr>
-						  <tr>
-							<td><b>Contact No</b></td>
-							<td><b>:0718489773</b></td>
+							<td><b>User Name</b></td>
+							<td><b>:<c:out value = "${stf1.USERNAME}"/></b></td>
 						  </tr>
 						  <tr>
 							<td><b>Email</b></td>
-							<td><b>:Clara9@gmail.com</b></td>
+							<td><b>:<c:out value = "${stf1.EMAIL}"/></b></td>
 						  </tr>
+						  <tr>
+							<td><b>Phone</b></td>
+							<td><b>:<c:out value = "${stf1.PHONE}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>NICe</b></td>
+							<td><b>:<c:out value = "${stf1.NIC}"/></b></td>
+						  </tr>
+						  
+						  </c:forEach>
+						  
 						  </tbody>
 						  </table>
 						  </div>

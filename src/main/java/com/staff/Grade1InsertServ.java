@@ -44,6 +44,7 @@ public class Grade1InsertServ extends HttpServlet {
 			dis.forward(request, response);
 		} else {
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
+			dis.forward(request, response);
 		}
    }	
 
