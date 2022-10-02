@@ -22,26 +22,26 @@
 			
 			<ul>
 				<li>
-					<a href="#">
+					<a href="StaffGradeIIDashboard.jsp">
 						<i class="fa fa-desktop" aria-hidden="true"></i>
 						<span>Dashboard</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="StaffGII Flight.jsp">
 						<i class="fa fa-plane" aria-hidden="true"></i>
 						<span>Add Flight Details</span>
 					</a>
 				</li>
 				
 				<li>
-					<a href="#">
+					<a href="StaffGradeIIFindUserDashboard.jsp">
 						<i class="fa fa-address-card" aria-hidden="true"></i>
 						<span> User Dashboard</span>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="loginstaff.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>

@@ -539,7 +539,7 @@
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
-											<span>2544 review</span>
+											<span>45632 review</span>
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
@@ -578,7 +578,7 @@
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
-											<span>2544 review</span>
+											<span>789 review</span>
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
@@ -613,11 +613,8 @@
 									<div class="packages-review">
 										<p>
 											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2544 review</span>
+										
+											<span>25447 review</span>
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
@@ -654,9 +651,8 @@
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2544 review</span>
+										
+											<span>44 review</span>
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
@@ -694,14 +690,13 @@
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<span>2544 review</span>
+											<span>254 review</span>
 										</p>
 									</div><!--/.packages-review-->
-									<div class="about-btn">
+									<a href="StaffGradeIIDashboard.jsp"><div class="about-btn">
 										<button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
@@ -767,10 +762,10 @@
 												make tour
 											</button>
 										</div><!--/.about-btn-->
-										<div class="about-btn">
+										<a href="staffGradeIDashboard.jsp"><div class="about-btn">
 											<button  class="about-view packages-btn">
 												book now
-											</button>
+											</button></a>
 										</div><!--/.about-btn-->
 									</div><!--/.offer-btn-group-->
 								</div><!--/.single-special-offer-txt-->
@@ -848,10 +843,10 @@
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Akila Tharinda
 									</a>
 								</h3>
-								<h4>Balangoda , Srilanka</h4>
+								<h4>Walasmulla , Srilanka</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -871,10 +866,10 @@
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Madushan Deshapriya
 									</a>
 								</h3>
-								<h4>Balangoda , Srilanka</h4>
+								<h4>Welimada , Srilanka</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -894,10 +889,10 @@
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Cahturangi
 									</a>
 								</h3>
-								<h4>Balangoda , Srilanka</h4>
+								<h4>Homagama, Srilanka</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -917,10 +912,10 @@
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Ravindi
 									</a>
 								</h3>
-								<h4>Balangoda , Srilanka</h4>
+								<h4>Horana , Srilanka</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -940,10 +935,10 @@
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Michel
 									</a>
 								</h3>
-								<h4>Balangoda , Srilanka</h4>
+								<h4> Rathnapura , Srilanka</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -1078,11 +1073,11 @@
 							<div class="single-footer-item">
 								<h2>link</h2>
 								<div class="single-footer-txt">
-									<p><a href="#">home</a></p>
-									<p><a href="#">destination</a></p>
-									<p><a href="#">spacial packages</a></p>
-									<p><a href="#">special offers</a></p>
-									<p><a href="#">contacts</a></p>
+									<p><a href="#home">home</a></p>
+									<p><a href="#gallery">destination</a></p>
+									<p><a href="#pack">spacial packages</a></p>
+									<p><a href="#spo">special offers</a></p>
+									<p><a href="#subs">contacts</a></p>
 								</div><!--/.single-footer-txt-->
 							</div><!--/.single-footer-item-->
 
