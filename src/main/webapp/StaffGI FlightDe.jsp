@@ -40,7 +40,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="StaffGradeIUserDetails.jsp">
 						<i class="fa fa-users" aria-hidden="true"></i>
 						<span>Update User Details</span>
 					</a>
