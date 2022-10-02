@@ -75,7 +75,7 @@
 						<div class="col-sm-2">
 							<div class="logo">
 								<a href="admindash.jsp">
-									<span>PHOENIX</span> AIRLINE 
+									<span>PHOENIX</span> Airline 
 								</a>
 							</div><!-- /.logo-->
 						</div><!-- /.col-->
