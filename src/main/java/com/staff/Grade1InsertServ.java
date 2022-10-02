@@ -40,7 +40,7 @@ public class Grade1InsertServ extends HttpServlet {
 		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD);
 		
 		if(isTrue == true) {
-			RequestDispatcher dis = request.getRequestDispatcher("success.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("successstaff.jsp");
 			dis.forward(request, response);
 		} else {
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");

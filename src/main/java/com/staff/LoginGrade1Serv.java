@@ -35,7 +35,7 @@ public class LoginGrade1Serv extends HttpServlet {
 		if (isTrue == true ) {
 			List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
 			request.setAttribute("grade1Info", grade1Info);
-			RequestDispatcher dis = request.getRequestDispatcher("staffaccount.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("staffGradeIDashboard.jsp");
 			dis.forward(request, response);
 		} else
 		{

@@ -7,20 +7,19 @@ public class Grade1 {
 	private String PASSWORD;
 	private String PHONE;
 	private String NIC;
-    private boolean GRADE;
-    private String CONFIRMPASSWORD;
-	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, boolean gRADE) {
+    private String GRADE;
+  
+	public Grade1(int sID, String uSERNAME, String eMAIL, String phone, String nIC, String gRADE) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;
 		EMAIL = eMAIL;
-		PASSWORD = pASSWORD;
 		PHONE = phone;
 		NIC = nIC;
 		GRADE = gRADE;
 		
 	}
-	public int getUID() {
+	public int getSID() {
 		return SID;
 	}
 	public String getUSERNAME() {
@@ -32,13 +31,13 @@ public class Grade1 {
 	public String getPASSWORD() {
 		return PASSWORD;
 	}
-	public String getPhone() {
+	public String getPHONE() {
 		return PHONE;
 	}
 	public String getNIC() {
 		return NIC;
 	}
-	public boolean isGRADE() {
+	public String getGRADE() {
 		return GRADE;
 	}
 	public void setCONFIRMPASSWORD(int cONFIRMPASSWORD ) {

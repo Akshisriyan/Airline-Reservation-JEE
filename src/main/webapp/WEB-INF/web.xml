@@ -51,12 +51,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>LoginStaffServ</display-name>
-    <servlet-name>LoginStaffServ</servlet-name>
-    <servlet-class>com.customer.LoginStaffServ</servlet-class>
+    <display-name>LoginGrade1Serv</display-name>
+    <servlet-name>LoginGrade1Serv</servlet-name>
+    <servlet-class>com.staff.LoginGrade1Serv</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>LoginStaffServ</servlet-name>
-    <url-pattern>/LoginStaffServ</url-pattern>
+    <servlet-name>LoginGrade1Serv</servlet-name>
+    <url-pattern>/staff</url-pattern>
   </servlet-mapping>
 </web-app>

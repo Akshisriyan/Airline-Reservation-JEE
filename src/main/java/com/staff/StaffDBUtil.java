@@ -51,7 +51,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 			// Crating Database Connection
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = " select * from staff1 where username = '"+USERNAME+"'";
+			String sql = " select * from grade1 where username = '"+USERNAME+"'";
 			rs = stmt.executeQuery(sql);
 			
 			//Checking user information from Database 1 by 1.... 
@@ -59,15 +59,14 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				int sid =  rs.getInt(1);
 				String username = rs.getString(2);
 				String email = rs.getString(3);
-				String password = rs.getString(4);
 				String phone = rs.getString(5);
 				String nic = rs.getString(6);
-				boolean grade = rs.getBoolean(7);
+				String grade = rs.getString(7);
 				
 				
 				
 				//Sending parameters to User.java constructor..
-				Grade1 g1 = new Grade1( sid , username , email , password , phone , nic , grade);
+				Grade1 g1 = new Grade1( sid , username , email , phone , nic , grade);
 				
 				//pass the "usr" object to "user" object
 				grade1.add(g1);

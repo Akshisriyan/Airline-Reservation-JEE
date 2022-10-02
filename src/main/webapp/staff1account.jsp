@@ -16,11 +16,10 @@
             <th>Grade1 Id</th>
             <th>User Name</th>
             <th>Email</th>
-            <th>Password</th>
             <th>Phone</th>
             <th>NIC</th>
             <th>Grade</th>
-            <th>NIC</th>
+           
          
             
          </tr>
@@ -30,7 +29,6 @@
                <td><c:out value = "${stf1.SID}"/></td>
                <td><c:out value = "${stf1.USERNAME}"/></td>
                <td><c:out value = "${stf1.EMAIL}"/></td>
-               <td><c:out value = "${stf1.PASSWORD}"/></td>
                <td><c:out value = "${stf1.PHONE}"/></td>
                <td><c:out value = "${stf1.NIC}"/></td>
                <td><c:out value = "${stf1.GRADE}"/></td>
