@@ -59,4 +59,14 @@
     <servlet-name>LoginGrade1Serv</servlet-name>
     <url-pattern>/staff</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginAdminServ</display-name>
+    <servlet-name>LoginAdminServ</servlet-name>
+    <servlet-class>com.admin.LoginAdminServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAdminServ</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
 </web-app>

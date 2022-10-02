@@ -47,6 +47,7 @@ public class CustomerInsertServ extends HttpServlet {
 			dis1.forward(request, response);
 		} else {
 			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
+			
 		}
    }	
 

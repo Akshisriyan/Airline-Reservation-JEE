@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -87,12 +89,14 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             </tr>
                           </thead>
                           <tbody>
+                          
+                         
                             <tr>
                               
-                              <td>John</td>
-                              <td>John98@gmail.com</td>
-                              <td>071614636</td>
-                              <td>1122345v</td>
+                              <td>Sam</td>
+                              <td>Sam@gmail.com</td>
+                              <td>071246326</td>
+                              <td>1243123v</td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
@@ -166,7 +170,6 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                                 <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
                             </div></td>
                               </tr>
-
 
 
                           </tbody>

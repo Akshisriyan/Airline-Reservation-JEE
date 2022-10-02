@@ -6,7 +6,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.customer.DBConnect;
+import com.admin.DBConnect;
 
 public class StaffDBUtil {
 	
@@ -15,15 +15,14 @@ public class StaffDBUtil {
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	
-	public static Boolean insertgrade1( String LNAME , String EMAIL , String CONTACT, String NIC , String PASSWORD , String GRADE, String CONFIRMPASSWORD) {
+	public static Boolean insertgrade1( String LNAME , String EMAIL , String CONTACT, String NIC , String PASSWORD , String GRADE, String CONFIRMPASSWORD , String STATUS) {
 		
-		boolean isSuccess = false;
 		
 		//Create Database Connection
 		try {
 			con = DBConnect.getConnection();
 		    stmt = con.createStatement();
-			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+CONFIRMPASSWORD+"')";
+			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+CONFIRMPASSWORD+"' , '"+STATUS+"')";
 			int rs = stmt.executeUpdate(sql);
 			
 			if(rs > 0) {

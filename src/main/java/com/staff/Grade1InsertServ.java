@@ -31,13 +31,13 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 
-
+		String STATUS = "on";
 		
 		
 		//calling insertcustomer() Methode
 		boolean isTrue;
 		
-		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD);
+		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
 		
 		if(isTrue == true) {
 			RequestDispatcher dis = request.getRequestDispatcher("successstaff.jsp");

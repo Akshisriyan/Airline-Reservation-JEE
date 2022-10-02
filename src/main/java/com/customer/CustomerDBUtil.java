@@ -6,11 +6,14 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.admin.DBConnect;
+
 public class CustomerDBUtil {
 	private static boolean isSuccess = false;
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
+	
 	
 	
 public static boolean validateUser(String USERNAME,String PASSWORD) {
