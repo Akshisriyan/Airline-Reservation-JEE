@@ -125,9 +125,9 @@
 
 									</h2>
 									<div class="about-btn">
-										<button  class="about-view">
-											<a href="login.jsp">Sign now</a>
-										</button>
+										<a href="login.jsp"><button  class="about-view">
+											Sign now
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
 							</div><!--/.single-about-us-->
@@ -160,7 +160,7 @@
 									<li role="presentation">
 									 	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">
 									 		<i class="fa fa-plane"></i>
-									 		flights
+									 		FLIGHTS
 									 	</a>
 									</li>
 								</ul>
@@ -357,8 +357,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/2.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													china
+												<a href="https://en.wikipedia.org/wiki/Tourism_in_China">
+													China
 												</a>
 												<p><span>20 tours</span><br><span>15 places</span></p>
 											</div><!-- /.item-title -->
@@ -369,8 +369,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/9.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													venuzuala
+												<a href="https://en.wikipedia.org/wiki/Tourism_in_Venezuela">
+													Venuzuala
 												</a>
 												<p><span>12 tours</span><br><span>9 places</span></p>
 											</div> <!-- /.item-title-->
@@ -381,8 +381,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/1.jpeg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													brazil
+												<a href="https://www.visitbrasil.com/en/">
+													Brazil
 												</a>
 												<p><span>25 tours</span><br><span>10 places</span></p>
 											</div><!-- /.item-title -->
@@ -393,8 +393,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/5.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													australia 
+												<a href="https://www.tourism.australia.com/en">
+													Australia 
 												</a>
 												<p><span>18 tours</span><br><span>9 places</span></p>
 											</div> <!-- /.item-title-->
@@ -405,8 +405,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/6.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													netharland
+												<a href="https://en.wikipedia.org/wiki/Tourism_in_the_Netherlands#:~:text=Tourism%20in%20the%20Netherlands%20is%20a%20relatively%20small,the%2020th%20most%20visited%20country%20in%20the%20world.">
+													Netharland
 												</a>
 												<p><span>14 tours</span><br><span>12 places</span></p>
 											</div> <!-- /.item-title-->
@@ -417,8 +417,8 @@
 						  				<div class="filtr-item">
 											<img src="assets/images/gallary/8.jpg" alt="portfolio image"/>
 											<div class="item-title">
-												<a href="#">
-													turkey
+												<a href="https://www.goturkeytourism.com/">
+													Turkey
 												</a>
 												<p><span>14 tours</span><br><span>6 places</span></p>
 											</div> <!-- /.item-title-->
@@ -1092,7 +1092,7 @@
 							<div class="single-footer-item">
 								<h2>popular destination</h2>
 								<div class="single-footer-txt">
-									<p><a href="#">china</a></p>
+									<p><a href="">china</a></p>
 									<p><a href="#">venezuela</a></p>
 									<p><a href="#">brazil</a></p>
 									<p><a href="#">australia</a></p>
