@@ -75,7 +75,7 @@
 						<div class="col-sm-2">
 							<div class="logo">
 								<a href="admindash.jsp">
-									<span>PHOENIX</span> Airline 
+									LOGO 
 								</a>
 							</div><!-- /.logo-->
 						</div><!-- /.col-->
@@ -96,8 +96,8 @@
 										<li class="smooth-menu"><a href="#spo">Special Offers</a></li>
 										<li class="smooth-menu"><a href="#subs">subscription</a></li>
 										<li>
-											<a href="login.jsp"><button class="book-btn">Sign now
-											</button></a>
+											<button class="book-btn"><a href="login.jsp">Sign now</a>
+											</button>
 										</li><!--/.project-btn--> 
 									</ul>
 								</div><!-- /.navbar-collapse -->
@@ -125,9 +125,9 @@
 
 									</h2>
 									<div class="about-btn">
-										<a href="login.jsp"><button  class="about-view">
-											Sign now
-										</button></a>
+										<button  class="about-view">
+											<a href="login.jsp">Sign now</a>
+										</button>
 									</div><!--/.about-btn-->
 								</div><!--/.about-us-txt-->
 							</div><!--/.single-about-us-->
@@ -355,72 +355,72 @@
 
 						  			<div class="col-md-6">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g1.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/2.jpg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													china
 												</a>
-												<p><span>20 tours</span><span>15 places</span></p>
+												<p><span>20 tours</span><br><span>15 places</span></p>
 											</div><!-- /.item-title -->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
 
 						  			<div class="col-md-6">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g2.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/9.jpg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													venuzuala
 												</a>
-												<p><span>12 tours</span><span>9 places</span></p>
+												<p><span>12 tours</span><br><span>9 places</span></p>
 											</div> <!-- /.item-title-->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
 
 						  			<div class="col-md-4">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g3.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/1.jpeg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													brazil
 												</a>
-												<p><span>25 tours</span><span>10 places</span></p>
+												<p><span>25 tours</span><br><span>10 places</span></p>
 											</div><!-- /.item-title -->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
 
 						  			<div class="col-md-4">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g4.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/5.jpg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													australia 
 												</a>
-												<p><span>18 tours</span><span>9 places</span></p>
+												<p><span>18 tours</span><br><span>9 places</span></p>
 											</div> <!-- /.item-title-->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
 
 						  			<div class="col-md-4">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g5.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/6.jpg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													netharland
 												</a>
-												<p><span>14 tours</span><span>12 places</span></p>
+												<p><span>14 tours</span><br><span>12 places</span></p>
 											</div> <!-- /.item-title-->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
 
 						  			<div class="col-md-8">
 						  				<div class="filtr-item">
-											<img src="assets/images/gallary/g6.jpg" alt="portfolio image"/>
+											<img src="assets/images/gallary/8.jpg" alt="portfolio image"/>
 											<div class="item-title">
 												<a href="#">
 													turkey
 												</a>
-												<p><span>14 tours</span><span>6 places</span></p>
+												<p><span>14 tours</span><br><span>6 places</span></p>
 											</div> <!-- /.item-title-->
 										</div><!-- /.filtr-item -->
 						  			</div><!-- /.col -->
@@ -476,7 +476,7 @@
 
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p1.jpg" alt="package-place">
+								<img src="assets/images/packages/3.jpeg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>italy <span class="pull-right">$499</span></h3>
 									<div class="packages-para">
@@ -515,7 +515,7 @@
 
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p2.jpg" alt="package-place">
+								<img src="assets/images/packages/4.jpeg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>england <span class="pull-right">$1499</span></h3>
 									<div class="packages-para">
@@ -554,7 +554,7 @@
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p3.jpg" alt="package-place">
+								<img src="assets/images/packages/7.jpg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>france <span class="pull-right">$1199</span></h3>
 									<div class="packages-para">
@@ -593,7 +593,7 @@
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p4.jpg" alt="package-place">
+								<img src="assets/images/packages/a1.jpg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>india <span class="pull-right">$799</span></h3>
 									<div class="packages-para">
@@ -632,7 +632,7 @@
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p5.jpg" alt="package-place">
+								<img src="assets/images/packages/a2.jpg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>spain <span class="pull-right">$999</span></h3>
 									<div class="packages-para">
@@ -671,7 +671,7 @@
 						
 						<div class="col-md-4 col-sm-6">
 							<div class="single-package-item">
-								<img src="assets/images/packages/p6.jpg" alt="package-place">
+								<img src="assets/images/packages/a3.jpg" alt="package-place">
 								<div class="single-package-item-txt">
 									<h3>thailand <span class="pull-right">$799</span></h3>
 									<div class="packages-para">
@@ -814,7 +814,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/a4.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -837,7 +837,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial2.jpg" alt="img"/>
+								<img src="assets/images/client/a5.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -860,7 +860,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/a7.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -883,7 +883,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/a8.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -906,7 +906,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial2.jpg" alt="img"/>
+								<img src="assets/images/client/a6.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -929,7 +929,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/b2.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -952,7 +952,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/b3.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -975,7 +975,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial2.jpg" alt="img"/>
+								<img src="assets/images/client/a9.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
@@ -998,7 +998,7 @@
 					<div class="home1-testm item">
 						<div class="home1-testm-single text-center">
 							<div class="home1-testm-img">
-								<img src="assets/images/client/testimonial1.jpg" alt="img"/>
+								<img src="assets/images/client/b4.jpg" alt="img"/>
 							</div><!--/.home1-testm-img-->
 							<div class="home1-testm-txt">
 								<span class="icon section-icon">
