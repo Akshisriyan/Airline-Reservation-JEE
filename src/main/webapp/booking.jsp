@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,8 +53,8 @@
                     <tr>
                              <div class="radio-btn">
                               <td><input type="radio" class="btn" name="check" checked="checked"><span>Round Trip</span> 
-                              <input type="radio" class="btn" name="check"><span>Multi-City</span>  
-                              <input type="radio" class="btn" name="check"><span>Trip Bulder</span> </td>     
+                              <input type="radio" class="btn" name="check"><span>On Way</span>  
+                              </td>     
                              </div>
                          </tr>
                           <br>
@@ -60,11 +62,13 @@
                             <div class="booking-form">
                                 <td>
                                    
-                                    <input type="text" class="form-control" placeholder="From?"></td>
-                                  
-                                    <td>  
+                                    <span>FROM</span> <input type="text" class="form-control" placeholder=""></td>
+                                  </tr>
+                                 
+                                   <tr>
+                                   
 
-                                    <input type="text" class="form-control" placeholder="To?"></td>
+                                    <td><span>TO</span><input type="text" class="form-control" placeholder=""></td>
                                 
                                 </div>
                             </tr>
