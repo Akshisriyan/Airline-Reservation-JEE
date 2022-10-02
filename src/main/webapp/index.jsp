@@ -199,10 +199,10 @@
 
 															  	<option value="default">enter your location</option><!-- /.option-->
 
-															  	<option value="turkey">turkey</option><!-- /.option-->
+															  	<option value="turkey">Turkey</option><!-- /.option-->
 
-															  	<option value="russia">russia</option><!-- /.option-->
-															  	<option value="egept">egypt</option><!-- /.option-->
+															  	<option value="russia">Russia</option><!-- /.option-->
+															  	<option value="egept">Egypt</option><!-- /.option-->
 
 															</select><!-- /.select-->
 														</div><!-- /.travel-select-icon -->
