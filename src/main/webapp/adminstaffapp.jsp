@@ -5,7 +5,7 @@
     
     <%
     
-    approval user=(approval) session.getAttribute("user");
+    approval us=(approval) session.getAttribute("us");
     
     
     
@@ -91,23 +91,23 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           <thead>
                           
                           
-                            <tr>
-                              <th scope="col">Staff ID</th>
+                            <tr>                            
                               <th scope="col">UserName</th>
-                              <th scope="col">Grade</th>
-                              <th scope="col">Contact No.</th>
                               <th scope="col">NIC</th>
+                              <th scope="col">Contact No.</th>
+                              <th scope="col">Email</th>
+                              <th scope="col">GRADE</th>
                               <th scope="col">Approval</th>
                             </tr>
                           </thead>
                           <tbody>
                           
                      <tr>
-                              <td><%=user.getSID() %></td>
-                              <td><%=user.getUSERNAME() %></td>
-                              <td><%=user.getGRADE() %></td>
-                              <td><%=user.getPHONE() %></td>
-                              <td><%=user.getNIC() %></td>
+                              <td><%=us.getUSERNAME() %></td>
+                              <td><%=us.getNIC() %></td>
+                              <td><%=us.getPHONE() %></td>
+                              <td><%=us.getEMAIL() %></td>
+                              <td><%=us.getGRADE() %></td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>

@@ -55,36 +55,5 @@ public class approval {
 		return STATUS;
 	}
 
-	public void setSID(String sID) {
-		SID = sID;
-	}
-
-	public void setUSERNAME(String uSERNAME) {
-		USERNAME = uSERNAME;
-	}
-
-	public void setEMAIL(String eMAIL) {
-		EMAIL = eMAIL;
-	}
-
-	public void setGRADE(String gRADE) {
-		GRADE = gRADE;
-	}
-
-	public void setPHONE(String pHONE) {
-		PHONE = pHONE;
-	}
-
-	public void setNIC(String nIC) {
-		NIC = nIC;
-	}
-
-	public void setPASSWORD(String pASSWORD) {
-		PASSWORD = pASSWORD;
-	}
-
-	public void setSTATUS(String sTATUS) {
-		STATUS = sTATUS;
-	}
-
+	
 }

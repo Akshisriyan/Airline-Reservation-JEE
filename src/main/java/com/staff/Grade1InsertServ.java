@@ -38,11 +38,11 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		String  STATUS = "false";
 
-	approval user=new approval(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
+	approval us=new approval(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
 	
 	
 	HttpSession ss= request.getSession();
-	ss.setAttribute("user", user);
+	ss.setAttribute("us", us);
 	
 
 		//calling insertcustomer() Methode
