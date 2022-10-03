@@ -35,6 +35,7 @@
         
             <button class="btn" type="submit">Sign in</button>
             <a href="loginstaff.jsp"><h5>STAFF LOGIN</h5></a>
+            <a href="loginadmin.jsp"><h5>ADMIN LOGIN</h5></a>
             <a href="login.jsp"><h6>Forget Password ?</h6></a>
             <h4><center>Create Your Account...</center> </h4>
              <a href="user.jsp"><h5>USER</h5></a>
