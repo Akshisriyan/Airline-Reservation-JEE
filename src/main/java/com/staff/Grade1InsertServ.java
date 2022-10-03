@@ -1,6 +1,7 @@
 package com.staff;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.swing.JOptionPane;
 
@@ -18,7 +19,7 @@ public class Grade1InsertServ extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		//Getting Parametars from user.jsp......
-		
+		PrintWriter out = response.getWriter();
 		
 		String  LNAME = request.getParameter("lname");
 		
@@ -44,7 +45,10 @@ public class Grade1InsertServ extends HttpServlet {
 		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
 		
 		if(isTrue == true) {
-			JOptionPane.showMessageDialog(null, "user created, wait for admin approval");
+			out.println("<script type = 'text/javascript'>");
+			out.println("alert('Account Created. Wait for admin approval');");
+			out.println("location = 'loginstaff.jsp'");
+			out.println("</script>");
 		} else {
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
 			dis.forward(request, response);
