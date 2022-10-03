@@ -10,11 +10,12 @@ public class Grade1 {
     private String GRADE;
     private String STATUS;
   
-	public Grade1(int sID, String uSERNAME, String eMAIL, String phone, String nIC, String gRADE, String sTATUS) {
+	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, String gRADE, String sTATUS) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;
 		EMAIL = eMAIL;
+		PASSWORD= pASSWORD;
 		PHONE = phone;
 		NIC = nIC;
 		GRADE = gRADE;
@@ -42,6 +43,11 @@ public class Grade1 {
 	public String getGRADE() {
 		return GRADE;
 	}
+	public String getSTATUS() {
+		return GRADE;
+	}
+	
+	
 	public void setCONFIRMPASSWORD(int cONFIRMPASSWORD ) {
 		SID = cONFIRMPASSWORD;
 	}

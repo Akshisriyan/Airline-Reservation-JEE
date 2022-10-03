@@ -58,6 +58,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				int sid =  rs.getInt(1);
 				String username = rs.getString(2);
 				String email = rs.getString(3);
+				String password = rs.getString(4);
 				String phone = rs.getString(5);
 				String nic = rs.getString(6);
 				String grade = rs.getString(7);
@@ -66,7 +67,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				
 				
 				//Sending parameters to User.java constructor..
-				Grade1 g1 = new Grade1( sid , username , email , phone , nic , grade, status );
+				Grade1 g1 = new Grade1( sid , username , email , password, phone , nic , grade, status );
 				
 				//pass the "usr" object to "user" object
 				grade1.add(g1);

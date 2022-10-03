@@ -48,7 +48,7 @@ public class LoginCustomerServ extends HttpServlet {
 			{
 				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
 				request.setAttribute("grade1Info", grade1Info);
-				RequestDispatcher dis = request.getRequestDispatcher("staffGradeIDashboard.jsp");
+				RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
 				dis.forward(request, response);
 				return;
 			}
