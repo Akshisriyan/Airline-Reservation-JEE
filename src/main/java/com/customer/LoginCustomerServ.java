@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import com.staff.Grade1;
+import com.staff.StaffDBUtil;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -32,11 +35,25 @@ public class LoginCustomerServ extends HttpServlet {
 		isTrue = CustomerDBUtil.validateUser(USERNAME , PASSWORD);
 		
 		if (isTrue == true ) {
-			List<User> userInfo = CustomerDBUtil.getUser(USERNAME);
-			request.setAttribute("userInfo", userInfo);
-			RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
-			dis.forward(request, response);
-		} else
+			
+			if(USERNAME.equals("admin") && PASSWORD.equals("admin") ) 
+			{
+				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
+				request.setAttribute("grade1Info", grade1Info);
+				RequestDispatcher dis = request.getRequestDispatcher("admindash.jsp");
+				dis.forward(request, response);
+				return;
+			}
+			else
+			{
+				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
+				request.setAttribute("grade1Info", grade1Info);
+				RequestDispatcher dis = request.getRequestDispatcher("staffGradeIDashboard.jsp");
+				dis.forward(request, response);
+				return;
+			}
+		} 		
+		else
 		{
 			out.println("<script type = 'text/javascript'>");
 			out.println("alert('Your User Name Or Password is Incorrect.');");

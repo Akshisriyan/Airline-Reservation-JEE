@@ -42,7 +42,8 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CPW );
 		
-		if(isTrue == true) {
+		if(isTrue == true  )
+				{
 			RequestDispatcher dis1 = request.getRequestDispatcher("success.jsp");
 			dis1.forward(request, response);
 		} else {

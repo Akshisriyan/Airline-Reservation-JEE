@@ -1,6 +1,9 @@
 package com.staff;
 
 import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -30,9 +33,10 @@ public class Grade1InsertServ extends HttpServlet {
 		String  GRADE = request.getParameter("grade");
 		
 		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
-
-		String STATUS = "on";
 		
+		String  STATUS = "false";
+
+	
 		
 		//calling insertcustomer() Methode
 		boolean isTrue;
@@ -40,8 +44,7 @@ public class Grade1InsertServ extends HttpServlet {
 		isTrue = StaffDBUtil.insertgrade1(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
 		
 		if(isTrue == true) {
-			RequestDispatcher dis = request.getRequestDispatcher("successstaff.jsp");
-			dis.forward(request, response);
+			JOptionPane.showMessageDialog(null, "user created, wait for admin approval");
 		} else {
 			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
 			dis.forward(request, response);

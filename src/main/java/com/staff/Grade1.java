@@ -8,8 +8,9 @@ public class Grade1 {
 	private String PHONE;
 	private String NIC;
     private String GRADE;
+    private String STATUS;
   
-	public Grade1(int sID, String uSERNAME, String eMAIL, String phone, String nIC, String gRADE) {
+	public Grade1(int sID, String uSERNAME, String eMAIL, String phone, String nIC, String gRADE, String sTATUS) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;
@@ -17,6 +18,7 @@ public class Grade1 {
 		PHONE = phone;
 		NIC = nIC;
 		GRADE = gRADE;
+		STATUS=sTATUS;
 		
 	}
 	public int getSID() {

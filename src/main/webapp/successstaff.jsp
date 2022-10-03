@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1> Account Created. click <a href = "loginstaff.jsp">here</a> </h1>
+	<h1> Account Created. Wait for admin approval. Click <a href = "loginstaff.jsp">here</a> </h1>
 </body>
 </html>

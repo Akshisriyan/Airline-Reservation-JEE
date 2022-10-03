@@ -15,14 +15,14 @@ public class StaffDBUtil {
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	
-	public static Boolean insertgrade1( String LNAME , String EMAIL , String CONTACT, String NIC , String PASSWORD , String GRADE, String CONFIRMPASSWORD , String STATUS) {
+	public static Boolean insertgrade1( String LNAME , String EMAIL , String CONTACT, String NIC , String PASSWORD , String GRADE, String CONFIRMPASSWORD, String STATUS ) {
 		
 		
 		//Create Database Connection
 		try {
 			con = DBConnect.getConnection();
 		    stmt = con.createStatement();
-			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+CONFIRMPASSWORD+"' , '"+STATUS+"')";
+			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+CONFIRMPASSWORD+"', '"+STATUS+"' )";
 			int rs = stmt.executeUpdate(sql);
 			
 			if(rs > 0) {
@@ -61,11 +61,12 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				String phone = rs.getString(5);
 				String nic = rs.getString(6);
 				String grade = rs.getString(7);
+				String status = rs.getString(8);
 				
 				
 				
 				//Sending parameters to User.java constructor..
-				Grade1 g1 = new Grade1( sid , username , email , phone , nic , grade);
+				Grade1 g1 = new Grade1( sid , username , email , phone , nic , grade, status );
 				
 				//pass the "usr" object to "user" object
 				grade1.add(g1);
