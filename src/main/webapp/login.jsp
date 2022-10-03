@@ -14,11 +14,11 @@
 <body>
     <form action = "LloginCustomerServ" method = "POST">
     <header>
-      <video src="img/1.mp4" autoplay muted loop></video>
+      <video src="img/air.mp4" autoplay muted loop></video>
         <div class="card">
         
-        
-            <h1><center>User login</center></h1>
+            
+            <h1><center>Login</center></h1>
             <div class="form-group">
                 <i class="fas fa-user"></i>
                 <label for="name"><b>Username</b></label>
@@ -35,13 +35,10 @@
         
             <button class="btn" type="submit">Sign in</button>
             <a href="loginstaff.jsp"><h5>STAFF LOGIN</h5></a>
-            <a href="loginadmin.jsp"><h5>Admin LOGIN</h5></a>
-            
             <a href="login.jsp"><h6>Forget Password ?</h6></a>
             <h4><center>Create Your Account...</center> </h4>
              <a href="user.jsp"><h5>USER</h5></a>
             <a href="staff.jsp"><h5>STAFF</h5></a>
-            
         </div>
     </header>
     
