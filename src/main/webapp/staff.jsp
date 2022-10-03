@@ -12,7 +12,7 @@
 <div class="wrapper">
 	<div class=" Staff registration_form">
 		<div class="title">
-			Staff Register
+			Staff Registers
 		</div>
 
 		<form action = "grade1" method = "POST">
