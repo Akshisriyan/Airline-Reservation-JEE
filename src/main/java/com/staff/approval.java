@@ -1,16 +1,16 @@
 package com.staff;
 
-public class Grade1 {
-	private int SID;
+public class approval {
+	private String SID;
 	private String USERNAME;
 	private String EMAIL;
-	private String PASSWORD;
+	private String GRADE;
 	private String PHONE;
 	private String NIC;
-    private String GRADE;
+    private String PASSWORD;
     private String STATUS;
   
-	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, String gRADE, String sTATUS) {
+	public approval(String sID, String uSERNAME, String eMAIL, String gRADE, String phone, String nIC, String pASSWORD, String sTATUS) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;
@@ -23,7 +23,7 @@ public class Grade1 {
 		
 	}
 
-	public int getSID() {
+	public String getSID() {
 		return SID;
 	}
 
@@ -35,8 +35,8 @@ public class Grade1 {
 		return EMAIL;
 	}
 
-	public String getPASSWORD() {
-		return PASSWORD;
+	public String getGRADE() {
+		return GRADE;
 	}
 
 	public String getPHONE() {
@@ -47,15 +47,15 @@ public class Grade1 {
 		return NIC;
 	}
 
-	public String getGRADE() {
-		return GRADE;
+	public String getPASSWORD() {
+		return PASSWORD;
 	}
 
 	public String getSTATUS() {
 		return STATUS;
 	}
 
-	public void setSID(int sID) {
+	public void setSID(String sID) {
 		SID = sID;
 	}
 
@@ -67,8 +67,8 @@ public class Grade1 {
 		EMAIL = eMAIL;
 	}
 
-	public void setPASSWORD(String pASSWORD) {
-		PASSWORD = pASSWORD;
+	public void setGRADE(String gRADE) {
+		GRADE = gRADE;
 	}
 
 	public void setPHONE(String pHONE) {
@@ -79,14 +79,12 @@ public class Grade1 {
 		NIC = nIC;
 	}
 
-	public void setGRADE(String gRADE) {
-		GRADE = gRADE;
+	public void setPASSWORD(String pASSWORD) {
+		PASSWORD = pASSWORD;
 	}
 
 	public void setSTATUS(String sTATUS) {
 		STATUS = sTATUS;
 	}
-	
-	
-	
+
 }

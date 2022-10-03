@@ -1,9 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
+    <%@page import = "com.staff.approval" %>
     
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+    <%
+    
+    approval user=(approval) session.getAttribute("user");
+    
+    
+    
+    
+    %>
+    
+<!DOCTYPE html>'session. xmns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,9 +89,12 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                       <div class="col-12">
                         <table class="table table-bordered">
                           <thead>
+                          
+                          
                             <tr>
-                              <th scope="col">Name</th>
-                              <th scope="col">E-Mail</th>
+                              <th scope="col">Staff ID</th>
+                              <th scope="col">UserName</th>
+                              <th scope="col">Grade</th>
                               <th scope="col">Contact No.</th>
                               <th scope="col">NIC</th>
                               <th scope="col">Approval</th>
@@ -90,87 +102,19 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           </thead>
                           <tbody>
                           
-                         
-                            <tr>
-                              
-                              <td>Sam</td>
-                              <td>Sam@gmail.com</td>
-                              <td>071246326</td>
-                              <td>1243123v</td>
+                     <tr>
+                              <td><%=user.getSID() %></td>
+                              <td><%=user.getUSERNAME() %></td>
+                              <td><%=user.getGRADE() %></td>
+                              <td><%=user.getPHONE() %></td>
+                              <td><%=user.getNIC() %></td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
                           </div></td>
-                              
-                            </tr>
-                            <tr>
-                              
-                              <td>Sam</td>
-                              <td>Sam@gmail.com</td>
-                              <td>071246326</td>
-                              <td>1243123v</td>
-                              <td><div>
-                                <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
-                              <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
-                          </div></td>
+                       
                             
                             </tr>
-                            <tr>
-                              
-                              <td>Daemon</td>
-                              <td>Daemon7@gmail.com</td>
-                              <td>071611636</td> 
-                              <td>1243653v</td> 
-                              <td><div>
-                                <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
-                              <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
-                          </div></td>
-                            </tr>
-                            <tr>
-                                
-                                <td>Dean</td>
-                                <td>Dean70@gmail.com</td>
-                                <td>071698636</td> 
-                                <td>1223423v</td> 
-                                <td><div>
-                                  <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
-                                <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
-                            </div></td>
-                              </tr>
-                              <tr>
-                                
-                                <td>Aegon</td>
-                                <td>Aegon5@gmail.com</td>
-                                <td>071614684</td> 
-                                <td>1123123v</td> 
-                                <td><div>
-                                  <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
-                                <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
-                            </div></td>
-                              </tr>
-                              <tr>
-                                
-                                <td>Jess</td>
-                                <td>Jess79@gmail.com</td>
-                                <td>077614613</td>  
-                                <td>1987323v</td>
-                                <td><div>
-                                  <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
-                                <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
-                            </div></td>
-                              </tr>
-                              <tr>
-                                
-                                <td>Clarra</td>
-                                <td>Clarra55@gmail.com</td>
-                                <td>071614456</td>  
-                                <td>1283423v</td>
-                                <td><div>
-                                  <button class="btnn btn--radius-2 btn--red" type="submit">Accept</button>
-                                <button class="btnn btn--radius-2 btn--red" type="submit">Discard</button>
-                            </div></td>
-                              </tr>
-
 
                           </tbody>
                         </table>

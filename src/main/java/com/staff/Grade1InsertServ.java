@@ -10,6 +10,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @jakarta.servlet.annotation.WebServlet("/StaffInsertServ")
 public class Grade1InsertServ extends HttpServlet {
@@ -37,10 +38,13 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		String  STATUS = "false";
 
+	approval user=new approval(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
 	
-		
-		
-		
+	
+	HttpSession ss= request.getSession();
+	ss.setAttribute("user", user);
+	
+
 		//calling insertcustomer() Methode
 		boolean isTrue;
 		
