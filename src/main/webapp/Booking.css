@@ -51,7 +51,7 @@
 .body {
 	display: flex;
 	width:100%;
-	background-image: url("./img/cloud2.jpg.jpg");
+	background-image: url("img/cloud2.jpg.jpg");
 	background-size: cover;
 	background-position: center;
 }
