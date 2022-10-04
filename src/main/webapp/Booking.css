@@ -44,14 +44,14 @@
 }
 .side-bar {
 	width: 290px;
-	background: #0d2099;
+	background: #72737a;
 	min-height: 92vh;
 	transition: 510ms width;
 }
 .body {
 	display: flex;
 	width:100%;
-	background-image: url("./img/cloud.jpg.jpg");
+	background-image: url("./img/cloud2.jpg.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -116,6 +116,19 @@
 	width: 70%;
 	padding: 1rem;
   }
+  .history_lists{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 0;
+  }
+  
   .promo_card{
 	width: 100%;
 	color: #fff;
@@ -139,14 +152,15 @@
 .card1{
     color: rgb(14, 10, 10);
     /* background-image: url(img/air3.jpg.jpg);*/
-   background-color: rgba(126, 123, 215, 0.3);
-     height: 570px;
+   background-color: rgb(126 123 215 / 46%);
+     height: 595px;
      width: 340px;
     border-radius: 15px;
     padding: 20px 20px;
     margin: auto;
     background-size: cover;
-  box-shadow: 2px 20px 60px -5px rgb(141, 26, 26);
+  box-shadow: 2px 10px 60px -5px rgb(16, 12, 12);
+  font-weight: bold;
 }
 .btn {
     font-size: 12px;
@@ -168,7 +182,7 @@
 	font-weight: bold;
 }
 .booking-form{
-	padding:0 20px 20px;
+	padding:20px 10px;
 }
 
 input::placeholder{
@@ -178,9 +192,10 @@ input::placeholder{
 .form-control{
 	font-size:12px !important;
 	border-radius:0 !important;
-	color:rgb(21, 19, 19) !important;
+	color:  #fff !important;
 	background: transparent !important;
 	box-shadow: none !important;
+	padding:2px 50px;
 
 
 }
@@ -196,21 +211,21 @@ input::placeholder{
 .card{
     color: rgb(14, 10, 10);
     /* background-image: url(img/air3.jpg.jpg);*/
-   background-color: rgba(126, 123, 215, 0.3);
+   background-color: rgb(126 123 215 / 44%);
      height: 580px;
      width:750px;
     border-radius: 15px;
     padding: 20px 20px;
     margin: auto;
     background-size: cover;
-  box-shadow: 8px 20px 60px -5px rgb(141, 26, 26);
+  box-shadow: 8px 20px 60px -5px rgb(20, 16, 16);
 }
 table{
-	background:rgba(126, 123, 215, 0.3);
+	background:rgb(122 121 166 / 64%);
 	padding: 2rem;
 	text-align: left;
 	border-radius: 10px;
-	box-shadow: 8px 15px 50px -5px rgb(66, 9, 3);
+	box-shadow: 8px 15px 50px -5px rgb(24, 23, 22);
   }
   table td, th{
 	padding: 1rem 1rem;
@@ -227,36 +242,42 @@ table{
   }
   
   .form-group1 .submit_btn{
-	width: 10%;
-	background:rgb(13, 162, 176);
-	padding: 8px;
-	border: 0;
-	border-radius: 3px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	cursor: pointer;
-	font-size: 10px;
+	font-size: 12px;
+	padding:10px 10px;
+	margin: 10px;
+	width:60px;
+	background:#14c0db;
+	cursor:pointer;
+	border:none;
+	border-radius:50px;
+	color:rgb(13, 11, 15);
+	box-shadow:10px 10px 10px -1px rgba(10,99,169,0.16),
+			   -10px -10px 10px -1px rgba(255,255,255,0.70);
 }
 .form-group1 .submit_btn:hover{
-	background: #0d7dbd;
+	color: #18161a;
+	background:linear-gradient(90deg,#0162c8,#55e7fc);
+	padding: 8px 16px;
+    border: 2px solid #1ebdcb;
 }
 .form-group1{
     font-size: 15px;
     margin: 1px;
+	padding:10px 10px;
 	
 }
 .form-group1 input{
     
-    width: 30%;
-   
+    width: 40%;
+    border-radius:25px;
+    border: none;
     margin-top: 1px;
-   
-    border: 0;
-    color: rgb(24, 15, 15);
+    color:  rgb(13 1 1);
     height: 30px;
     font-size: 12px;
-    box-shadow: 0 0.3px 0 0 none;
+    box-shadow: 2px 10px 60px -5px rgb(16 12 12);
     transition: all .5s linear;
+	
 }
  
 .form-group{
@@ -281,42 +302,7 @@ table{
     outline: none;
     
 }
-.main-body{
-	width: 70%;
-	padding: 1rem;
-  }
-  .promo_card{
-	width: 100%;
-	color: #fff;
-	margin-top: 10px;
-	border-radius: 8px;
-	padding: 1rem 2rem 2rem 5rem;
-	background: rgb(13, 13, 14);
-  }
-  .promo_card h1, .promo_card span, button{
-	margin: 10px;
-  }
+  
+  
  
-  .promo_card1{
-	width: 50%;
-	color: #fff;
-	margin-top: 6px;
-	border-radius: 10px;
-	padding: 1rem 0.5rem 0.5rem 1rem;
-	background: rgb(10, 21, 172);
-  }
-  
-  
-  .history_lists{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-  }
-  
-  .row{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 1rem 0;
-  }
   

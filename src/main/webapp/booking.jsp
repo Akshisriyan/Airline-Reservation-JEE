@@ -3,14 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Booking Flight</title>
+	<title>Booking</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="Booking.css">
 </head>
 <body>
 	<input type="checkbox" id="checkbox">
 	<header class="header">
-		<h2 class="u-name">Flight <b>Booking</b>
+		<h2 class="u-name">Staff <b>Grade II</b>
 			<label for="checkbox">
 				<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
 			</label>
@@ -27,9 +27,26 @@
     
 			
 			<ul>
-			
 				<li>
-					<a href="index.jsp">
+					<a href="#">
+						<i class="fa fa-desktop" aria-hidden="true"></i>
+						<span>Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-plane" aria-hidden="true"></i>
+						<span>Add Flight Details</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-address-card" aria-hidden="true"></i>
+						<span> User Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
@@ -53,59 +70,72 @@
                     <tr>
                              <div class="radio-btn">
                               <td><input type="radio" class="btn" name="check" checked="checked"><span>Round Trip</span> 
-                              <input type="radio" class="btn" name="check"><span>On Way</span>  
-                              </td>     
-                             </div>
+                              <input type="radio" class="btn" name="check"><span>On way</span>  
+                              </div>
                          </tr>
-                          <br>
+                          
                          <tr>
                             <div class="booking-form">
-                                <td>
-                                   
-                                    <span>FROM</span> <input type="text" class="form-control" placeholder=""></td>
-                                  </tr>
-                                 
-                                   <tr>
-                                   
-
-                                    <td><span>TO</span><input type="text" class="form-control" placeholder=""></td>
+                              <td>
+                                <label>From:-</label><br>
+                                <input type="text" class="form-control" placeholder=""><br>
+                            </td>
+                            <br>
+                            <td>
+                              <label>To  :-</label><br>
+                              <input type="text" class="form-control" placeholder="">
+                          </td>
+                          <br>
                                 
-                                </div>
                             </tr>
                          <br>
                      <tr>
-                         <div class="input-grp">
-                         <td><input type="date" class="form-control select-date" >
+                       
+                         <td>
+                          <label>Departure:-</label><br>
+                          <input type="date" class="form-control select-date" >
+                        </td><br><br>
+                        </tr>
+                        
+                        <tr>
+                        <td>
+                          <label>Return:-</label><br>
                              <input type="date" class="form-control select-date" ></td>
-                         </div>   
+                          <br>  
                          </tr>
-                         <br>
                          
+                         <br>
                          <tr>
-                             <div class="booking-grp">
+                             
                              <td>
                                  <label>Passport ID :-</label>
                                  <input type="text" class="form-control" placeholder="">
-                             </td>
-                         </div>
+                             <br></td>
+                       
                          </tr>
                          <br>
                          
                          <tr>
-                             <div class="input-gp">
+                            
                              <td>
-                                 <label>Flight ID & Name :-</label>
-                                 <input type="text" class="form-control" placeholder=""><br><br>
-                                 <label>Ticket Price :-</label>
+                                 <label>Flight ID/Name :-<br></label>
                                  <input type="text" class="form-control" placeholder="">
-                             </td>
+                                <br>
+                                </td>
+                            <br>
+
+                              <td>
+                                 <label>Ticket Price :-</label>
+                                 <input type="text" class="form-control" placeholder="">  </td>
+                               
+                           
                          </div>
                          </tr>
-                         <br><br><br>
+                         <br>
                          <tr>
                              <div class="submit-btn">
-                             <td>
-                                 <a href="payment.jsp" class="btn">Book Now</a></td>
+                             <td><a href="#" class="btn">Payment</a>
+                                 <a href="#" class="btn">Book Now</a></td>
                              </div>
                          </tr>
 
@@ -197,4 +227,4 @@
 					  </body>
 					  </html>
 				   
-	
+		
