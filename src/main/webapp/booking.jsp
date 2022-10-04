@@ -15,38 +15,21 @@
 				<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
 			</label>
 		</h2>
-		<i class="fa fa-user" aria-hidden="true"></i>
+		<a href="userinfo.jsp"><i class="fa fa-user" aria-hidden="true"></i></a>
 	</header>
 	<div class="body">
 		<nav class="side-bar">
      
           <div class="user-p">
-            <img src="img/user.png.png">
+           <a href="userinfo.jsp"> <img src="img/user.png.png"></a>
             
           </div>
     
 			
 			<ul>
+			
 				<li>
-					<a href="#">
-						<i class="fa fa-desktop" aria-hidden="true"></i>
-						<span>Dashboard</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-plane" aria-hidden="true"></i>
-						<span>Add Flight Details</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-address-card" aria-hidden="true"></i>
-						<span> User Dashboard</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
+					<a href="index.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
