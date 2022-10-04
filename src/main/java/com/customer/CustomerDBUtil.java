@@ -70,7 +70,7 @@ return isSuccess;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-	public static List<User> getUser(String USERNAME){
+	public static List<User> getUser(String USERNAME,String PASSWORD){
 		
 		//Creating object from ArrayList<User>
 		ArrayList< User > user = new ArrayList<>();
@@ -80,7 +80,7 @@ return isSuccess;
 			// Crating Database Connection
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = " select * from user where username = '"+USERNAME+"'";
+			String sql = " select * from user where username = '"+USERNAME+"' and password = '"+PASSWORD+"'";
 			rs = stmt.executeQuery(sql);
 			
 			//Checking user information from Database 1 by 1.... 
@@ -91,23 +91,26 @@ return isSuccess;
 				String username = rs.getString(4);
 				String email = rs.getString(5);
 				String password = rs.getString(6);
-				String phone = rs.getString(7);
-				String nic = rs.getString(8);
-				String bdate = rs.getString(9);
-				String country = rs.getString(10);
-				String ccode = rs.getString(11);
+				String confirmpassword = rs.getString(7);
+				String phone = rs.getString(8);
+				String nic = rs.getString(9);
+				String bdate = rs.getString(10);
+				String country = rs.getString(11);
+				String ccode = rs.getString(12);
+				
 				
 				
 				//Sending parameters to User.java constructor..
-				User usr = new User( id , fname , lname , username , email , password , phone , nic , bdate , country , ccode);
+				User usr = new User( id , fname , lname , username , email , password , confirmpassword, phone , nic , bdate , country , ccode);
 				
 				//pass the "usr" object to "user" object
 				user.add(usr);
 				
 			}
 			
-		} catch (Exception e ) {
-			
+		} 
+		catch (Exception e ) {
+			e.printStackTrace();
 		}
 		
 		return user;

@@ -1,6 +1,8 @@
 package com.customer;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -13,6 +15,8 @@ public class CustomerInsertServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter out = response.getWriter();
 		
 		//Getting Parametars from user.jsp......
 		String  FNAME = request.getParameter("fname");
@@ -42,10 +46,11 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CPW );
 		
-		if(isTrue == true  )
-				{
-			RequestDispatcher dis1 = request.getRequestDispatcher("success.jsp");
-			dis1.forward(request, response);
+		if(isTrue == true) {
+			out.println("<script type = 'text/javascript'>");
+			out.println("alert('Account Created Successfully. Log In Again');");
+			out.println("location = 'login.jsp'");
+			out.println("</script>");
 		} else {
 			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
 			

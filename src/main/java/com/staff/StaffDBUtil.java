@@ -40,7 +40,7 @@ public class StaffDBUtil {
 	
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////	
-public static List< Grade1 > getGrade1(String USERNAME){
+public static List< Grade1 > getGrade1(String USERNAME, String PASSWORD){
 		
 		//Creating object from ArrayList<User>
 		ArrayList< Grade1 > grade1 = new ArrayList<>();
@@ -50,7 +50,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 			// Crating Database Connection
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = " select * from grade1 where username = '"+USERNAME+"'";
+			String sql = " select * from grade1 where username = '"+USERNAME+"'and password = '"+PASSWORD+"'";
 			rs = stmt.executeQuery(sql);
 			
 			//Checking user information from Database 1 by 1.... 
@@ -59,6 +59,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				String username = rs.getString(2);
 				String email = rs.getString(3);
 				String password = rs.getString(4);
+				String confirmpass = rs.getString(8);
 				String phone = rs.getString(5);
 				String nic = rs.getString(6);
 				String grade = rs.getString(7);
@@ -67,7 +68,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				
 				
 				//Sending parameters to User.java constructor..
-				Grade1 g1 = new Grade1( sid , username , email , password, phone , nic , grade, status );
+				Grade1 g1 = new Grade1( sid , username , email , password,confirmpass, phone , nic , grade, status );
 				
 				//pass the "usr" object to "user" object
 				grade1.add(g1);

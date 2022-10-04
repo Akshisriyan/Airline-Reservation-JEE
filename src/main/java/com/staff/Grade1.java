@@ -5,17 +5,19 @@ public class Grade1 {
 	private String USERNAME;
 	private String EMAIL;
 	private String PASSWORD;
+	private String CONFIRMPASSWORD;
 	private String PHONE;
 	private String NIC;
     private String GRADE;
     private String STATUS;
   
-	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD, String phone, String nIC, String gRADE, String sTATUS) {
+	public Grade1(int sID, String uSERNAME, String eMAIL, String pASSWORD,String cONFIRMPASSWORD, String phone, String nIC, String gRADE, String sTATUS) {
 		super();
 		SID = sID;
 		USERNAME = uSERNAME;
 		EMAIL = eMAIL;
 		PASSWORD= pASSWORD;
+		CONFIRMPASSWORD=cONFIRMPASSWORD;
 		PHONE = phone;
 		NIC = nIC;
 		GRADE = gRADE;
@@ -39,6 +41,10 @@ public class Grade1 {
 		return PASSWORD;
 	}
 
+	public String getCONFIRMPASSWORD() {
+		return CONFIRMPASSWORD;
+	}
+
 	public String getPHONE() {
 		return PHONE;
 	}
@@ -55,38 +61,6 @@ public class Grade1 {
 		return STATUS;
 	}
 
-	public void setSID(int sID) {
-		SID = sID;
-	}
 
-	public void setUSERNAME(String uSERNAME) {
-		USERNAME = uSERNAME;
-	}
-
-	public void setEMAIL(String eMAIL) {
-		EMAIL = eMAIL;
-	}
-
-	public void setPASSWORD(String pASSWORD) {
-		PASSWORD = pASSWORD;
-	}
-
-	public void setPHONE(String pHONE) {
-		PHONE = pHONE;
-	}
-
-	public void setNIC(String nIC) {
-		NIC = nIC;
-	}
-
-	public void setGRADE(String gRADE) {
-		GRADE = gRADE;
-	}
-
-	public void setSTATUS(String sTATUS) {
-		STATUS = sTATUS;
-	}
-	
-	
 	
 }

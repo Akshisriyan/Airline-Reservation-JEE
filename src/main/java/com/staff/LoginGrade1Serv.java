@@ -38,7 +38,7 @@ public class LoginGrade1Serv extends HttpServlet {
 			
 			if(GRADE.equals("Grade 1") ) 
 			{
-				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
+				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME,PASSWORD);
 				request.setAttribute("grade1Info", grade1Info);
 				RequestDispatcher dis = request.getRequestDispatcher("staffGradeIDashboard.jsp");
 				dis.forward(request, response);
@@ -46,7 +46,7 @@ public class LoginGrade1Serv extends HttpServlet {
 			}
 			else if(GRADE.equals("Grade 2") ) 
 			{
-				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
+				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME,PASSWORD);
 				request.setAttribute("grade1Info", grade1Info);
 				RequestDispatcher dis = request.getRequestDispatcher("StaffGradeIIDashboard.jsp");
 				dis.forward(request, response);

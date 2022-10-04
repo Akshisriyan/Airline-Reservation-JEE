@@ -19,6 +19,7 @@
             <th>User Name</th>
             <th>Email</th>
             <th>Password</th>
+            <th>ConfirmPassword</th>
             <th>Phone</th>
             <th>NIC</th>
             <th>Birth Date</th>
@@ -35,6 +36,7 @@
                <td><c:out value = "${user.USERNAME}"/></td>
                <td><c:out value = "${user.EMAIL}"/></td>
                <td><c:out value = "${user.PASSWORD}"/></td>
+               <td><c:out value = "${user.CONFIRMPASSWORD}"/></td>
                <td><c:out value = "${user.PHONE}"/></td>
                <td><c:out value = "${user.NIC}"/></td>
                <td><c:out value = "${user.BDATE}"/></td>

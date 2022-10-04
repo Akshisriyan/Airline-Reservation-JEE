@@ -38,16 +38,16 @@ public class LoginCustomerServ extends HttpServlet {
 			
 			if(USERNAME.equals("admin") && PASSWORD.equals("admin") ) 
 			{
-				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
-				request.setAttribute("grade1Info", grade1Info);
+				List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
+				request.setAttribute("userInfo", userInfo);
 				RequestDispatcher dis = request.getRequestDispatcher("admindash.jsp");
 				dis.forward(request, response);
 				return;
 			}
 			else
 			{
-				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME);
-				request.setAttribute("grade1Info", grade1Info);
+				List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
+				request.setAttribute("userInfo", userInfo);
 				RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
 				dis.forward(request, response);
 				return;
