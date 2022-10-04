@@ -5,7 +5,7 @@
 <head>
 	<title>Booking</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="Booking.css">
+	<link rel="stylesheet" href="book.css">
 </head>
 <body>
 	<input type="checkbox" id="checkbox">
