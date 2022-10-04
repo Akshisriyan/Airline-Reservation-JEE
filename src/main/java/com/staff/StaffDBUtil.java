@@ -62,7 +62,7 @@ public static List< Grade1 > getGrade1(String USERNAME){
 				String phone = rs.getString(5);
 				String nic = rs.getString(6);
 				String grade = rs.getString(7);
-				String status = rs.getString(8);
+				String status = rs.getString(9);
 				
 				
 				

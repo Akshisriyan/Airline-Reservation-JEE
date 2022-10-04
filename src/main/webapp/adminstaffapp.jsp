@@ -5,14 +5,11 @@
     
     <%
     
-    approval us=(approval) session.getAttribute("us");
-    
-    
-    
+    approval usss=(approval) session.getAttribute("usss");
     
     %>
     
-<!DOCTYPE html>'session. xmns="http://www.w3.org/1999/xhtml">
+
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,11 +88,12 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           <thead>
                           
                           
-                            <tr>                            
+                            <tr> 
+                                                       
                               <th scope="col">UserName</th>
-                              <th scope="col">NIC</th>
-                              <th scope="col">Contact No.</th>
+                              <th scope="col">NIC</th>   
                               <th scope="col">Email</th>
+                              <th scope="col">Contact No.</th>
                               <th scope="col">GRADE</th>
                               <th scope="col">Approval</th>
                             </tr>
@@ -103,15 +101,17 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           <tbody>
                           
                      <tr>
-                              <td><%=us.getUSERNAME() %></td>
-                              <td><%=us.getNIC() %></td>
-                              <td><%=us.getPHONE() %></td>
-                              <td><%=us.getEMAIL() %></td>
-                              <td><%=us.getGRADE() %></td>
+                              
+                              <td><%=usss.getUSERNAME() %></td>
+                              <td><%=usss.getPHONE() %></td>
+                              <td><%=usss.getEMAIL() %></td>
+                              <td><%=usss.getGRADE() %></td>
+                              <td><%=usss.getCONFIRMPASSWORD() %></td>
                               <td><div>
                                 <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
                               <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
-                          </div></td>
+                          </div>
+                          </td>
                        
                             
                             </tr>

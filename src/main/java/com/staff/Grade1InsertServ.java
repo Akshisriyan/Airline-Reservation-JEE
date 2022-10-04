@@ -19,6 +19,8 @@ public class Grade1InsertServ extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		try {
+		
 		//Getting Parametars from user.jsp......
 		PrintWriter out = response.getWriter();
 		
@@ -32,19 +34,43 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		String  PASSWORD = request.getParameter("password");
 		
-		String  GRADE = request.getParameter("grade");
-		
 		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 		
+		String  GRADE = request.getParameter("grade");
+	
 		String  STATUS = "false";
 
-	approval us=new approval(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
+	approval usss=new approval(LNAME, EMAIL, CONTACT, NIC, PASSWORD,CONFIRMPASSWORD,GRADE,STATUS);
 	
 	
 	HttpSession ss= request.getSession();
-	ss.setAttribute("us", us);
+	ss.setAttribute("usss", usss);
 	
-
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+PrintWriter out = response.getWriter();
+		
+		String  LNAME = request.getParameter("lname");
+		
+		String  EMAIL = request.getParameter("email");
+		
+		String  CONTACT = request.getParameter("contact_no");
+		
+		String  NIC = request.getParameter("nic_no");
+		
+		String  PASSWORD = request.getParameter("password");
+		
+		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
+		
+		String  GRADE = request.getParameter("grade");
+	
+		String  STATUS = "false";
+		
+		
 		//calling insertcustomer() Methode
 		boolean isTrue;
 		
