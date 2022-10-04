@@ -21,7 +21,7 @@ public class Grade1InsertServ extends HttpServlet {
 		
 		try {
 		
-		//Getting Parametars from user.jsp......
+		//Getting Parametars from staff.jsp......
 		PrintWriter out = response.getWriter();
 		
 		String  LNAME = request.getParameter("lname");

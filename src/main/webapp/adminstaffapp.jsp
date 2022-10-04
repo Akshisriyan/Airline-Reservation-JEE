@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
+     <%@ taglib  uri ="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
+    
     <%@page import = "com.staff.approval" %>
     
     <%
@@ -101,6 +104,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           <tbody>
                           
                      <tr>
+                              <c:forEach var = "approval" items = "${grade1Info}">
                               
                               <td><%=usss.getUSERNAME() %></td>
                               <td><%=usss.getPHONE() %></td>
@@ -115,7 +119,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                        
                             
                             </tr>
-
+</c:forEach>
                           </tbody>
                         </table>
                       </div>
