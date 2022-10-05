@@ -44,14 +44,14 @@
 }
 .side-bar {
 	width: 290px;
-	background: #0d2099;
+	background: #6d6e76;
 	min-height: 92vh;
 	transition: 510ms width;
 }
 .body {
 	display: flex;
 	width:100%;
-	background-image: url("./img/cloud.jpg.jpg");
+	background-image: url("./img/cloud2.jpg.jpg");
 	background-size: cover;
 	background-position: center;
 }

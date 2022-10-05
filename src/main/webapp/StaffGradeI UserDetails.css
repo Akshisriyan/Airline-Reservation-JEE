@@ -44,14 +44,14 @@
 }
 .side-bar {
 	width: 290px;
-	background: #0d2099;
+	background: #6d6e76;
 	min-height: 92vh;
 	transition: 510ms width;
 }
 .body {
 	display: flex;
 	width:100%;
-	background-image: url("./img/cloud.jpg.jpg");
+	background-image: url("./img/cloud2.jpg.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -141,11 +141,11 @@
 	margin: 1rem 0;
   }
   table{
-	background:rgba(126, 123, 215, 0.3);
+	background:rgb(126 123 215 / 43%);
 	padding: 1rem;
 	text-align: left;
 	border-radius: 10px;
-	box-shadow: 2px 20px 60px -5px rgb(66, 9, 3);
+	box-shadow: 2px 20px 60px -5px rgb(17, 15, 14);
   }
   table td, th{
 	padding: 1.5rem 1rem;
