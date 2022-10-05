@@ -29,38 +29,39 @@ public class LoginCustomerServ extends HttpServlet {
 		//getting Username and Password fron Login page...
 		String USERNAME = request.getParameter("Username");
 		String PASSWORD = request.getParameter("Password");
+		String CONFIRMPASSWORD = request.getParameter("ConfirmPassword");
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
-		isTrue = CustomerDBUtil.validateUser(USERNAME , PASSWORD);
+		isTrue = CustomerDBUtil.validateUser(USERNAME , PASSWORD , CONFIRMPASSWORD);
 		
 		if (isTrue == true ) {
 			
-			if(USERNAME.equals("admin") && PASSWORD.equals("admin") ) 
+			List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
+			request.setAttribute("userInfo", userInfo);
+			RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
+			dis.forward(request, response);
+			return;
+		}
+		
+		else if (USERNAME.equals("admin") && PASSWORD.equals("admin")   ) {
+			List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
+			request.setAttribute("userInfo", userInfo);
+			RequestDispatcher dis = request.getRequestDispatcher("admindash.jsp");
+			dis.forward(request, response);
+			return;
+		}
+			else 
 			{
-				List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
-				request.setAttribute("userInfo", userInfo);
-				RequestDispatcher dis = request.getRequestDispatcher("admindash.jsp");
-				dis.forward(request, response);
-				return;
+				out.println("<script type = 'text/javascript'>");
+				out.println("alert('Your User Name Or Password is Incorrect.');");
+				out.println("location = 'login.jsp'");
+				out.println("</script>");
 			}
-			else
-			{
-				List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
-				request.setAttribute("userInfo", userInfo);
-				RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
-				dis.forward(request, response);
-				return;
-			}
-		} 		
-		else
-		{
-			out.println("<script type = 'text/javascript'>");
-			out.println("alert('Your User Name Or Password is Incorrect.');");
-			out.println("location = 'login.jsp'");
-			out.println("</script>");
+		
 		
 	}
 
 }
-}
+
+

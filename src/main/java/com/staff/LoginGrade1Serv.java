@@ -23,14 +23,16 @@ public class LoginGrade1Serv extends HttpServlet {
 		response.setContentType("text/html");
 		
 		//getting Username and Password fron Login page...
-		String USERNAME = request.getParameter("Username");
+		String USERNAME = request.getParameter("Username");   
 		String PASSWORD = request.getParameter("Password");
 		String GRADE = request.getParameter("grade");
+		String CONFIRMPASSWORD = request.getParameter("ConfirmPassword");
+		
 		
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
-		isTrue = StaffDBUtil.validateGrade1(USERNAME , PASSWORD, GRADE ); //ok
+		isTrue = StaffDBUtil.validateGrade1(USERNAME , PASSWORD, GRADE , CONFIRMPASSWORD ); //ok
 		
 		
 		if (isTrue == true) {

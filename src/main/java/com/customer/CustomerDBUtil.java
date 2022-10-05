@@ -16,13 +16,13 @@ public class CustomerDBUtil {
 	
 	
 	
-public static boolean validateUser(String USERNAME,String PASSWORD) {
+public static boolean validateUser(String USERNAME,String PASSWORD , String CONFIRMPASSWORD) {
 		
 		try {
 			
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = "select * from user where username = '"+USERNAME+"' and password = '"+PASSWORD+"'";
+			String sql = "select * from user where (confirmpassword = '"+CONFIRMPASSWORD+"' and password = '"+PASSWORD+"') and username = '"+ USERNAME +"'";
 			rs = stmt.executeQuery(sql);
 			
 			if(rs.next()) {
