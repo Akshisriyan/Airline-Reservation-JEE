@@ -86,12 +86,6 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
 
 <!--table-->
 
-<%
-
-
-
-%>
-
                 <form action="admindash.jsp">
                 <div class="container">
                     <div class="row">
@@ -119,7 +113,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                               <td><%=usss.getGRADE() %></td>
                               <td><%=usss.getCONFIRMPASSWORD() %></td>
                               <td><div>
-                                <input type="button"  class="btnn btnn--radius-2 btn--red" type="submit" value="Acceptt"  ><a href="login.jsp">
+                                <a href="login.jsp"><input type="button"  class="btnn btnn--radius-2 btn--red" type="submit" value="Acceptt"  ><a href="login.jsp">
                               <input type="button" class="btnn btnn--radius-2 btn--red" type="submit" value="Discard">
                           </div>
                           </td>                    
