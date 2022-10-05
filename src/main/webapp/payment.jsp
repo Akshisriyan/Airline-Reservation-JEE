@@ -23,48 +23,52 @@
         }
         
         body {
-            background-color: #3ecc6d;
-             background-image: url(img/air1.jpg.jpg);
+            background-color: white;
+             background-image: url(img/ab.jpg);
+             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .container {
             margin: 20px auto;
             width: 800px;
-            padding: 30px
+            padding: 30px;
+            background-color: #4d4c6a85!important;
         }
         
         .card.box1 {
             width: 350px;
             height: 500px;
-            background-color: #6996d0;
-            color: #baf0c3;
+            background-color: #070549!important;
+            color: #f7fdff;
             border-radius: 0
         }
         
         .card.box2 {
             width: 450px;
             height: 580px;
-            background-color: #ffffff;
+            background-color: #8891acde;
             border-radius: 0
         }
         
         .text {
-            font-size: 13px
+            font-size: 13px;
         }
         
         .box2 .btn.btn-primary.bar {
             width: 20px;
             background-color: transparent;
             border: none;
-            color: #65d2f7
+            color: #0b0c5e;
         }
         
         .box2 .btn.btn-primary.bar:hover {
-            color: #baf0c3
+            color: #a9bce2;
         }
         
         .box1 .btn.btn-primary {
-            background-color: #65d2f7;
+            background-color: #5b6687;
             width: 45px;
             height: 45px;
             display: flex;
@@ -74,15 +78,15 @@
         }
         
         .box1 .btn.btn-primary:hover {
-            background-color: #f6f8f7;
-            color: #65d2f7
+            background-color: #babdc6;
+            color: #131386;
         }
         
         .btn.btn-success {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: #ddd;
+            background-color: #adb5bd;
             color: black;
             display: flex;
             justify-content: center;
@@ -92,24 +96,32 @@
         
         .nav.nav-tabs {
             border: none;
-            border-bottom: 2px solid #ddd
+            border-bottom: 2px solid #ddd;
+            
         }
         
         .nav.nav-tabs .nav-item .nav-link {
             border: none;
-            color: black;
+            color: #c5c7eb;
             border-bottom: 2px solid transparent;
-            font-size: 14px
+            font-size: 14px;
+           
         }
         
         .nav.nav-tabs .nav-item .nav-link:hover {
             border-bottom: 2px solid #3ecc6d;
-            color: #05cf48
+            color: #999999;
+            
+        }
+        
+        .nav.nav-tabs .nav-item .nav-link.active:hover{
+            background-color: #261f3e ;
         }
         
         .nav.nav-tabs .nav-item .nav-link.active {
             border: none;
-            border-bottom: 2px solid #3ecc6d
+            border-bottom: 2px solid #084298;
+            background-color: #08145b;
         }
         
         .form-control {
@@ -121,7 +133,8 @@
             font-size: 14px;
             padding: 15px 0px;
             letter-spacing: 1.5px;
-            border-radius: 0
+            border-radius: 0;
+            background-color: #6a6d841a;;
         }
         
         .inputWithIcon {
@@ -138,7 +151,7 @@
             position: absolute;
             right: 0px;
             bottom: 9px;
-            color: #57c97d;
+            color: #070d71;
             cursor: pointer;
             transition: 0.3s;
             font-size: 14px
@@ -146,17 +159,18 @@
         
         .form-control:focus {
             box-shadow: none;
-            border-bottom: 1px solid #ddd
+            border-bottom: 1px solid #ddd;
+            background-color: #c6c9e1fc
         }
         
         .btn-outline-primary {
             color: black;
-            background-color: #ddd;
+            background-color: #adb5bd;
             border: 1px solid #ddd
         }
         
         .btn-outline-primary:hover {
-            background-color: #05cf48;
+            background-color: #4e4d59;
             border: 1px solid #ddd
         }
         
@@ -165,8 +179,8 @@
         .btn-outline-primary.active,
         .btn-outline-primary.dropdown-toggle.show,
         .btn-outline-primary:active {
-            color: #baf0c3;
-            background-color: #65d2f7;
+            color: #e7e8eb;
+            background-color: #2d275c;
             box-shadow: none;
             border: 1px solid #ddd
         }
@@ -191,12 +205,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #65d2f7;
+            background-color: #20195c;
             border: 1px solid #ddd
         }
         
         form .btn.btn-primary:hover {
-            background-color: #05cf48
+            background-color: #4e4d59;
         }
         
         @media (max-width:750px) {
@@ -212,7 +226,7 @@
                 width: 100%
             }
             .nav.nav-tabs .nav-item .nav-link {
-                font-size: 12px
+                font-size: 12px;
             }
         }
     </style>
