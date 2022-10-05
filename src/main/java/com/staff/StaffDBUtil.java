@@ -91,7 +91,7 @@ public static boolean validateGrade1(String USERNAME,String PASSWORD,String GRAD
 		
 		con = DBConnect.getConnection();
 		stmt = con.createStatement();
-		String sql = "select * from grade1 where (username = '"+USERNAME+"' and password='"+PASSWORD+"') and grade = '"+GRADE+"' ";
+		String sql = "select * from grade1 where (username = '"+USERNAME+"' and password='"+PASSWORD+"') and grade = '"+GRADE+"'";
 				
 		rs = stmt.executeQuery(sql);
 		

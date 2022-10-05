@@ -26,6 +26,7 @@ public class LoginGrade1Serv extends HttpServlet {
 		String USERNAME = request.getParameter("Username");
 		String PASSWORD = request.getParameter("Password");
 		String GRADE = request.getParameter("grade");
+		
 		boolean isTrue;
 		
 		//Pass the User's username and password to the CustomerDBUtil.java > validate() method and assign boolean value to "isTrue" variable
@@ -36,7 +37,7 @@ public class LoginGrade1Serv extends HttpServlet {
 			
 			
 			
-			if(GRADE.equals("Grade 1") ) 
+			if(GRADE.equals("Grade 1" ) ) 
 			{
 				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME,PASSWORD);
 				request.setAttribute("grade1Info", grade1Info);
@@ -44,7 +45,7 @@ public class LoginGrade1Serv extends HttpServlet {
 				dis.forward(request, response);
 				return;
 			}
-			else if(GRADE.equals("Grade 2") ) 
+			else if(GRADE.equals("Grade 2")  ) 
 			{
 				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME,PASSWORD);
 				request.setAttribute("grade1Info", grade1Info);
@@ -58,8 +59,9 @@ public class LoginGrade1Serv extends HttpServlet {
 		
 		else
 		{
+
 			out.println("<script type = 'text/javascript'>");
-			out.println("alert('Your User Name Or Password is Incorrect.');");
+			out.println("alert('Wrong Details. Try again');");
 			out.println("location = 'loginstaff.jsp'");
 			out.println("</script>");
 		

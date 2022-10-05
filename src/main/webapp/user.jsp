@@ -72,7 +72,7 @@
 				</div>
                 <div class="input_wrap">
 					<label for="confirm_password"><b>Confirm Password</b></label>
-					<input type="password" id="confirm_password"required>
+					<input type="password" id="confirm_password" name="confirm_password" required>
 				</div>
 
 				<div class="input_wrap">

@@ -39,21 +39,33 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		String  PASSWORD = request.getParameter("password");
 		
-		String  CPW = request.getParameter("confirm_password");
+		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 		
 		//calling insertcustomer() Methode.......
 		boolean isTrue;
 		
-		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CPW );
+		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CONFIRMPASSWORD );
 		
 		if(isTrue == true) {
+			 if(PASSWORD.equals(CONFIRMPASSWORD))
+			 {
 			out.println("<script type = 'text/javascript'>");
-			out.println("alert('Account Created Successfully. Log In Again');");
+			out.println("alert('Account Created. Log In Here');");
 			out.println("location = 'login.jsp'");
 			out.println("</script>");
-		} else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("unsuccess.jsp");
-			
+		    } 
+			else
+			{
+			out.println("<script type = 'text/javascript'>");
+			out.println("alert('Password Mismatch. Try again ');");
+			out.println("location = 'user.jsp'");
+			out.println("</script>");	
+			}
+		}
+		
+		else {
+			RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");
+			dis.forward(request, response);
 		}
    }	
 
