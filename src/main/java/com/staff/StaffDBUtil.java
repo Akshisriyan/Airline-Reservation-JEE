@@ -97,7 +97,7 @@ public static boolean validateGrade1(String USERNAME,String PASSWORD,String GRAD
 		
 		if(rs.next()) {
 			
-			if(rs.getString(9).equals("true"))
+			if(rs.getString(9).equals("false"))
 			{
 				isSuccess = true;
 			}
