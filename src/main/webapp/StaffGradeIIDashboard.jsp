@@ -2,6 +2,8 @@
     pageEncoding="ISO-8859-1"%>
     <%@ taglib  uri ="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
+     <% response.setHeader("Cache-Control","no-cache, no-store");
+    %>
 <!DOCTYPE html>
 <html>
 <head>

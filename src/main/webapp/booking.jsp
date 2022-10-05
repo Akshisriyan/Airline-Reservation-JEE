@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+     <% response.setHeader("Cache-Control","no-cache, no-store");
+    %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +12,7 @@
 <body>
 	<input type="checkbox" id="checkbox">
 	<header class="header">
-		<h2 class="u-name">Staff <b>Grade II</b>
+		<h2 class="u-name">Flight <b>Booking</b>
 			<label for="checkbox">
 				<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
 			</label>
