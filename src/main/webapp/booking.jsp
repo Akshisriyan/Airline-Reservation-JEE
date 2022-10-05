@@ -117,8 +117,8 @@
                          <br>
                          <tr>
                              <div class="submit-btn">
-                             <td><a href="#" class="btn">Payment</a>
-                                 <a href="#" class="btn">Book Now</a></td>
+                             <td>
+                                 <a href="payment.jsp" class="btn">Book Now</a></td>
                              </div>
                          </tr>
 
