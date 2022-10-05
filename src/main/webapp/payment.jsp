@@ -82,6 +82,22 @@
             color: #131386;
         }
         
+        .box1 .btn.btn-secondary {
+            background-color: #6c707e;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            color: #050e3f;
+            font-size: 20px;
+        }
+         .box1 .btn.btn-secondary:hover {
+            background-color: #454851;
+            color: #000000;
+        }
+        
         .btn.btn-success {
             width: 40px;
             height: 40px;
@@ -259,6 +275,13 @@
                                             <span class="ps-2">Payment Date:</span></span>
                     <span class="ps-3">21 OCT,2022</span>
                 </div>
+                <div class="col-12 px-md-5 px-4 mt-3">
+                        <div class="btn btn-secondary w-100"><b>Home</b>
+
+
+                        </div>
+
+                    </div>
                 <div class="d-flex align-items-center justify-content-between text mt-5">
                     <div class="d-flex flex-column text">
                         <span>Customer Support:</span>
