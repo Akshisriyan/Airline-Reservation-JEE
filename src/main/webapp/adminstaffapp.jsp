@@ -1,17 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    import java.sql.Connection;
     
+
      <%@ taglib  uri ="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
     
     <%@page import = "com.staff.approval" %>
     
     <%
-    
+
     approval usss=(approval) session.getAttribute("usss");
     
     %>
-    
+  
 
 <head>
       <meta charset="utf-8" />
@@ -83,7 +85,14 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                 
 
 <!--table-->
-                
+
+<%
+
+
+
+%>
+
+                <form action="admindash.jsp">
                 <div class="container">
                     <div class="row">
                       <div class="col-12">
@@ -101,42 +110,31 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                               <th scope="col">Approval</th>
                             </tr>
                           </thead>
-                          <tbody>
-                          
+                          <tbody>             
                      <tr>
-
-                              
+                 
                               <td><%=usss.getUSERNAME() %></td>
                               <td><%=usss.getPHONE() %></td>
                               <td><%=usss.getEMAIL() %></td>
                               <td><%=usss.getGRADE() %></td>
                               <td><%=usss.getCONFIRMPASSWORD() %></td>
                               <td><div>
-                                <button class="btnn btnn--radius-2 btn--red" type="submit">Accept</button>
-                              <button class="btnn btnn--radius-2 btn--red" type="submit">Discard</button>
+                                <input type="button"  class="btnn btnn--radius-2 btn--red" type="submit" value="Acceptt"  ><a href="login.jsp">
+                              <input type="button" class="btnn btnn--radius-2 btn--red" type="submit" value="Discard">
                           </div>
-                          </td>
-                       
-                            
+                          </td>                    
                             </tr>
 
                           </tbody>
                         </table>
                       </div>
                     </div>
-                
+                </div>
 
 
 <!--table-->
+</form>
 
-
-    </div>
-
-    
-
-
-    
-            
-   
+    </div>           
 </body>
 </html>
