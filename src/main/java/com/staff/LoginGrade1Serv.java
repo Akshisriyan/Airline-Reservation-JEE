@@ -45,7 +45,7 @@ public class LoginGrade1Serv extends HttpServlet {
 				dis.forward(request, response);
 				return;
 			}
-			else if(GRADE.equals("Grade 2")  ) 
+			else if(GRADE.equals("Grade 2") ) 
 			{
 				List<Grade1> grade1Info = StaffDBUtil.getGrade1(USERNAME,PASSWORD);
 				request.setAttribute("grade1Info", grade1Info);

@@ -85,7 +85,7 @@ public static List< Grade1 > getGrade1(String USERNAME, String PASSWORD){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-public static boolean validateGrade1(String USERNAME,String PASSWORD,String GRADE ) {
+public static boolean validateGrade1(String USERNAME,String PASSWORD,String GRADE) {
 	
 	try {
 		
@@ -96,8 +96,17 @@ public static boolean validateGrade1(String USERNAME,String PASSWORD,String GRAD
 		rs = stmt.executeQuery(sql);
 		
 		if(rs.next()) {
-			isSuccess = true;
-		} else {
+			
+			if(rs.getString(9).equals("true"))
+			{
+				isSuccess = true;
+			}
+			else
+			{
+				isSuccess = false;
+			}	
+			}	
+ else {
 			
 			isSuccess = false;
 		}
