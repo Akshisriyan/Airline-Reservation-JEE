@@ -117,7 +117,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Contact No.</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">NIC</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Confirm Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>                      
