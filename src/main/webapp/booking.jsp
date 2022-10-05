@@ -31,7 +31,7 @@
 				<li>
 					<a href="index.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
-						<span>Logout</span>
+						<span>LogOut</span>
 					</a>
 				</li>
 			</ul>
