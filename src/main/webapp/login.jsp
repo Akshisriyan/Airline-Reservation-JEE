@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Login Form</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -28,6 +28,12 @@
                 <i class="fas fa-lock"></i>
                 <label for="name"><b>Password</b></label>
                 <input type="password" name="Password" required>
+               
+            </div>
+             <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <label for="name"><b>Confirm Password</b></label>
+                <input type="password" name="ConfirmPassword" required>
                
             </div>
             
