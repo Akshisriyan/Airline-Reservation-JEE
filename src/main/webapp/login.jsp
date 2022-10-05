@@ -18,7 +18,7 @@
         <div class="card">
         
             
-            <h1><center>Login user</center></h1>
+            <h1><center>Login User</center></h1>
             <div class="form-group">
                 <i class="fas fa-user"></i>
                 <label for="name"><b>Username</b></label>
