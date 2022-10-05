@@ -96,12 +96,12 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                     <h2 class="title">Staff Registration Form</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form action = "addstaff" method = "POST">
                         <div class="form-row">
                             <div class="name">User Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
+                                    <input class="input--style-5" type="text" name="lname">
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">E-Mail</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Contact No.</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="contact_no">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">NIC</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="nic_no">
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="password">
                                 </div>
                             </div>
                         </div>
@@ -142,9 +142,10 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                             <div class="name">Confirm Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="confirm_password">
                                 </div>
                             </div>
+                        </div>
                         </div>                      
                          <input type="radio" name="grade" value="Grade 1"required>Grade I
 

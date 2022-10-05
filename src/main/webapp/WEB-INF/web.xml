@@ -69,4 +69,15 @@
     <servlet-name>LoginAdminServ</servlet-name>
     <url-pattern>/admin</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>addStaffInsertServ</display-name>
+    <servlet-name>addStaffInsertServ</servlet-name>
+    <servlet-class>com.addstaff.addStaffInsertServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addStaffInsertServ</servlet-name>
+    <url-pattern>/addstaff</url-pattern>
+  </servlet-mapping>
 </web-app>

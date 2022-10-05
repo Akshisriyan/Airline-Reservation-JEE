@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@jakarta.servlet.annotation.WebServlet("/StaffInsertServ")
+@jakarta.servlet.annotation.WebServlet("/addStaffInsertServ")
 public class addStaffInsertServ extends HttpServlet {
     
 	private static final long serialVersionUID = 1L;
