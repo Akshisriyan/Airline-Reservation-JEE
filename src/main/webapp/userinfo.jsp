@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib  uri ="http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,44 +57,54 @@
 		  </thead>
 		  <tbody>
 			  <tr>
-				  <td><img src="img/1.jfif" alt="">
-					  
-			  </tr>
-			  <h3>Your Details</h3>
-			  <tr>
-			  
-			  <td><b>User ID:</b></td>
-			  <td><b>:22200</b></td>
-			  
-			</tr>
-			<tr>
-			  <td><b>Name:</b></td>
-			  <td><b>:John Smith</b></td>
-			</tr>
-			
-			<tr>
-			  <td><b>Passport ID:</b></td>
-			  <td><b>:2022456</b></td>
-			</tr>
-			<tr>
-				<td><b>NIC:</b></td>
-				<td><b>457896</b></td>
-			</tr>
-			<tr>
-			  <td><b>Contact No</b></td>
-			  <td><b>:0718489773</b></td>
-			</tr>
-			<tr><td><b>Address:</b></td>
-				<td><b>Asd,TWDS.Srilanka</b></td>
-			</tr>
-			<tr>
-			  <td><b>Email</b></td>
-			  <td><b>:John8@gmail.com</b></td>
-			</tr>
-			<tr>
-				<td><a href="#" class="btn">Cancel</a>
+								<td><img src="img/1.jfif" alt="">
+									
+							</tr>
+								
+								
+							  <c:forEach var = "user" items = "${userInfo}">
+							
+						  
+						  
+						   
+							
+						  <tr>
+							<td><b>Your ID</b></td>
+							<td><b><c:out value = ":${user.UID}"/></b></td>
+							
+						  </tr>
+						  <tr>
+							<td><b>User Name</b></td>
+							<td><b>:<c:out value = "${user.USERNAME}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Email</b></td>
+							<td><b>:<c:out value = "${user.EMAIL}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Phone</b></td>
+							<td><b>:<c:out value = "${user.PHONE}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>NICe</b></td>
+							<td><b>:<c:out value = "${user.NIC}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Birthday</b></td>
+							<td><b>:<c:out value = "${user.BDATE}"/></b></td>
+						  </tr>
+						  <tr>
+							<td><b>Country</b></td>
+							<td><b>:<c:out value = "${user.COUNTRY}"/></b></td>
+						  </tr>
+						  
+						  <td><a href="booking.jsp" class="btn">Cancel</a>
 					<a href="#" class="btn">Update</a></td>
-			</tr>
+						  
+						  </c:forEach>
+						  
+						  </tbody>
+				
 			</tbody>
 			</table>
 			</div>

@@ -39,7 +39,7 @@ public class LoginCustomerServ extends HttpServlet {
 			
 			List<User> userInfo = CustomerDBUtil.getUser(USERNAME,PASSWORD);
 			request.setAttribute("userInfo", userInfo);
-			RequestDispatcher dis = request.getRequestDispatcher("booking.jsp");
+			RequestDispatcher dis = request.getRequestDispatcher("userinfo.jsp");
 			dis.forward(request, response);
 			return;
 		}
