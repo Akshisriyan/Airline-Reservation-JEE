@@ -92,7 +92,7 @@
 							<td><b>:<c:out value = "${user.PHONE}"/></b></td>
 						  </tr>
 						  <tr>
-							<td><b>NICe</b></td>
+							<td><b>NIC</b></td>
 							<td><b>:<c:out value = "${user.NIC}"/></b></td>
 						  </tr>
 						  <tr>

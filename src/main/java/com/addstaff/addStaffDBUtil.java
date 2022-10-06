@@ -15,14 +15,14 @@ public class addStaffDBUtil {
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	
-	public static Boolean insertaddstaff( String LNAME , String EMAIL , String CONTACT, String NIC , String PASSWORD , String GRADE, String CONFIRMPASSWORD, String STATUS ) {
+	public static Boolean insertaddstaff( String LNAME , String EMAIL ,String PASSWORD , String CONFIRMPASSWORD, String CONTACT, String NIC ,String GRADE, String STATUS ) {
 		
 		
 		//Create Database Connection
 		try {
 			con = DBConnect.getConnection();
 		    stmt = con.createStatement();
-			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+CONFIRMPASSWORD+"', '"+STATUS+"' )";
+			String  sql = "insert into grade1 values (0 ,'"+LNAME+"','"+EMAIL+"','"+PASSWORD+"','"+CONFIRMPASSWORD+"','"+CONTACT+"','"+NIC+"','"+GRADE+"','"+STATUS+"' )";
 			int rs = stmt.executeUpdate(sql);
 			
 			if(rs > 0) {
@@ -59,10 +59,10 @@ public static List< addstaff > getGrade1(String USERNAME, String PASSWORD){
 				String username = rs.getString(2);
 				String email = rs.getString(3);
 				String password = rs.getString(4);
-				String confirmpass = rs.getString(8);
-				String phone = rs.getString(5);
-				String nic = rs.getString(6);
-				String grade = rs.getString(7);
+				String confirmpass = rs.getString(5);
+				String phone = rs.getString(6);
+				String nic = rs.getString(7);
+				String grade = rs.getString(8);
 				String status = rs.getString(9);
 				
 				

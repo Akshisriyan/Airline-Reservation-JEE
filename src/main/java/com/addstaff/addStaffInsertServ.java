@@ -26,13 +26,13 @@ public class addStaffInsertServ extends HttpServlet {
 		
 		String  EMAIL = request.getParameter("email");
 		
+        String  PASSWORD = request.getParameter("password");
+		
+		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
+		
 		String  CONTACT = request.getParameter("contact_no");
 		
 		String  NIC = request.getParameter("nic_no");
-		
-		String  PASSWORD = request.getParameter("password");
-		
-		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 		
 		String  GRADE = request.getParameter("grade");
 	
@@ -40,7 +40,7 @@ public class addStaffInsertServ extends HttpServlet {
 		//calling insertcustomer() Methode
 				boolean isTrue;
 				
-				isTrue = addStaffDBUtil.insertaddstaff(LNAME, EMAIL, CONTACT, NIC, PASSWORD,GRADE,CONFIRMPASSWORD,STATUS);
+				isTrue = addStaffDBUtil.insertaddstaff(LNAME, EMAIL,PASSWORD,CONFIRMPASSWORD, CONTACT, NIC,GRADE,STATUS);
 				
 				if(isTrue == true) {
 					out.println("<script type = 'text/javascript'>");
