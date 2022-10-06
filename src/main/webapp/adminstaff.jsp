@@ -146,13 +146,13 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                                 </div>
                             </div>
                         </div>
-                        </div>                      
+                        </div> <center>                     
                          <input type="radio" name="grade" value="Grade 1"required>Grade I
 
-                            <input type="radio" name="grade" value="Grade 2"required>Grade II                     
-                        <div>
+                            <input type="radio" name="grade" value="Grade 2"required>Grade II </center>                    
+                       <center> <div>
                             <button class="btnn btn--radius-2 btn--red" type="submit">Register</button>
-                        </div>
+                        </div></center>
                     </form>
                 </div>
             </div>
