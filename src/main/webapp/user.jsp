@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Registration Form for user </title>
+	<title>Phoenix Airline </title>
 	<link rel="stylesheet" href="user.css">
 	
 	

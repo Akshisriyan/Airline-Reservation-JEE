@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Phoenix Airline</title>
 </head>
 <body>
 	<h1> Account Created. Wait for admin approval. Click <a href = "loginstaff.jsp">here</a> </h1>

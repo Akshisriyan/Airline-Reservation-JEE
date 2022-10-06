@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phoenix Airline</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet" type="text/css" />
@@ -256,16 +256,16 @@
             <div class="fw-bolder mb-4"><span class="">
 
          </span>
-                <span class="ps-1">Rs.599000,00</span>
+                <span class="ps-1">$599.00</span>
             </div>
             <div class="d-flex flex-column">
                 <div class="d-flex align-items-center justify-content-between text">
                     <span class="">Commission</span> <span class="">
-                    <span class="ps-1">Rs.10000.99</span></span>
+                    <span class="ps-1">$599.99</span></span>
                 </div>
                 <div class="d-flex align-items-center justify-content-between text mb-4">
                     <span>Total</span> <span class="">
-                            <span class="ps-1">Rs.600000.99</span></span>
+                            <span class="ps-1">$456.99</span></span>
                 </div>
                 <div class="border-bottom mb-4"></div>
                 <div class="d-flex flex-column mb-4">
@@ -278,7 +278,7 @@
                     <span class="ps-3">21 OCT,2022</span>
                 </div>
                 <div class="col-12 px-md-5 px-4 mt-3">
-                      <a href="index.jsp"> <div class="btn btn-secondary w-100"><b>Home</b>
+                      <a href="index.jsp"> <div class="btn btn-secondary w-100"><b>Cancel</b>
 
 
                         </div></a>
@@ -287,7 +287,7 @@
                 <div class="d-flex align-items-center justify-content-between text mt-5">
                     <div class="d-flex flex-column text">
                         <span>Customer Support:</span>
-                        <span>online chat 24/2</span>
+                        <span>online  24/2</span>
                     </div>
                     <div class="btn btn-primary rounded-circle">
                         <span class="fas fa-comment-alt"></span>
@@ -372,7 +372,7 @@
                         </div>
                     </div>
                     <div class="col-12 px-md-5 px-4 mt-3">
-                        <div class="btn btn-primary w-100">Pay Rs.59900.00
+                        <div class="btn btn-primary w-100">Pay $5990.00
 
 
                         </div>
