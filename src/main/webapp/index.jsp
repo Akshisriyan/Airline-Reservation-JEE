@@ -76,7 +76,7 @@
 					<div class="row">
 						<div class="col-sm-2">
 							<div class="logo">
-								<a href="admindash.jsp">
+								<a href="index.jsp">
 									<span>PHOENIX</span> Airline
 								</a>
 							</div><!-- /.logo-->
@@ -178,7 +178,7 @@
   													<label for="radio01">
   														<span class="round-boarder">
   															<span class="round-boarder1"></span>
-  														</span>round trip
+  														</span>Round Trip
   													</label>
 												</div><!--/.single-trip-circle-->
 												<div class="single-trip-circle">
@@ -186,7 +186,7 @@
   													<label for="radio02">
   														<span class="round-boarder">
   															<span class="round-boarder1"></span>
-  														</span>on way
+  														</span>On Way
   													</label>
 												</div><!--/.single-trip-circle-->
 											</div><!--/.trip-circle-->
@@ -194,7 +194,7 @@
 												<div class="col-lg-4 col-md-4 col-sm-12">
 													<div class="single-tab-select-box">
 
-														<h2>from</h2>
+														<h2>From</h2>
 
 														<div class="travel-select-icon">
 															<select class="form-control ">
@@ -205,6 +205,9 @@
 
 															  	<option value="russia">Russia</option><!-- /.option-->
 															  	<option value="egept">Egypt</option><!-- /.option-->
+															  	<option value="china">China</option><!-- /.option-->
+															  	<option value="korea">Korea</option><!-- /.option-->
+															  	<option value="usa">USA</option><!-- /.option-->
 
 															</select><!-- /.select-->
 														</div><!-- /.travel-select-icon -->
@@ -213,11 +216,11 @@
 
 												<div class="col-lg-2 col-md-3 col-sm-4">
 													<div class="single-tab-select-box">
-														<h2>departure</h2>
+														<h2>Departure</h2>
 														<div class="travel-check-icon">
 															<form action="#">
 																<input type="text" name="departure" class="form-control" data-toggle="datepicker"
-																placeholder="12 -01 - 2017 ">
+																placeholder="12 -01 - 2022 ">
 															</form>
 														</div><!-- /.travel-check-icon -->
 													</div><!--/.single-tab-select-box-->
@@ -225,10 +228,10 @@
 
 												<div class="col-lg-2 col-md-3 col-sm-4">
 													<div class="single-tab-select-box">
-														<h2>return</h2>
+														<h2>Return</h2>
 														<div class="travel-check-icon">
 															<form action="#">
-																<input type="text" name="return" class="form-control" data-toggle="datepicker" placeholder="22 -01 - 2017 ">
+																<input type="text" name="return" class="form-control" data-toggle="datepicker" placeholder="22 -01 - 2022 ">
 															</form>
 														</div><!-- /.travel-check-icon -->
 													</div><!--/.single-tab-select-box-->
@@ -236,7 +239,7 @@
 
 												<div class="col-lg-2 col-md-1 col-sm-4">
 													<div class="single-tab-select-box">
-														<h2>adults</h2>
+														<h2>Adults</h2>
 														<div class="travel-select-icon">
 															<select class="form-control ">
 
@@ -254,7 +257,7 @@
 
 												<div class="col-lg-2 col-md-1 col-sm-4">
 													<div class="single-tab-select-box">
-														<h2>childs</h2>
+														<h2>Childs</h2>
 														<div class="travel-select-icon">
 															<select class="form-control ">
 
@@ -276,17 +279,18 @@
 												<div class="col-lg-4 col-md-4 col-sm-12">
 													<div class="single-tab-select-box">
 
-														<h2>to</h2>
+														<h2>To</h2>
 
 														<div class="travel-select-icon">
 															<select class="form-control ">
 
-															  	<option value="default">enter your destination location</option><!-- /.option-->
+															  	<option value="default">Enter your destination location</option><!-- /.option-->
 
-															  	<option value="istambul">istambul</option><!-- /.option-->
+															  	<option value="istambul">Istambul</option><!-- /.option-->
 
-															  	<option value="mosko">mosko</option><!-- /.option-->
-															  	<option value="cairo">cairo</option><!-- /.option-->
+															  	<option value="mosko">Mosko</option><!-- /.option-->
+															  	<option value="cairo">Cairo</option><!-- /.option-->
+															  	  	<option value="colombo">Colombo</option><!-- /.option-->
 
 															</select><!-- /.select-->
 														</div><!-- /.travel-select-icon -->
@@ -300,7 +304,7 @@
 														<div class="travel-select-icon">
 															<select class="form-control ">
 
-															  	<option value="default">enter class</option><!-- /.option-->
+															  	<option value="default">Enter class</option><!-- /.option-->
 
 															  	<option value="A">A</option><!-- /.option-->
 
@@ -314,7 +318,7 @@
 												<div class="clo-sm-5">
 													<div class="about-btn pull-right">
 														<a href="flightdetails.jsp"><button  class="about-view travel-btn">
-															search	
+															Search	
 														</button></a><!--/.travel-btn-->
 													</div><!--/.about-btn-->
 												</div><!--/.col-->
@@ -445,12 +449,12 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="dicount-offer-content text-center">
-							<h2>Join with us within 21 November, 202 and get upto 40% Discount</h2>
+							<h2>Join with us within 21 November, 2022 and get upto 40% Discount</h2>
 
 							<div class="about-btn">
-								<button  class="about-view discount-offer-btn">
-									join now
-								</button>
+								<a href="login.jsp"><button  class="about-view discount-offer-btn">
+									Join now
+								</button></a>
 							</div><!--/.about-btn-->
 
 
@@ -467,10 +471,10 @@
 			<div class="container">
 				<div class="gallary-header text-center">
 					<h2>
-						special packages
+						Special packages
 					</h2>
 					<p>
-						Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.  
+						Here We Go.... We have lot of packages.  
 					</p>
 				</div><!--/.gallery-header-->
 				<div class="packages-content">
@@ -484,7 +488,7 @@
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<i class="fa fa-angle-right"></i>  5 star accomodation
 										</p>
@@ -523,7 +527,7 @@
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<i class="fa fa-angle-right"></i>  5 star accomodation
 										</p>
@@ -545,9 +549,9 @@
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
-										<button  class="about-view packages-btn">
+										<a href="login.jsp"><button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
@@ -558,11 +562,11 @@
 							<div class="single-package-item">
 								<img src="assets/images/packages/7.jpg" alt="package-place">
 								<div class="single-package-item-txt">
-									<h3>france <span class="pull-right">$1199</span></h3>
+									<h3>France <span class="pull-right">$1199</span></h3>
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<i class="fa fa-angle-right"></i>  5 star accomodation
 										</p>
@@ -584,9 +588,9 @@
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
-										<button  class="about-view packages-btn">
+										<a href="login.jsp"><button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
@@ -597,11 +601,11 @@
 							<div class="single-package-item">
 								<img src="assets/images/packages/a1.jpg" alt="package-place">
 								<div class="single-package-item-txt">
-									<h3>india <span class="pull-right">$799</span></h3>
+									<h3>India <span class="pull-right">$799</span></h3>
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<i class="fa fa-angle-right"></i>  5 star accomodation
 										</p>
@@ -620,9 +624,9 @@
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
-										<button  class="about-view packages-btn">
+										<a href="login.jsp"><button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
@@ -633,11 +637,11 @@
 							<div class="single-package-item">
 								<img src="assets/images/packages/a2.jpg" alt="package-place">
 								<div class="single-package-item-txt">
-									<h3>spain <span class="pull-right">$999</span></h3>
+									<h3>Spain <span class="pull-right">$999</span></h3>
 									<div class="packages-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<i class="fa fa-angle-right"></i>  5 star accomodation
 										</p>
@@ -658,9 +662,9 @@
 										</p>
 									</div><!--/.packages-review-->
 									<div class="about-btn">
-										<button  class="about-view packages-btn">
+										<a href="login.jsp"><button  class="about-view packages-btn">
 											book now
-										</button>
+										</button></a>
 									</div><!--/.about-btn-->
 								</div><!--/.single-package-item-txt-->
 							</div><!--/.single-package-item-->
@@ -671,7 +675,7 @@
 							<div class="single-package-item">
 								<img src="assets/images/packages/a3.jpg" alt="package-place">
 								<div class="single-package-item-txt">
-									<h3>thailand <span class="pull-right">$799</span></h3>
+									<h3>Thailand <span class="pull-right">$799</span></h3>
 									<div class="packages-para">
 										<p>
 											<span>
@@ -695,7 +699,7 @@
 											<span>254 review</span>
 										</p>
 									</div><!--/.packages-review-->
-									<a href="StaffGradeIIDashboard.jsp"><div class="about-btn">
+									<a href="login.jsp"><div class="about-btn">
 										<button  class="about-view packages-btn">
 											book now
 										</button></a>
@@ -723,7 +727,7 @@
 						<div class="col-sm-8">
 							<div class="single-special-offer">
 								<div class="single-special-offer-txt">
-									<h2>thiland</h2>
+									<h2>Thiland</h2>
 									<div class="packages-review special-offer-review">
 										<p>
 											<i class="fa fa-star"></i>
@@ -737,7 +741,7 @@
 									<div class="packages-para special-offer-para">
 										<p>
 											<span>
-												<i class="fa fa-angle-right"></i> 5 daays 6 nights
+												<i class="fa fa-angle-right"></i> 5 days 6 nights
 											</span>
 											<span>
 												<i class="fa fa-angle-right"></i> 2 person
@@ -766,7 +770,7 @@
 										</div><!--/.about-btn-->
 										<a href="staffGradeIDashboard.jsp"><div class="about-btn">
 											<button  class="about-view packages-btn">
-												book now
+												Book now
 											</button></a>
 										</div><!--/.about-btn-->
 									</div><!--/.offer-btn-group-->
@@ -1100,12 +1104,12 @@
 
 						<div class="col-sm-3">
 							<div class="single-footer-item text-center">
-								<h2 class="text-left">contacts</h2>
+								<h2 class="text-left">Contacts</h2>
 								<div class="single-footer-txt text-left">
 									<p>+94 11 1234 6543</p>
 									<p class="foot-email"><a href="#">info@pheonix.com</a></p>
-									<p> 336/A</p>
-									<p>Balangoda, Srilanka</p>
+									<p> Colombo</p>
+									<p>Srilanka</p>
 								</div><!--/.single-footer-txt-->
 							</div><!--/.single-footer-item-->
 						</div><!--/.col-->
@@ -1120,7 +1124,7 @@
 		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
 		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
 		        	</ul>
-		        	<p>&copy; 2022 Akshitha Sriyanjith. All Right Reserved</p>
+		        	<p>&copy; 2022 Pheonix Airline Development Teams. All Right Reserved</p>
 
 		        </div><!--/.foot-icons-->
 				<div id="scroll-Top">
