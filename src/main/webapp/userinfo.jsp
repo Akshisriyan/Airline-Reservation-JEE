@@ -30,7 +30,13 @@
 			<ul>
 			
 				<li>
-					<a href="#">
+					<a href="booking.jsp">
+						<i class="fa fa-ticket" aria-hidden="true"></i>
+						<span>Booking</span>
+					</a>
+				</li>
+				<li>
+					<a href="index.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
 					</a>
@@ -98,8 +104,8 @@
 							<td><b>:<c:out value = "${user.COUNTRY}"/></b></td>
 						  </tr>
 						  
-						  <td><a href="booking.jsp" class="btn">Cancel</a>
-					<a href="#" class="btn">Update</a></td>
+						  <td><a href="login.jsp" class="btn">Cancel</a>
+					<a href="user.jsp" class="btn">Update</a></td>
 						  
 						  </c:forEach>
 						  
