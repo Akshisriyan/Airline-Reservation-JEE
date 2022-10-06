@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    <%@page import="java.sql.*" %>
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +48,7 @@
 					<a href="loginstaff.jsp">
 						<i class="fa fa-power-off" aria-hidden="true"></i>
 						<span>Logout</span>
-					</a>
+				</a>
 				</li>
 			</ul>
 		</nav>
@@ -61,84 +65,115 @@
 					
 					
 				  </div>
-				  <table>
-					<thead>
-					  <tr>
-						
-						<td><img src="img/1.jfif" alt=""></td>
-						
-					 
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr>
-						  <td>
-							  <div class="form-group1">
-								  <label for="name"><b>Enter User ID:</b></label>
-								  <input type="text" required>
-							  </div>
-							  <div class="input_wrap">
-								  <input type="submit" value="Search" class="submit_btn"><br>
-							  
-					  </div> 
-						  </td>
-					  </tr>
-					  
-					</tbody>
-				  </table>
-				</div>
-				<header>
-               
-					<div class="card">
-						
-						<div class="form-group">
-							<label for="name"><b>User ID</b></label>
-							<input type="text" required>
-						</div>
-					   
-						<div class="form-group">
-						  <label for="name"><b>Name</b></label>
-						  <input type="text" required>
-					  </div>
-						<div class="form-group">
-							<label for="name"><b>Passport ID</b></label>
-							<input type="text" required>
-						   
-						</div>
-						
-						<div class="form-group">
-							<label for="name"><b>NIC</b></label>
-							<input type="text" required>
-						   </div>
-						
-						<div class="form-group">
-						  <label for="name"><b>Contact No</b></label>
-						  <input type="text" required>
-					  </div>
-  
-					  <div class="form-group">
-						  <label for="name"><b>Address</b></label>
-						  <input type="text" required>
-					  </div>
-  
-					  <div class="form-group">
-						  <label for="email"><b>Email Address</b></label>
-					  <input type="text" id="email">
-					  </div>
-  
-						</div>
-				 </header>      
-						
-				  </tbody>
-				  </table>
+
+	
+					
 				  </div>
-				  
-					  
-						</div>
-						</div>
-					  </div>
-					  </div>
-					  </body>
-					  </html>
-				   
+
+
+
+<form id="form" method="post" action="StaffGradeIIFindUserDashboard.jsp" >
+         
+<input type="text" name="eid" id="eid" placeholder="UserID"/>
+<button>submit</button>		  
+
+<h1 text-align:center>USERS</h1>                
+                     
+						<% 
 						
+
+Connection con;
+PreparedStatement pst;
+ResultSet rs;
+Class.forName("com.mysql.jdbc.Driver");
+con=DriverManager.getConnection("jdbc:mysql://localhost:3306/phonix","root","25069499");
+
+String eid=request.getParameter("eid");
+
+if(eid==null || eid.isEmpty())
+{
+	pst=con.prepareStatement("select * from user");
+	rs=pst.executeQuery();
+	
+	while(rs.next())
+	{
+		out.println("<table>");
+		out.println("<tr>");
+		out.println("<th>User ID</th>");
+		out.println("<th>First Name</th>");
+		out.println("<th>Last Name</th>");
+		out.println("<th>User Name</th>");
+		out.println("<th>Email</th>");
+		out.println("<th>Phone</th>");
+		out.println("<th>NIC</th>");
+		out.println("<th>BirthDay</th>");
+		out.println("<th>Country</th>");
+		out.println("<th>Country Code</th>");
+		out.println("</tr>");
+		
+		out.println("<tr>");
+		out.println("<td>" +rs.getInt("uid") + "</td>");
+		out.println("<td>" +rs.getString("fname") + "</td>");
+		out.println("<td>" +rs.getString("lname") + "</td>");
+		out.println("<td>" +rs.getString("username") + "</td>");
+		out.println("<td>" +rs.getString("email") + "</td>");
+		out.println("<td>" +rs.getString("phone") + "</td>");
+		out.println("<td>" +rs.getString("nic") + "</td>");
+		out.println("<td>" +rs.getString("bdate") + "</td>");
+		out.println("<td>" +rs.getString("country") + "</td>");
+		out.println("<td>" +rs.getString("ccode") + "</td>");
+		out.println("</TR>");
+		out.println("</table>");
+	}
+	
+}
+else
+{
+pst=con.prepareStatement("select * from user where uid=? ");
+pst.setString(1, eid);
+
+rs=pst.executeQuery();
+while(rs.next())
+{
+	out.println("<table>");
+	out.println("<tr>");
+	out.println("<th>User ID</th>");
+	out.println("<th>First Name</th>");
+	out.println("<th>Last Name</th>");
+	out.println("<th>User Name</th>");
+	out.println("<th>Email</th>");
+	out.println("<th>Phone</th>");
+	out.println("<th>NIC</th>");
+	out.println("<th>BirthDay</th>");
+	out.println("<th>Country</th>");
+	out.println("<th>Country Code</th>");
+	out.println("</tr>");
+	
+	out.println("<tr>");
+	out.println("<td>" +rs.getInt("uid") + "</td>");
+	out.println("<td>" +rs.getString("fname") + "</td>");
+	out.println("<td>" +rs.getString("lname") + "</td>");
+	out.println("<td>" +rs.getString("username") + "</td>");
+	out.println("<td>" +rs.getString("email") + "</td>");
+	out.println("<td>" +rs.getString("phone") + "</td>");
+	out.println("<td>" +rs.getString("nic") + "</td>");
+	out.println("<td>" +rs.getString("bdate") + "</td>");
+	out.println("<td>" +rs.getString("country") + "</td>");
+	out.println("<td>" +rs.getString("ccode") + "</td>");
+	out.println("</TR>");
+	out.println("</table>");
+}
+}
+
+%>
+
+
+
+
+
+</form>
+
+					</body>
+					</html>
+				 
+                      
