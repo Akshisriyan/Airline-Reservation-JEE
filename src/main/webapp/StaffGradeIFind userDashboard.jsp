@@ -81,24 +81,21 @@
 			<div class="history_lists">
 				<div class="list1">
 				  <div class="row">
-					
+		
+
+	
 					
 				  </div>
-<td><img src="img/1.jfif" alt=""></td>
 
-<table class="table table-bordered">
 
-                           
+
+<form id="form" method="post" action="StaffGradeIFind userDashboard.jsp" >
+         
+<input type="text" name="eid" id="eid" placeholder="UserID"/>
+<button>submit</button>		  
+
+<h1 text-align:center>USERS</h1>                
                      
-                          <thead>
-                            <tr>
-                              <th scope="col">Activity</th>
-                              <th scope="col">User Type</th>
-                              <th scope="col">User ID</th>
-                              <th scope="col">Date</th>
- </tr>
-                          </thead>
-<tbody>
 						<% 
 						
 
@@ -117,20 +114,33 @@ if(eid==null || eid.isEmpty())
 	
 	while(rs.next())
 	{
-		out.println("<Table border=1 >");
-		out.println("<TR>");
-		out.println("<TD>" +rs.getInt("uid") + "<TD>");
-		out.println("<TD>" +rs.getString("fname") + "<TD>");
-		out.println("<TD>" +rs.getString("lname") + "<TD>");
-		out.println("<TD>" +rs.getString("username") + "<TD>");
-		out.println("<TD>" +rs.getString("email") + "<TD>");
-		out.println("<TD>" +rs.getString("phone") + "<TD>");
-		out.println("<TD>" +rs.getString("nic") + "<TD>");
-		out.println("<TD>" +rs.getString("bdate") + "<TD>");
-		out.println("<TD>" +rs.getString("country") + "<TD>");
-		out.println("<TD>" +rs.getString("ccode") + "<TD>");
+		out.println("<table>");
+		out.println("<tr>");
+		out.println("<th>User ID</th>");
+		out.println("<th>Last Name</th>");
+		out.println("<th>User Name</th>");
+		out.println("<th>Email</th>");
+		out.println("<th>Phone</th>");
+		out.println("<th>NIC</th>");
+		out.println("<th>BirthDay</th>");
+		out.println("<th>Country</th>");
+		out.println("<th>Country Code</th>");
+		out.println("<th>BirthDay</th>");
+		out.println("</tr>");
+		
+		out.println("<tr>");
+		out.println("<td>" +rs.getInt("uid") + "</td>");
+		out.println("<td>" +rs.getString("fname") + "</td>");
+		out.println("<td>" +rs.getString("lname") + "</td>");
+		out.println("<td>" +rs.getString("username") + "</td>");
+		out.println("<td>" +rs.getString("email") + "</td>");
+		out.println("<td>" +rs.getString("phone") + "</td>");
+		out.println("<td>" +rs.getString("nic") + "</td>");
+		out.println("<td>" +rs.getString("bdate") + "</td>");
+		out.println("<td>" +rs.getString("country") + "</td>");
+		out.println("<td>" +rs.getString("ccode") + "</td>");
 		out.println("</TR>");
-		out.println("<Table>");
+		out.println("</table>");
 	}
 	
 }
@@ -142,30 +152,39 @@ pst.setString(1, eid);
 rs=pst.executeQuery();
 while(rs.next())
 {
-	out.println("<Table border=1 bgcolor=yellow cellpadding=2 cellspacing=2>");
-	out.println("<TR>");
-	out.println("<TD>" +rs.getInt("uid") + "<TD>");
-	out.println("<TD>" +rs.getString("fname") + "<TD>");
-	out.println("<TD>" +rs.getString("lname") + "<TD>");
-	out.println("<TD>" +rs.getString("username") + "<TD>");
-	out.println("<TD>" +rs.getString("email") + "<TD>");
-	out.println("<TD>" +rs.getString("phone") + "<TD>");
-	out.println("<TD>" +rs.getString("nic") + "<TD>");
-	out.println("<TD>" +rs.getString("bdate") + "<TD>");
-	out.println("<TD>" +rs.getString("country") + "<TD>");
-	out.println("<TD>" +rs.getString("ccode") + "<TD>");
+	out.println("<table>");
+	out.println("<tr>");
+	out.println("<th>User ID</th>");
+	out.println("<th>Last Name</th>");
+	out.println("<th>User Name</th>");
+	out.println("<th>Email</th>");
+	out.println("<th>Phone</th>");
+	out.println("<th>NIC</th>");
+	out.println("<th>BirthDay</th>");
+	out.println("<th>Country</th>");
+	out.println("<th>Country Code</th>");
+	out.println("<th>BirthDay</th>");
+	out.println("</tr>");
+	
+	out.println("<tr>");
+	out.println("<td>" +rs.getInt("uid") + "</td>");
+	out.println("<td>" +rs.getString("fname") + "</td>");
+	out.println("<td>" +rs.getString("lname") + "</td>");
+	out.println("<td>" +rs.getString("username") + "</td>");
+	out.println("<td>" +rs.getString("email") + "</td>");
+	out.println("<td>" +rs.getString("phone") + "</td>");
+	out.println("<td>" +rs.getString("nic") + "</td>");
+	out.println("<td>" +rs.getString("bdate") + "</td>");
+	out.println("<td>" +rs.getString("country") + "</td>");
+	out.println("<td>" +rs.getString("ccode") + "</td>");
 	out.println("</TR>");
-	out.println("<Table>");
+	out.println("</table>");
 }
 }
 
 %>
 
-<form id="form" method="post" action="StaffGradeIFind userDashboard.jsp" >
 
-<label>User ID</label>
-<input type="text" name="eid" id="eid" placeholder="UserID"/>
-<button>submit</button>
 
 
 
