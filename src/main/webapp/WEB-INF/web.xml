@@ -81,14 +81,25 @@
     <url-pattern>/addstaff</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+  <servlet>
     <description></description>
-    <display-name>FlightInsertServ</display-name>
-    <servlet-name>FlightInsertServ</servlet-name>
-    <servlet-class>com.flights.FlightInsertServ</servlet-class>
+    <display-name>FlightInsertServ1</display-name>
+    <servlet-name>FlightInsertServ1</servlet-name>
+    <servlet-class>com.flights1.FlightInsertServ1</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>FlightInsertServ</servlet-name>
-    <url-pattern>/addflight</url-pattern>
+    <servlet-name>FlightInsertServ1</servlet-name>
+    <url-pattern>/addflight1</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>FlightInsertServ2</display-name>
+    <servlet-name>FlightInsertServ2</servlet-name>
+    <servlet-class>com.flights2.FlightInsertServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FlightInsertServ2</servlet-name>
+    <url-pattern>/addflight2</url-pattern>
   </servlet-mapping>
 </web-app>

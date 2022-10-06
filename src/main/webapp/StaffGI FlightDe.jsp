@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,77 +74,112 @@
           <div class="row">
             
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Flight ID</th>
-                <th>From</th>
-                <th>Destination</th>
-                <th>Plane Type</th>
-                <th>Available Seats</th>
-                 <th>Date and Time</th>
-                  <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>UML4980</td>
-                <td>Japan</td>
-                <td>Venezula</td>
-                <td>Boeing727</td>
-                <td>18</td>
-                <td>2022/10/08<br>1.00PM</td>
-                <td><div>
-                               
-                          </div></td>
-                
-              </tr>
-              <tr>
-                <td>UML4981</td>
-                <td>India</td>
-                <td>Switzerland</td>
-                <td>Boeing747-8</td>
-                <td>20</td>
-                <td>2022/10/08<br>3.00PM</td>
-                <td><div>
-                                
-                          </div></td>
-              </tr>
-              <tr>
-                <td>UML4950</td>
-                <td>USA</td>
-              
-                <td>France</td>
-                <td>Boeing780</td>
-                <td>24</td>
-                <td>2022/10/09<br>6.00PM</td>
-                <td><div>
-                                
-                          </div></td>
-                
-              </tr>
-              <tr>
-                <td>UML4980</td>
-                <td>Japan</td>
-                <td>Venezulaa</td>
-                <td>Boeing747-8</td>
-                <td>3</td>
-                <td>2022/10/09<br>1.00PM</td>
-                <td><div>
-                                
-                          </div></td>
-              </tr>
-             
-            </tbody>
-          </table>
-        </div>
+          
+        <% 
+		
+		
+Connection con;
+PreparedStatement pst;
+ResultSet rs;
+Class.forName("com.mysql.jdbc.Driver");
+con=DriverManager.getConnection("jdbc:mysql://localhost:3306/phonix","root","25069499");
 
-</div>
+String eid=request.getParameter("eid");    
+          
+if(eid==null || eid.isEmpty())
+{
+	pst=con.prepareStatement("select * from flight");
+	rs=pst.executeQuery();
+	
+	while(rs.next())
+	{
+		
+	      out.println("<table>");
+			out.println("<thead>");
+			out.println("<tr>");
+			out.println("<th>Flight ID</th>");
+			out.println("<th>Start From</th>");
+			out.println("<th>Destination</th>");
+			out.println("<th>Plane Type</th>");
+			out.println("<th>Available Seats</th>");
+			out.println("<th>Date</th>");
+			out.println("<th>Time</th>");
+			out.println("</tr>");
+			out.println("</thead>");
+		
+		out.println("<tbody>");
+		out.println("<tr>");
+		out.println("<td>" +rs.getInt("flightid") + "</td>");
+		out.println("<td>" +rs.getString("from") + "</td>");
+		out.println("<td>" +rs.getString("destination") + "</td>");
+		out.println("<td>" +rs.getString("planetype") + "</td>");
+		out.println("<td>" +rs.getString("availableseats") + "</td>");
+		out.println("<td>" +rs.getString("date") + "</td>");
+		out.println("<td>" +rs.getString("time") + "</td>");
+		out.println("</tr>");
+		out.println("</table>");
+	}
+	
+}  
+                   
+        %>      
+            
+           <form action = "addflight1" method = "POST">    
+                </div>
 </div>
 </div>
 
 
+      
+ 
 
+    <div class="sidebar">
+      <h3>Account Balance</h3>
+      
+      <div class="form-group">
+        <label for="name"><b>Flight ID :</b></label>
+            <input type="text" name="Fid" required>
+        </div><br>
+        <div class="form-group">
+          <label for="name"><b> From:</b></label>
+          <input type="text" name="from" required>
+        </div><br>
+
+        <div class="form-group">
+          <label for="name"><b> Destination:</b></label>
+          <input type="text" name="des" required>
+        </div><br>
+
+        <div class="form-group">
+          <label for="name"><b> Plane Type:</b></label>
+          <input type="text" name="pt" required>
+        </div><br>
+
+        <div class="form-group">
+          <label for="name"><b> Available Seats:</b></label>
+          <input type="text" name="as" required>
+        </div><br>
+
+        <div class="form-group">
+          <label for="name"><b>Date:</b></label>
+          <input type="text" name="date" required>
+        </div><br>
+        
+        <div class="form-group">
+          <label for="name"><b>Time:</b></label>
+          <input type="text" name="time" required>
+        </div><br>
+      
+      
+      
+        <div class="form-group">
+          <input type="submit" value="ADD" class="submit_btn"><br>
+        
+    </div> 
+    </div>
+    
+</form>
+</div>
 
 
 </body>

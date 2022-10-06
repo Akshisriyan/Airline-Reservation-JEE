@@ -1,4 +1,4 @@
-package com.flights;
+package com.flights1;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.admin.DBConnect;
 
-public class FlightDBUtil {
+public class FlightDBUtil1 {
 	
 	private static boolean isSuccess = false;
 	private static Connection con = null;

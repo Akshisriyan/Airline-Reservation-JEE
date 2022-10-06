@@ -1,4 +1,4 @@
-package com.flights;
+package com.flights1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,8 +10,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@jakarta.servlet.annotation.WebServlet("/FlightInsertServ")
-public class FlightInsertServ extends HttpServlet {
+@jakarta.servlet.annotation.WebServlet("/FlightInsertServ1")
+public class FlightInsertServ1 extends HttpServlet {
     
 	private static final long serialVersionUID = 1L;
 	
@@ -40,12 +40,12 @@ public class FlightInsertServ extends HttpServlet {
 		//calling insertcustomer() Methode
 				boolean isTrue;
 				
-				isTrue = FlightDBUtil.insertflights(FLIGHTID,FROM,DESTINATION,PLANETYPE,AVAILABLESEATS,DATE,TIME);
+				isTrue = FlightDBUtil1.insertflights(FLIGHTID,FROM,DESTINATION,PLANETYPE,AVAILABLESEATS,DATE,TIME);
 				
 				if(isTrue == true) {
 					out.println("<script type = 'text/javascript'>");
 					out.println("alert('Flight Details Successfully Added');");
-					out.println("location = 'StaffGII Flight.jsp'");
+					out.println("location = 'StaffGI FlightDe.jsp'");
 					out.println("</script>");
 				} else {
 					RequestDispatcher dis = request.getRequestDispatcher("unsuccess.jsp");

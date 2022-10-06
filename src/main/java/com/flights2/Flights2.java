@@ -1,6 +1,6 @@
-package com.flights;
+package com.flights2;
 
-public class Flights {
+public class Flights2 {
 	private int FLIGHTID;
 	private String FROM;
 	private String DESTINATION;
@@ -9,7 +9,7 @@ public class Flights {
 	private String DATE;
 	private String TIME;
 	
-	public Flights(int fLIGHTID, String fROM, String dESTINATION, String pLANETYPE, String aVAILABLESEATS, String dATE,String tIME) 
+	public Flights2(int fLIGHTID, String fROM, String dESTINATION, String pLANETYPE, String aVAILABLESEATS, String dATE,String tIME) 
 	{
 		super();
 		FLIGHTID = fLIGHTID;

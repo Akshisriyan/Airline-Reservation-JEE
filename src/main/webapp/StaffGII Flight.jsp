@@ -115,7 +115,7 @@ if(eid==null || eid.isEmpty())
                    
         %>      
             
-           <form action = "addflight" method = "POST">    
+           <form action = "addflight2" method = "POST">    
             
          
         </div>
