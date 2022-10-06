@@ -80,4 +80,15 @@
     <servlet-name>addStaffInsertServ</servlet-name>
     <url-pattern>/addstaff</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>FlightInsertServ</display-name>
+    <servlet-name>FlightInsertServ</servlet-name>
+    <servlet-class>com.flights.FlightInsertServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FlightInsertServ</servlet-name>
+    <url-pattern>/addflight</url-pattern>
+  </servlet-mapping>
 </web-app>

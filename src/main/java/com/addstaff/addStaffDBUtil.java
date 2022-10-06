@@ -39,48 +39,6 @@ public class addStaffDBUtil {
 	}
 	
 	
-//////////////////////////////////////////////////////////////////////////////////////////////////////	
-public static List< addstaff > getGrade1(String USERNAME, String PASSWORD){
-		
-		//Creating object from ArrayList<User>
-		ArrayList< addstaff > grade1 = new ArrayList<>();
-		
-		try {
-			
-			// Crating Database Connection
-			con = DBConnect.getConnection();
-			stmt = con.createStatement();
-			String sql = " select * from grade1 where username = '"+USERNAME+"'and password = '"+PASSWORD+"'";
-			rs = stmt.executeQuery(sql);
-			
-			//Checking user information from Database 1 by 1.... 
-			while (rs.next()) {
-				int sid =  rs.getInt(1);
-				String username = rs.getString(2);
-				String email = rs.getString(3);
-				String password = rs.getString(4);
-				String confirmpass = rs.getString(5);
-				String phone = rs.getString(6);
-				String nic = rs.getString(7);
-				String grade = rs.getString(8);
-				String status = rs.getString(9);
-				
-				
-				
-				//Sending parameters to User.java constructor..
-				addstaff g1 = new addstaff( sid , username , email , password,confirmpass, phone , nic , grade, status );
-				
-				//pass the "usr" object to "user" object
-				grade1.add(g1);
-				
-			}
-			
-		} catch (Exception e ) {
-			
-		}
-		
-		return grade1;
-		}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

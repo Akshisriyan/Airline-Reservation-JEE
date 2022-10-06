@@ -108,7 +108,7 @@
                 <td>Boeing747-8</td>
                 <td><center>31</center></td>
                 <td><center>2022/10/09</center></td>
-                
+  <form action = "addflight" method = "POST">              
              
             </tbody>
           </table>
@@ -121,32 +121,39 @@
       
       <div class="form-group">
         <label for="name"><b>Flight ID :</b></label>
-            <input type="text" required>
+            <input type="text" name="Fid" required>
         </div><br>
         <div class="form-group">
           <label for="name"><b> From:</b></label>
-          <input type="text" required>
+          <input type="text" name="from" required>
         </div><br>
 
         <div class="form-group">
           <label for="name"><b> Destination:</b></label>
-          <input type="text" required>
+          <input type="text" name="des" required>
         </div><br>
 
         <div class="form-group">
           <label for="name"><b> Plane Type:</b></label>
-          <input type="text" required>
+          <input type="text" name="pt" required>
         </div><br>
 
         <div class="form-group">
           <label for="name"><b> Available Seats:</b></label>
-          <input type="text" required>
+          <input type="text" name="as" required>
         </div><br>
 
         <div class="form-group">
           <label for="name"><b>Date:</b></label>
-          <input type="text" required>
+          <input type="text" name="date" required>
         </div><br>
+        
+        <div class="form-group">
+          <label for="name"><b>Time:</b></label>
+          <input type="text" name="time" required>
+        </div><br>
+      
+      
       
         <div class="form-group">
           <input type="submit" value="ADD" class="submit_btn"><br>
@@ -154,9 +161,9 @@
     </div> 
     
 </div>
+</form>
 </div>
-</div>
-</div>
-</div>
+
+
 </body>
 </html>

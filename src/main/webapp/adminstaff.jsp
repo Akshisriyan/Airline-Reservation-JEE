@@ -101,7 +101,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">User Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="lname">
+                                    <input class="input--style-5" type="text" name="lname" required>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">E-Mail</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="email">
+                                    <input class="input--style-5" type="text" name="email" required>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">Contact No.</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="contact_no">
+                                    <input class="input--style-5" type="text" name="contact_no" required>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">NIC</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="nic_no">
+                                    <input class="input--style-5" type="text" name="nic_no" required>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="password">
+                                    <input class="input--style-5" type="text" name="password" required>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="index.jsp" cl
                             <div class="name">Confirm Password</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="confirm_password">
+                                    <input class="input--style-5" type="text" name="confirm_password" required>
                                 </div>
                             </div>
                         </div>
