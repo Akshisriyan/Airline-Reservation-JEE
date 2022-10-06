@@ -127,7 +127,7 @@ if(eid==null || eid.isEmpty())
 
 
     <div class="sidebar">
-      <h3>ADD Flight</h3>
+      <h3>Add Flight</h3>
       
       <div class="form-group">
         <label for="name"><b>Flight ID :</b></label>
