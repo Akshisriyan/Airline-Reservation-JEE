@@ -124,7 +124,7 @@
 							<td><b>:<c:out value = "${stf1.PHONE}"/></b></td>
 						  </tr>
 						  <tr>
-							<td><b>NICe</b></td>
+							<td><b>NIC</b></td>
 							<td><b>:<c:out value = "${stf1.NIC}"/></b></td>
 						  </tr>
 						  

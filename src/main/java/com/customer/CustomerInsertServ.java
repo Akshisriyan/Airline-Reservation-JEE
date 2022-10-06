@@ -27,6 +27,10 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		String  EMAIL = request.getParameter("email");
 		
+		String  PASSWORD = request.getParameter("password");
+		
+		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
+		
 		String  CONTACT = request.getParameter("contact_no");
 		
 		String  NIC = request.getParameter("nic_no");
@@ -37,14 +41,12 @@ public class CustomerInsertServ extends HttpServlet {
 		
 		String  COUNTRYCODE = request.getParameter("country_code");
 		
-		String  PASSWORD = request.getParameter("password");
 		
-		String  CONFIRMPASSWORD = request.getParameter("confirm_password");
 		
 		//calling insertcustomer() Methode.......
 		boolean isTrue;
 		
-		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE, PASSWORD, CONFIRMPASSWORD );
+		isTrue = CustomerDBUtil.insertcustomer(FNAME, LNAME, UNAME, EMAIL,PASSWORD, CONFIRMPASSWORD, CONTACT, NIC, BIRTHDAY, COUNTRY, COUNTRYCODE  );
 		
 		if(isTrue == true) {
 			 if(PASSWORD.equals(CONFIRMPASSWORD))

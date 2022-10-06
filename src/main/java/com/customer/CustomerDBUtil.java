@@ -43,13 +43,13 @@ public static boolean validateUser(String USERNAME,String PASSWORD , String CONF
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-public static Boolean insertcustomer(String FNAME , String LNAME , String USERNAME ,String EMAIL , String CONTACT, String NIC , String BIRTHDAY , String COUNTRY , String COUNTRYCODE , String PASSWORD , String CONFIRMPASSWORD ) {
+public static Boolean insertcustomer(String FNAME , String LNAME , String USERNAME ,String EMAIL , String PASSWORD, String CONFIRMPASSWORD, String CONTACT, String NIC , String BIRTHDAY , String COUNTRY , String COUNTRYCODE) {
 
 //Create Database Connection
 try {
 con = DBConnect.getConnection();
 stmt = con.createStatement();
-String  sql = "insert into user values (0 ,'"+FNAME+"','"+LNAME+"', '"+USERNAME+"' ,'"+EMAIL+"','"+PASSWORD+"','"+CONTACT+"','"+NIC+"','"+BIRTHDAY+"','"+COUNTRY+"','"+COUNTRYCODE+"' ,'"+CONFIRMPASSWORD+"')";
+String  sql = "insert into user values (0 ,'"+FNAME+"','"+LNAME+"', '"+USERNAME+"' ,'"+EMAIL+"','"+PASSWORD+"','"+CONFIRMPASSWORD+"','"+CONTACT+"','"+NIC+"','"+BIRTHDAY+"','"+COUNTRY+"','"+COUNTRYCODE+"')";
 int rs = stmt.executeUpdate(sql);
 
 if(rs > 0) {
