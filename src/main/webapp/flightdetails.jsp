@@ -1,4 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     
+
+    <%@page import="java.sql.*" %>
+
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Phoenix Airline</title>
@@ -37,79 +44,103 @@
         <header>
                
             <div class="card">
-                <table>
-                    <thead>
-                      <tr>
-                        <th>Flight ID</th>
-                        <th>From</th>
-                        <th>Destination</th>
-                        <th>Plane Type</th>
-                        <th>Available Seats</th>
-                         <th>Date and time</th>
-                          <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>UML4980</td>
-                        <td>Japan</td>
-                        <td>Venezula</td>
-                        <td>Boeing727</td>
-                        <td><center>18</center></td>
-                        <td><center>2022/10/08 1.00AM</center></td>
-                       
-                        
-                      </tr>
-                      <tr>
-                        <td>UML4981</td>
-                        <td>India</td>
-                        <td>Switzerland</td>
-                        <td>Boeing747-8</td>
-                        <td><center>20</center></td>
-                        <td><center>2022/10/10 3.00PM</center></td>
-                        
-                      <tr>
-                        <td>UML4950</td>
-                        <td>USA</td>
-                      
-                        <td>France</td>
-                        <td>Boeing780</td>
-                        <td><center>24</center></td>
-                        <td><center>2022/10/12 6.00AM</center></td>
-                       
-                      <tr>
-                        <td>UML4980</td>
-                        <td>Japan</td>
-                        <td>Venezula</td>
-                        <td>Boeing747-8</td>
-                        <td><center>31</center></td>
-                        <td><center>2022/10/14 1.00PM</center></td>
+ <form id="form" method="post" action="flightdetails.jsp" >
+ <div class="form-group1">
+
+                  <input type="text" name="eid" id="eid" placeholder="Flight ID"/>
+<button>Search</button>	
+     
+<% 						
+
+Connection con;
+PreparedStatement pst;
+ResultSet rs;
+Class.forName("com.mysql.jdbc.Driver");
+con=DriverManager.getConnection("jdbc:mysql://localhost:3306/phonix","root","25069499");
+
+String eid=request.getParameter("eid");
+
+if(eid==null || eid.isEmpty())
+{
+	pst=con.prepareStatement("select * from flight");
+	rs=pst.executeQuery();
+	
+	while(rs.next())
+	{		
+        out.println("<table>");
+		out.println("<tr>");
+		out.println("<th>Flight ID</th>");
+		out.println("<th>From</th>");
+		out.println("<th>Destination</th>");
+		out.println("<th>Plane Type</th>");
+		out.println("<th>Available Seats</th>");
+		out.println("<th>Date</th>");
+		out.println("<th>Time</th>");
+		out.println("</tr>");
+		
+		out.println("<tr>");
+		out.println("<td>" +rs.getInt("flightid") + "</td>");
+		out.println("<td>" +rs.getString("from") + "</td>");
+		out.println("<td>" +rs.getString("destination") + "</td>");
+		out.println("<td>" +rs.getString("planetype") + "</td>");
+		out.println("<td>" +rs.getString("availableseats") + "</td>");
+		out.println("<td>" +rs.getString("date") + "</td>");
+		out.println("<td>" +rs.getString("time") + "</td>");
+		out.println("</tr>");
+		out.println("</table>");
+	}
+	
+}
+else
+{
+pst=con.prepareStatement("select * from flight where flightid=? ");
+pst.setString(1, eid);
+
+rs=pst.executeQuery();
+while(rs.next())
+{
+	  out.println("<table>");
+		out.println("<tr>");
+		out.println("<th>Flight ID</th>");
+		out.println("<th>Start From</th>");
+		out.println("<th>Destination</th>");
+		out.println("<th>Plane Type</th>");
+		out.println("<th>Available Seats</th>");
+		out.println("<th>Date</th>");
+		out.println("<th>Time</th>");
+		out.println("</tr>");
+	
+	
+	out.println("<tr>");
+	out.println("<td>" +rs.getInt("flightid") + "</td>");
+	out.println("<td>" +rs.getString("from") + "</td>");
+	out.println("<td>" +rs.getString("destination") + "</td>");
+	out.println("<td>" +rs.getString("planetype") + "</td>");
+	out.println("<td>" +rs.getString("availableseats") + "</td>");
+	out.println("<td>" +rs.getString("date") + "</td>");
+	out.println("<td>" +rs.getString("time") + "</td>");
+	out.println("</tr>");
+	out.println("</table>");
+}
+}
+
+%>
+       
                         
                      
-                    </tbody>
-                  </table>
+                   
                 <br>
-                <div class="form-group1">
-                    
-                <input type="text" required>  
-                  
-                    <input type="submit" value="Search" class="submit_btn"><br>
-                </div>
+                
                  
                 
 
                 </div>
          </header>      
                 
-          </tbody>
-          </table>
           </div>
           
-              
-                </div>
-                </div>
-              </div>
-              </div>
+             </form> 
+
               </body>
               </html>
            
