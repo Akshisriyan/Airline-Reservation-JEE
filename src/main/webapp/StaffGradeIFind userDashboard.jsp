@@ -117,6 +117,7 @@ if(eid==null || eid.isEmpty())
 		out.println("<table>");
 		out.println("<tr>");
 		out.println("<th>User ID</th>");
+		out.println("<th>First Name</th>");
 		out.println("<th>Last Name</th>");
 		out.println("<th>User Name</th>");
 		out.println("<th>Email</th>");
@@ -125,7 +126,6 @@ if(eid==null || eid.isEmpty())
 		out.println("<th>BirthDay</th>");
 		out.println("<th>Country</th>");
 		out.println("<th>Country Code</th>");
-		out.println("<th>BirthDay</th>");
 		out.println("</tr>");
 		
 		out.println("<tr>");
@@ -155,6 +155,7 @@ while(rs.next())
 	out.println("<table>");
 	out.println("<tr>");
 	out.println("<th>User ID</th>");
+	out.println("<th>First Name</th>");
 	out.println("<th>Last Name</th>");
 	out.println("<th>User Name</th>");
 	out.println("<th>Email</th>");
@@ -163,7 +164,6 @@ while(rs.next())
 	out.println("<th>BirthDay</th>");
 	out.println("<th>Country</th>");
 	out.println("<th>Country Code</th>");
-	out.println("<th>BirthDay</th>");
 	out.println("</tr>");
 	
 	out.println("<tr>");
