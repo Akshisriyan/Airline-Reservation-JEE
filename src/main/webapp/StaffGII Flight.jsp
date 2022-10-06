@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+<%@page import="java.sql.*" %>
 <html>
 <head>
 	<title>Phoenix Airline</title>
@@ -61,60 +62,69 @@
           <div class="row">
             
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Flight ID</th>
-                <th>From</th>
-                <th>Destination</th>
-                <th>Plane Type</th>
-                <th>Available Seats</th>
-                 <th>Date </th>
-                  <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>UML4980</td>
-                <td>Japan</td>
-                <td>Venezula</td>
-                <td>Boeing727</td>
-                <td><center>18</center></td>
-                <td><center>2022/10/08</center></td>
-               
-                
-              </tr>
-              <tr>
-                <td>UML4981</td>
-                <td>India</td>
-                <td>Switzerland</td>
-                <td>Boeing747-8</td>
-                <td><center>20</center></td>
-                <td><center>2022/10/08</center></td>
-                
-              <tr>
-                <td>UML4950</td>
-                <td>USA</td>
-              
-                <td>France</td>
-                <td>Boeing780</td>
-                <td><center>24</center></td>
-                <td><center>2022/10/09</center></td>
-               
-              <tr>
-                <td>UML4980</td>
-                <td>Japan</td>
-                <td>Venezula</td>
-                <td>Boeing747-8</td>
-                <td><center>31</center></td>
-                <td><center>2022/10/09</center></td>
-  <form action = "addflight" method = "POST">              
-             
-            </tbody>
-          </table>
+          
+      
+      
+      
+      <% 
+		
+		
+Connection con;
+PreparedStatement pst;
+ResultSet rs;
+Class.forName("com.mysql.jdbc.Driver");
+con=DriverManager.getConnection("jdbc:mysql://localhost:3306/phonix","root","25069499");
+
+String eid=request.getParameter("eid");    
+          
+if(eid==null || eid.isEmpty())
+{
+	pst=con.prepareStatement("select * from flight");
+	rs=pst.executeQuery();
+	
+	while(rs.next())
+	{
+		
+	      out.println("<table>");
+			out.println("<thead>");
+			out.println("<tr>");
+			out.println("<th>Flight ID</th>");
+			out.println("<th>Start From</th>");
+			out.println("<th>Destination</th>");
+			out.println("<th>Plane Type</th>");
+			out.println("<th>Available Seats</th>");
+			out.println("<th>Date</th>");
+			out.println("<th>Time</th>");
+			out.println("</tr>");
+			out.println("</thead>");
+		
+		out.println("<tbody>");
+		out.println("<tr>");
+		out.println("<td>" +rs.getInt("flightid") + "</td>");
+		out.println("<td>" +rs.getString("from") + "</td>");
+		out.println("<td>" +rs.getString("destination") + "</td>");
+		out.println("<td>" +rs.getString("planetype") + "</td>");
+		out.println("<td>" +rs.getString("availableseats") + "</td>");
+		out.println("<td>" +rs.getString("date") + "</td>");
+		out.println("<td>" +rs.getString("time") + "</td>");
+		out.println("</tr>");
+		out.println("</table>");
+	}
+	
+}  
+                   
+        %>      
+            
+           <form action = "addflight" method = "POST">    
+            
+         
         </div>
 </div>
 </div>
+
+
+  
+
 
     <div class="sidebar">
       <h3>Account Balance</h3>
@@ -159,8 +169,8 @@
           <input type="submit" value="ADD" class="submit_btn"><br>
         
     </div> 
+    </div>
     
-</div>
 </form>
 </div>
 
