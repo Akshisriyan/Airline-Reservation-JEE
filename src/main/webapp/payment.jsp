@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+      <% response.setHeader("Cache-Control","no-cache, no-store");
+    %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -276,10 +278,10 @@
                     <span class="ps-3">21 OCT,2022</span>
                 </div>
                 <div class="col-12 px-md-5 px-4 mt-3">
-                        <div class="btn btn-secondary w-100"><b>Home</b>
+                      <a href="index.jsp"> <div class="btn btn-secondary w-100"><b>Home</b>
 
 
-                        </div>
+                        </div></a>
 
                     </div>
                 <div class="d-flex align-items-center justify-content-between text mt-5">

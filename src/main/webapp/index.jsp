@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+  <% response.setHeader("Cache-Control","no-cache, no-store");
+    %>
 <!doctype html>
 <html class="no-js"  lang="en">
 
@@ -75,7 +77,7 @@
 						<div class="col-sm-2">
 							<div class="logo">
 								<a href="admindash.jsp">
-									LOGO 
+									<span>PHOENIX</span> Airline
 								</a>
 							</div><!-- /.logo-->
 						</div><!-- /.col-->
