@@ -805,7 +805,7 @@
 						clients reviews
 					</h2>
 					<p>
-						enter description
+						Give Your Ideas...
 					</p>
 
 				</div><!--/.gallery-header-->
@@ -822,11 +822,11 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									enter description
+									I am from Srilnaka......
 								</p>
 								<h3>
 									<a href="#">
-										Akshitha Sriyanjith
+										Ravindi
 									</a>
 								</h3>
 								<h4>Balangoda , Srilanka</h4>
@@ -845,7 +845,7 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									enter description
+									Thank you for your service....
 								</p>
 								<h3>
 									<a href="#">
@@ -868,11 +868,11 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									enter description
+									I think this is best airline....
 								</p>
 								<h3>
 									<a href="#">
-										Madushan Deshapriya
+										Chathurangi
 									</a>
 								</h3>
 								<h4>Welimada , Srilanka</h4>
