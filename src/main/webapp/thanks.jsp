@@ -5,6 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+ <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: arial, sans-serif;
+    }
+   </style>
 </head>
 <body>
  <div class="container">
