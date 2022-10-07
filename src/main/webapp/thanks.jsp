@@ -78,8 +78,8 @@
         cursor: pointer;
         box-shadow:0 5px 5px rgba(0,0,0,0.2);
     }
-    
-   </style>
+    </style>
+  
 </head>
 <body>
  <div class="container">
