@@ -34,6 +34,19 @@
         font-weight:500;
         border-radius:30px;
     }
+    .popup{
+        width:400px;
+        background-color:  rgb(47 122 143);
+        border-radius:6px;
+        position:absolute;
+        top:0;
+        left:50%;
+        transform:translate(-50%,-50%) scale(0.1);
+        text-align:center;
+        padding:0 30px 30px;
+        color:#333;
+        visibility: hidden;
+        t
    </style>
 </head>
 <body>
