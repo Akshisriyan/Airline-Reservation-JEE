@@ -46,7 +46,13 @@
         padding:0 30px 30px;
         color:#333;
         visibility: hidden;
-        t
+         transition:transform 0.4s, top 0.4s;
+    }
+     .open-popup{
+        visibility:visible;
+        top:50%;
+        transform:translate(-50%,-50%) scale(1);
+    }
    </style>
 </head>
 <body>
