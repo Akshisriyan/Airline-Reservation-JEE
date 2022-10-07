@@ -134,7 +134,7 @@ if(eid==null || eid.isEmpty())
  
 
     <div class="sidebar">
-      <h3>Account Balance</h3>
+      <h3>ADD Flight</h3>
       
       <div class="form-group">
         <label for="name"><b>Flight ID :</b></label>

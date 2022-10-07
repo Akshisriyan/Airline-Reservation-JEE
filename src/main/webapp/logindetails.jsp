@@ -33,7 +33,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"> Last access : 7 October 2022 &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation">
@@ -88,53 +88,53 @@ font-size: 16px;"> Last access : 30 September 2022 &nbsp; <a href="#" class="btn
                           <tbody>
                             <tr>
                               
-                              <td>207912</td>
-                              <td>Staff Grade 1</td>
-                              <td>2022/09/13-8.00AM</td>
+                              <td>36</td>
+                              <td>StaffGrade1</td>
+                              <td>2022/10/7-8.00AM</td>
                               <td>172.145.23.1</td>
                               
                             </tr>
                             <tr>
                               
-                              <td>20723</td>
-                              <td>User</td>
-                              <td>2022/09/05-9.45PM</td>
+                              <td>79</td>
+                              <td>phoenix</td>
+                              <td>2022/10/05-9.45PM</td>
                               <td>192.14.223.2</td>
                             
                             </tr>
                             <tr>
                               
-                              <td>215674</td>
-                              <td>Staff Grade 2</td>
-                              <td>2022/08/25-10.00AM</td>
+                              <td>11</td>
+                              <td>StaffGrade2</td>
+                              <td>2022/10/4-10.00AM</td>
                               <td>112.134.23.5</td> 
                             </tr>
                             <tr>
                                 
-                                <td>203452</td>
-                              <td>Staff Grade 1</td>
-                              <td>2022/08/18-6.00PM</td>
+                                <td>5</td>
+                              <td>StaffGrade1</td>
+                              <td>2022/10/18-6.00PM</td>
                               <td>12.135.2.64</td> 
                               </tr>
                               <tr>
                                 
-                                <td>22864</td>
-                              <td>Staff Grade 1</td>
-                              <td>2022/08/05-1.00PM</td>
+                                <td>22</td>
+                              <td>StaffGrade1 </td>
+                              <td>2022/10/05-1.00PM</td>
                               <td>132.167.3.6</td>
                               </tr>
                               <tr>
                                 
-                                <td>22464</td>
-                              <td>Staff Grade 1</td>
-                              <td>2022/07/23-6.00AM</td>
+                                <td>2</td>
+                              <td>StaffGrade1</td>
+                              <td>2022/10/4-6.00AM</td>
                               <td>152.125.267.3</td>
                               </tr>
                               <tr>
                                 
-                                <td>216598</td>
-                              <td>Staff Grade 1</td>
-                              <td>2022/07/13-7.00PM</td>
+                                <td>21</td>
+                              <td>StaffGrade1</td>
+                              <td>2022/10/1-7.00PM</td>
                               <td>132.105.22.112</td>
                               </tr>
 
