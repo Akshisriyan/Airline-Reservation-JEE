@@ -12,6 +12,17 @@
         box-sizing: border-box;
         font-family: arial, sans-serif;
     }
+    
+     .container{
+        width:100%;
+        height:100vh;
+        background-image:url(img/cloud2.jpg.jpg);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-weight: bold;
+        color: black;
+    }
    </style>
 </head>
 <body>
