@@ -23,6 +23,17 @@
         font-weight: bold;
         color: black;
     }
+    
+     .btn{
+        padding:10px 60px;
+        background-color: rgb(17 228 212 / 97%);
+        border:0;
+        outline:none;
+        cursor:pointer;
+        font-size:22px;
+        font-weight:500;
+        border-radius:30px;
+    }
    </style>
 </head>
 <body>
