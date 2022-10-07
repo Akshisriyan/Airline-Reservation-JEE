@@ -85,7 +85,7 @@
  <div class="container">
        <button type="submit" class="btn" onclick="openPopup() ">Submit</button>
        <div class="popup" id="popup">
-        <img src="Tick1.jpg">
+        <img src="img/Tick1.jpg">
         <h2>Thank You!</h2>
         <p>Your details has been successfully submitted.Thank!</p>
         <button type="button" onclick="closePopup()">OK</button>
