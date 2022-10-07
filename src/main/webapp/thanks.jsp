@@ -53,6 +53,32 @@
         top:50%;
         transform:translate(-50%,-50%) scale(1);
     }
+    
+     .popup img{
+        width:100px;
+        margin-top:-50px;
+        border-radius:50%;
+        box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+    .popup h2{
+        font-size:38px;
+        font-weight:500;
+        margin:30px 0 10px;
+    }
+    .popup button{
+        width:100%;
+        margin-top:50px;
+        padding:10px 0;
+        background:rgb(32 63 161 / 98%);
+        color:#fff;
+        border:0;
+        outline:none;
+        font-size:18px;
+        border-radius:4px;
+        cursor: pointer;
+        box-shadow:0 5px 5px rgba(0,0,0,0.2);
+    }
+    
    </style>
 </head>
 <body>
